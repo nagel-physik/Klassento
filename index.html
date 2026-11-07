@@ -1632,6 +1632,12 @@ tr.eg2-live td{background:#fefce8}
 .rolle-fl .kd-fix{grid-template-columns:1fr!important}.rolle-fl .kd-fix>.kd-heute{grid-column:1;grid-row:auto}
 @media(max-width:820px){.kd-fix{grid-template-columns:1fr 1fr!important;grid-template-rows:auto}.kd-fix>.kd-stat:nth-child(2){grid-column:2;grid-row:1}.kd-fix>.kd-stat:first-child{grid-row:1}.kd-fix>.kd-heute{grid-column:1/-1;grid-row:2}}
 .kal-mehr{font-size:10px;color:#4f46e5;font-weight:700;cursor:pointer}.kal-mehr:hover{text-decoration:underline}
+/* Zurück-Knopf */
+#nav-zurueck{display:inline-flex;align-items:center;gap:6px;border:1.5px solid #c7d2fe;background:#eef2ff;color:#3730a3;border-radius:10px;padding:5px 12px 5px 10px;font-size:15px;font-weight:800;cursor:pointer;margin-right:10px;line-height:1;transition:.15s}
+#nav-zurueck span{font-size:13px;font-weight:700}
+#nav-zurueck:hover:not(:disabled){background:#e0e7ff;border-color:#818cf8}
+#nav-zurueck:disabled{opacity:.35;cursor:default;background:#f8fafc;border-color:#e2e8f0;color:#94a3b8}
+@media(max-width:820px){#nav-zurueck span{display:none}#nav-zurueck{padding:5px 10px}}
 </style>
 </head><body>
 <script>
@@ -4379,7 +4385,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v44 · Stand 07.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v45 · Stand 07.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -19076,6 +19082,7 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','←','Zurück-Knopf','Oben links neben dem Seitentitel: „← Zurück“ führt immer zum vorigen Schritt – z. B. von den Noten zurück in die Lerngruppe, vom Reiter „Schüler/in“ zurück zu „Erfassen“ oder aus einem Fenster heraus. Auch mit Alt + ← oder der Zurück-Taste der Maus.','Allgemein'],
  ['Nov. 2026','📅','Termine löschen','Im Klassenkalender einen Termin antippen → „🗑 Löschen“ unten links. „+2 mehr“ an einem Tag öffnet die Liste aller Termine dieses Tages. Die Kacheln „Fehlend heute“ und „Unentschuldigt“ sind jetzt kleiner und wachsen nicht mehr mit.','Kalender'],
  ['Nov. 2026','🔄','Update-Knopf','Oben rechts neben „💾 Sichern“: „🔄 Aktualisieren“ lädt die neueste Version, die Daten bleiben erhalten. Gibt es eine neue Version, wird der Knopf orange und zeigt die Nummer.','Allgemein'],
  ['Nov. 2026','🧩','Lerngruppe vom Dashboard & Differenzierung','Ein Klick auf eine eigene Stunde unter „Heute/Nächster Schultag“ öffnet direkt die passende Lerngruppe. 🧩 zeigt, wie viele Kinder mit Förderstatus (LRS, Förderschwerpunkt …) in der Gruppe sind. In der Bibliothek steht auf jeder Themenseite „Differenzierung beachten“ mit Namen und Förderstatus.','Dashboard'],
@@ -20329,7 +20336,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v44',KLASSENTO_STAND='07.11.2026';
+const KLASSENTO_VER='v45',KLASSENTO_STAND='07.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -21463,6 +21470,96 @@ function kalTagZeigen(dat){
   m.style.display='flex';
 }
 /* ===== KALENDER LÖSCHEN ENDE ===== */
+/* ===== ZURÜCK-KNOPF =====
+   Oben links „←“: führt immer zum vorigen Schritt zurück – Bereich, Lerngruppe, Reiter, Detailansicht.
+   Ist ein Fenster (Dialog) offen, schließt „←“ zuerst dieses. Auch: Alt + ← und die Zurück-Taste der Maus.
+   Funktionsweise: Jeder Seiten-/Reiterwechsel wird als Zustand {v: Bereich, s: [[Funktion, Argumente] …]} gemerkt. */
+const NAV={stapel:[],akt:null,wieder:0,tiefe:0,zuletzt:0};
+const NAV_FENSTER=['arbeitszeit','muendlich','vorschriften'];
+const NAV_SCHRITTE=['openLerngruppe','switchLGTab','setLGNotenTab','boTab','exkSetTab','ezSetModus','bfTab','showKkTab','showQuTab','showKonfTab','showLerTab','showRechtTab','showArchivTab','openArchivJahr','openArchivLG','openArchivKlasseSus','openArchivLGSus','openElterngespraechSuS','openNachDetail','openLerSusFromUebersicht','setFlMode','spAnsichtSetzen'];
+const NAV_HOCH={backToLGOverview:'openLerngruppe',backToNachOverview:'openNachDetail',backToEgOverview:'openElterngespraechSuS',backToArchivOverview:'openArchivJahr'};
+const NAV_RESET={lerngruppen:'backToLGOverview',nachschreiben:'backToNachOverview',elterngespraech:'backToEgOverview',archiv:'backToArchivOverview'};
+const NAV_ORIG={};
+function navArg(a){
+  if(a&&a.nodeType===1){if(a.id)return {__el:'#'+a.id};const oc=a.getAttribute&&a.getAttribute('onclick');return oc?{__el:'[onclick="'+oc.replace(/"/g,'\\"')+'"]'}:null;}
+  if(a&&typeof a==='object'&&(a instanceof Event))return null;
+  return a;
+}
+function navArgZurueck(a){if(a&&typeof a==='object'&&a.__el){try{return document.querySelector(a.__el);}catch(e){return null;}}return a;}
+function navNeu(name,art,args){
+  const akt=NAV.akt;
+  if(art==='view'){const v=args[0];if(NAV_FENSTER.includes(v))return null;return {v,s:navStart(v)};}
+  if(!akt)return null;
+  const s=akt.s.slice();
+  if(art==='hoch'){const i=s.findIndex(x=>x[0]===NAV_HOCH[name]);if(i>=0)s.length=i;return {v:akt.v,s};}
+  const i=s.findIndex(x=>x[0]===name);if(i>=0)s.length=i;
+  s.push([name,args.map(navArg)]);return {v:akt.v,s};
+}
+/* Was beim Betreten eines Bereichs schon eingestellt ist (damit „zurück“ es wiederherstellt) */
+function navStart(v){
+  try{
+    if(v==='beobachtung'&&typeof boUI!=='undefined')return [['boTab',[boUI.tab]]];
+    if(v==='exkursionen'&&typeof exkTab!=='undefined')return [['exkSetTab',[exkTab]]];
+  }catch(e){}
+  return [];
+}
+function navMerke(name,art,args){
+  const neu=navNeu(name,art,args);if(!neu)return;
+  if(NAV.akt&&JSON.stringify(neu)===JSON.stringify(NAV.akt))return;
+  const jetzt=Date.now();
+  if(NAV.akt&&jetzt-NAV.zuletzt>350){NAV.stapel.push(NAV.akt);if(NAV.stapel.length>60)NAV.stapel.shift();}
+  NAV.akt=neu;NAV.zuletzt=jetzt;navKnopf();
+}
+function navWickeln(name,art){
+  const orig=window[name];if(typeof orig!=='function'||orig.__nav)return;NAV_ORIG[name]=orig;
+  const w=function(){
+    if(NAV.wieder||NAV.tiefe>0){NAV.tiefe++;try{return orig.apply(this,arguments);}finally{NAV.tiefe--;}}
+    NAV.tiefe++;let r;try{r=orig.apply(this,arguments);}finally{NAV.tiefe--;}
+    try{navMerke(name,art,[...arguments]);}catch(e){}
+    return r;
+  };w.__nav=true;window[name]=w;
+}
+function navOffenesFenster(){
+  const L=[...document.querySelectorAll('.mb')].filter(m=>m.style.display==='flex'||(m.style.display!=='none'&&getComputedStyle(m).display!=='none'));
+  return L.length?L[L.length-1]:null;
+}
+function navZurueck(){
+  const f=navOffenesFenster();
+  if(f){const x=f.querySelector('.mhd button,[onclick*="closeM"]');if(x)x.click();else f.style.display='none';navKnopf();return;}
+  const z=NAV.stapel.pop();if(!z){navKnopf();return;}
+  NAV.akt=z;NAV.zuletzt=Date.now();
+  NAV.wieder++;
+  try{
+    const btn=document.querySelector(`.ni[onclick*="show('${z.v}'"]`);
+    (NAV_ORIG.show||show)(z.v,btn);
+    const r=NAV_RESET[z.v];if(r&&NAV_ORIG[r])try{NAV_ORIG[r]();}catch(e){}
+    z.s.forEach(([n,a])=>{try{const fn=NAV_ORIG[n]||window[n];if(typeof fn==='function')fn.apply(null,a.map(navArgZurueck));}catch(e){}});
+    try{document.querySelector('.main')&&document.querySelector('.main').scrollTo&&document.querySelector('.main').scrollTo(0,0);}catch(e){}
+  }finally{NAV.wieder--;}
+  navKnopf();
+}
+function navKnopf(){
+  let b=document.getElementById('nav-zurueck');
+  if(!b){const t=document.getElementById('pg-title');if(!t)return;
+    b=document.createElement('button');b.id='nav-zurueck';b.type='button';b.innerHTML='←<span>Zurück</span>';b.title='Zurück zum vorigen Schritt (Alt + ←)';b.onclick=()=>navZurueck();
+    t.parentNode.insertBefore(b,t);}
+  const an=NAV.stapel.length>0||!!navOffenesFenster();
+  b.disabled=!an;b.classList.toggle('an',an);
+}
+(function(){
+  navWickeln('show','view');
+  NAV_SCHRITTE.forEach(n=>navWickeln(n,'schritt'));
+  Object.keys(NAV_HOCH).forEach(n=>navWickeln(n,'hoch'));
+  // Startzustand: der gerade sichtbare Bereich
+  try{const v=[...document.querySelectorAll('[id^="view-"]')].find(x=>x.style.display==='block');NAV.akt={v:v?v.id.slice(5):'dashboard',s:[]};}catch(e){NAV.akt={v:'dashboard',s:[]};}
+  document.addEventListener('keydown',e=>{if(e.altKey&&e.key==='ArrowLeft'&&!/INPUT|TEXTAREA|SELECT/.test((e.target.tagName||''))){e.preventDefault();navZurueck();}});
+  document.addEventListener('mouseup',e=>{if(e.button===3){e.preventDefault();navZurueck();}});
+  // Fenster auf/zu → Knopf aktualisieren
+  let navRaf=0;try{new MutationObserver(()=>{if(navRaf)return;navRaf=requestAnimationFrame(()=>{navRaf=0;navKnopf();});}).observe(document.body,{attributes:true,subtree:true,attributeFilter:['style']});}catch(e){}
+  navKnopf();
+})();
+/* ===== ZURÜCK-KNOPF ENDE ===== */
+
 
 /* ===== UPDATE-KNOPF (nur Browser-/Kollegen-Fassung) =====
    Oben rechts „🔄 Aktualisieren“ mit leicht pulsierendem Rand. Die App fragt beim Start, alle 30 Minuten und beim
