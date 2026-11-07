@@ -1614,6 +1614,14 @@ tr.eg2-live td{background:#fefce8}
 .bi2-diff-hd{font-weight:800;margin-bottom:.25em}
 .bi2-diff-g{margin-top:.3em}.bi2-diff-g>span{color:#92400e}
 .bi2-diff ul{margin:.2em 0 0;padding-left:1.2em}.bi2-diff li{margin:.05em 0}.bi2-diff i{color:#a16207}
+/* Update-Knopf (Browser-Fassung) */
+.btn.upd-btn{font-size:12px;padding:5px 11px;font-weight:700;color:#1d4ed8;background:#eff6ff;border:1.5px solid #60a5fa;animation:updPuls 2.2s ease-in-out infinite;white-space:nowrap}
+.btn.upd-btn:hover{background:#dbeafe}
+.btn.upd-btn.neu{color:#fff;background:linear-gradient(135deg,#f97316,#ea580c);border-color:#f97316;animation:updPulsNeu 1.3s ease-in-out infinite}
+.btn.upd-btn:disabled{opacity:.7;animation:none}
+@keyframes updPuls{0%,100%{box-shadow:0 0 0 0 rgba(96,165,250,.55)}50%{box-shadow:0 0 0 5px rgba(96,165,250,0)}}
+@keyframes updPulsNeu{0%,100%{box-shadow:0 0 0 0 rgba(249,115,22,.7)}50%{box-shadow:0 0 0 8px rgba(249,115,22,0)}}
+@media (prefers-reduced-motion:reduce){.btn.upd-btn,.btn.upd-btn.neu{animation:none}}
 </style>
 </head><body>
 <script>
@@ -3848,6 +3856,24 @@ Verschiedenes und Fragen</textarea></div>
       </div>
     </div>
 
+    <div class="anl-section" data-anl="update aktualisieren neue version neu laden updates browser vercel link pulsieren">
+      <div class="anl-section-hd" onclick="anlToggle(this)">
+        <span class="anl-icon">🔄</span><span class="anl-section-title">Updates – immer die neueste Version</span><span class="anl-arrow">▶</span>
+      </div>
+      <div class="anl-section-body">
+        <ul>
+          <li><strong>Warum wichtig?</strong> Klassento wird laufend verbessert. Der Browser merkt sich aber oft die alte Fassung – ohne Aktualisieren kommen Verbesserungen und Fehlerkorrekturen nicht auf deinen Rechner.</li>
+          <li><strong>Der Knopf „🔄 Aktualisieren“</strong> steht oben rechts neben „💾 Sichern“. Der blaue Rand pulsiert leicht, damit man ihn nicht übersieht. Ein Tipp lädt die neueste Version.</li>
+          <li><strong>Neue Version da?</strong> Klassento schaut beim Start, alle 30 Minuten und wenn du zur App zurückkehrst selbst nach. Gibt es eine neue Version, wird der Knopf <strong>orange</strong> und zeigt die Nummer, z. B. „🔄 Update v44“. Dann bitte antippen.</li>
+          <li><strong>Deine Daten bleiben erhalten.</strong> Vor dem Neuladen wird alles verschlüsselt gespeichert. Danach einmal wie gewohnt das Passwort eingeben. Danach meldet die App kurz „✓ Aktualisiert auf …“ und was neu ist (siehe auch „Neu“ im Handbuch).</li>
+          <li><strong>Welche Version habe ich?</strong> Die Nummer steht unten links in der Seitenleiste und im Anmeldefenster.</li>
+          <li><strong>Als App installiert</strong> (Edge, Chrome, Tablet): Der Knopf funktioniert genauso.</li>
+        </ul>
+        <div style="margin:8px 0"><button class="btn" onclick="updPruefen(true)">🔍 Jetzt nach Updates suchen</button></div>
+        <div class="anl-tip">Tipp: Vor einem Update ist kein Backup nötig – trotzdem gilt wie immer: regelmäßig über „💾 Sichern“ eine Sicherungsdatei anlegen.</div>
+      </div>
+    </div>
+
     <div class="anl-section" data-anl="datensicherheit backup sichern wiederherstellen verschlüsselt json export import cloud">
       <div class="anl-section-hd" onclick="anlToggle(this)">
         <span class="anl-icon">💾</span><span class="anl-section-title">Datensicherheit &amp; Backup</span><span class="anl-arrow">▶</span>
@@ -4343,7 +4369,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v42 · Stand 07.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v43 · Stand 07.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -18917,7 +18943,7 @@ const HB_KAP=[
   {t:'Noten & Leistung',d:'Noten, Notenzettel, Live-Noten, Konferenz und Einschätzungen.',k:['Noten','Notenzettel-Import','Live-Noten','Gesprächsansicht','Notenkonferenz','Lernentwicklung','Einschätzung für Betrieb','Sek I-VO']},
   {t:'Eltern & Gespräche',d:'Elterngespräch, Protokolle, Briefe und Förderung.',k:['Elterngespräch','Elternabend-Protokolle','Briefe','Förderpläne','Vorläufige Einschätzung','Klassenkonferenz']},
   {t:'Organisation & Finanzen',d:'Ganztag, Klassenkonto, Quittungen und AGs.',k:['Ganztagsbetreuung','Klassenkonto','Quittungen','AGs meiner SuS','AG-Bereich']},
-  {t:'Daten, Recht & Archiv',d:'Datensicherung, Schuljahresabschluss und Schulrecht.',k:['Datensicherheit','Archiv','Schulrecht']}
+  {t:'Daten, Recht & Archiv',d:'Datensicherung, Schuljahresabschluss und Schulrecht.',k:['Updates','Datensicherheit','Archiv','Schulrecht']}
 ];
 let hbSeiten=[],hbIdx=0,hbFertig=false;
 function hbTitel(sec){const t=sec.querySelector('.anl-section-title');return t?t.textContent.trim():'';}
@@ -19040,6 +19066,7 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','🔄','Update-Knopf','Oben rechts neben „💾 Sichern“: „🔄 Aktualisieren“ lädt die neueste Version, die Daten bleiben erhalten. Gibt es eine neue Version, wird der Knopf orange und zeigt die Nummer.','Allgemein'],
  ['Nov. 2026','🧩','Lerngruppe vom Dashboard & Differenzierung','Ein Klick auf eine eigene Stunde unter „Heute/Nächster Schultag“ öffnet direkt die passende Lerngruppe. 🧩 zeigt, wie viele Kinder mit Förderstatus (LRS, Förderschwerpunkt …) in der Gruppe sind. In der Bibliothek steht auf jeder Themenseite „Differenzierung beachten“ mit Namen und Förderstatus.','Dashboard'],
  ['Nov. 2026','⏰','Unterrichtszeiten einstellbar','Stundenplan → Lehrer-Stundenplan → ⏰ Unterrichtszeiten: Beginn und Ende der vier Blöcke, Früh- und Spätaufsicht und die Tage mit 4. Block festlegen. Die Pausen ergeben sich von selbst. Gilt überall – auch im Arbeitszeit-Fenster.','Stundenplan'],
  ['Nov. 2026','✍️','Unterschrift in Briefen','Unter ⚙️ → Profil & Schule direkt unterschreiben (Maus, Trackpad, Finger) oder ein Foto der Unterschrift hochladen – sie erscheint in allen Briefen über der Unterschriftslinie, auch im PDF und in Word.','Briefe'],
@@ -20291,7 +20318,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v42',KLASSENTO_STAND='07.11.2026';
+const KLASSENTO_VER='v43',KLASSENTO_STAND='07.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -21405,6 +21432,64 @@ function biFoeHtml(b){
   };
 })();
 /* ===== DIFFERENZIERUNG ENDE ===== */
+/* ===== UPDATE-KNOPF (nur Browser-/Kollegen-Fassung) =====
+   Oben rechts „🔄 Aktualisieren“ mit leicht pulsierendem Rand. Die App fragt beim Start, alle 30 Minuten und beim
+   Zurückkehren in den Tab beim Server nach, ob es eine neuere Version gibt. Dann wird der Knopf orange: „Update vNN“.
+   Klick: Daten sicher wegschreiben (Tresor) → Zwischenspeicher des Browsers umgehen → neu laden. Daten bleiben erhalten. */
+const UPD={neu:null,letzt:0,laeuft:false};
+function updNr(v){const m=/v(\d+)/.exec(String(v||''));return m?+m[1]:0;}
+function updOnline(){return /^https?:$/.test(location.protocol)&&!window.__TAURI__;}
+function updUrl(){return location.href.split('#')[0].split('?')[0];}
+async function updPruefen(manuell){
+  if(!updOnline()){if(manuell)updMeldung('Die Update-Prüfung geht nur, wenn Klassento über den Internet-Link geöffnet ist.');return;}
+  if(UPD.laeuft)return;UPD.laeuft=true;UPD.letzt=Date.now();
+  try{
+    const r=await fetch(updUrl()+'?vc='+Date.now(),{cache:'no-store'});
+    const t=await r.text();const m=/KLASSENTO_VER='(v\d+)'/.exec(t);
+    if(m&&updNr(m[1])>updNr(KLASSENTO_VER)){UPD.neu=m[1];updKnopf();if(manuell)updMeldung('Neue Version '+m[1]+' ist da – jetzt auf „Update“ tippen.');}
+    else if(manuell)updMeldung('✓ Du hast die neueste Version ('+KLASSENTO_VER+').');
+  }catch(e){if(manuell)updMeldung('Keine Verbindung – bitte später noch einmal versuchen.');}
+  UPD.laeuft=false;
+}
+function updMeldung(t){try{window.szToast(t);}catch(e){alert(t);}}
+async function updJetzt(){
+  if(!window.__updOhneFrage&&!confirm('Klassento lädt jetzt die neueste Version.\n\nDeine Daten bleiben erhalten. Danach bitte einmal dein Passwort eingeben.'))return;
+  const b=document.getElementById('upd-btn');if(b){b.disabled=true;b.innerHTML='⏳ Wird aktualisiert …';}
+  // 1) Alles sicher speichern (verschlüsselt)
+  try{localStorage.setItem('klassento_ver_vorher',KLASSENTO_VER);}catch(e){}
+  try{if(typeof save==='function')save();}catch(e){}
+  try{if(typeof SZ!=='undefined'&&SZ.flush)await SZ.flush();}catch(e){}
+  // 2) Neue Datei vom Server holen (Browser-Zwischenspeicher umgehen), dann neu laden
+  try{if(updOnline())await fetch(updUrl(),{cache:'reload'});}catch(e){}
+  location.reload();
+}
+function updKnopf(){
+  let b=document.getElementById('upd-btn');
+  if(!b){
+    const ziel=document.querySelector('button[onclick="exportBackup()"][title="Schnell-Backup erstellen"]');
+    if(!ziel)return;
+    b=document.createElement('button');b.id='upd-btn';b.className='btn upd-btn';b.onclick=()=>updJetzt();
+    ziel.parentNode.insertBefore(b,ziel);
+  }
+  if(UPD.neu){b.classList.add('neu');b.innerHTML='🔄 Update '+UPD.neu;b.title='Neue Version '+UPD.neu+' verfügbar – jetzt aktualisieren. Deine Daten bleiben erhalten.';}
+  else{b.classList.remove('neu');b.innerHTML='🔄 Aktualisieren';b.title='Neueste Version laden (Daten bleiben erhalten)';}
+}
+(function(){
+  if(window.__TAURI__)return;
+  const start=()=>{updKnopf();
+    // Nach einem Update kurz bestätigen
+    let vorher=null;try{vorher=localStorage.getItem('klassento_ver_vorher');}catch(e){}
+    if(vorher){try{localStorage.removeItem('klassento_ver_vorher');}catch(e){}
+      if(vorher!==KLASSENTO_VER){let neu='';try{neu=HB2_NEU&&HB2_NEU[0]?' Neu: '+HB2_NEU[0][2]+'.':'';}catch(e){}setTimeout(()=>updMeldung('✓ Aktualisiert auf '+KLASSENTO_VER+'.'+neu),1200);}
+      else setTimeout(()=>updMeldung('✓ Klassento ist auf dem neuesten Stand ('+KLASSENTO_VER+').'),1200);}
+    setTimeout(()=>updPruefen(false),6000);
+    setInterval(()=>{if(document.visibilityState==='visible')updPruefen(false);},30*60*1000);
+    document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'&&Date.now()-UPD.letzt>10*60*1000)updPruefen(false);});
+  };
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();
+/* ===== UPDATE-KNOPF ENDE ===== */
+
 
 
 
