@@ -1605,6 +1605,15 @@ tr.eg2-live td{background:#fefce8}
 .zt-hinw{font-size:11.5px;color:#94a3b8;margin:10px 0 4px;line-height:1.45}
 .zt-ft{display:flex;gap:8px;padding:12px 18px;border-top:1px solid #e2e8f0;align-items:center}
 @media (max-width:480px){.zt-z>span:first-child,.zt-tage>span{width:100%}.zt-z{gap:6px 8px}.zt-t{min-width:0;width:118px}}
+/* Differenzierung & Lerngruppen-Sprung */
+.kd-heute td.kd-lg{cursor:pointer;position:relative}
+.kd-heute td.kd-lg:hover{background:#e0e7ff;box-shadow:inset 0 0 0 1px #a5b4fc}
+.kd-heute td.kd-lg::after{content:'›';position:absolute;right:8px;top:50%;transform:translateY(-50%);color:#94a3b8;font-weight:800}
+.kd-foe{background:#fef3c7;color:#92400e}
+.bi2-diff{background:#fffbeb;border:1px solid #fcd34d;border-radius:8px;padding:.5em .7em;margin:0 0 .8em;font-family:system-ui,-apple-system,sans-serif;font-size:.82em;line-height:1.4;color:#78350f}
+.bi2-diff-hd{font-weight:800;margin-bottom:.25em}
+.bi2-diff-g{margin-top:.3em}.bi2-diff-g>span{color:#92400e}
+.bi2-diff ul{margin:.2em 0 0;padding-left:1.2em}.bi2-diff li{margin:.05em 0}.bi2-diff i{color:#a16207}
 </style>
 </head><body>
 <script>
@@ -4334,7 +4343,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v41 · Stand 07.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v42 · Stand 07.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -10694,7 +10703,7 @@ function kdHeuteHtml(){
     const ichTxt=entfaellt?`<span style="text-decoration:line-through;color:#94a3b8">${kdE(roh.fach)}</span> <span class="kd-tag" style="background:#e2e8f0;color:#475569">entfällt/pausiert</span>`:ich&&ich.fach?kdE(ich.fach)+(ich.raum?` <span style="color:#94a3b8">· ${kdE(ich.raum)}</span>`:'')+(ich.vertretung?' <span class="kd-tag" style="background:#fde68a;color:#7a4b00">Vertretung</span>':''):'<span style="color:#94a3b8">frei</span>';
     const beiMir=ich&&ich.fach&&kl&&String(ich.fach).toLowerCase().replace(/\s+/g,'').includes(kl);
     const kTxt=kc&&kc.fach?kdE(kc.fach):'<span style="color:#94a3b8">—</span>';
-    return `<tr class="${vorbei?'kd-past':''} ${jetztB?'kd-now':''}"><td>${n+1}<div style="font-size:10px;font-weight:500">${z.t1}</div></td><td>${ichTxt}${jetztB?' <span class="kd-tag" style="background:#2f6fed;color:#fff">jetzt</span>':''}</td><td style="${beiMir?'color:#1d4ed8;font-weight:700':''}">${kTxt}${beiMir?' <span class="kd-tag" style="background:#fde68a;color:#7a4b00">bei mir</span>':''}</td></tr>`;}).join('');
+    return `<tr class="${vorbei?'kd-past':''} ${jetztB?'kd-now':''}"><td>${n+1}<div style="font-size:10px;font-weight:500">${z.t1}</div></td><td${kdLgAttr(ich,entfaellt)}>${ichTxt}${kdFoeTag(ich,entfaellt)}${jetztB?' <span class="kd-tag" style="background:#2f6fed;color:#fff">jetzt</span>':''}</td><td style="${beiMir?'color:#1d4ed8;font-weight:700':''}">${kTxt}${beiMir?' <span class="kd-tag" style="background:#fde68a;color:#7a4b00">bei mir</span>':''}</td></tr>`;}).join('');
   const tagName=new Date(dat+'T12:00:00').toLocaleDateString('de-DE',{weekday:'long',day:'2-digit',month:'2-digit'});
   const titel=heute?'Heute · '+tagName:'Nächster Schultag · '+tagName;
   const {schultag}=kdPlanTag();
@@ -19031,6 +19040,7 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','🧩','Lerngruppe vom Dashboard & Differenzierung','Ein Klick auf eine eigene Stunde unter „Heute/Nächster Schultag“ öffnet direkt die passende Lerngruppe. 🧩 zeigt, wie viele Kinder mit Förderstatus (LRS, Förderschwerpunkt …) in der Gruppe sind. In der Bibliothek steht auf jeder Themenseite „Differenzierung beachten“ mit Namen und Förderstatus.','Dashboard'],
  ['Nov. 2026','⏰','Unterrichtszeiten einstellbar','Stundenplan → Lehrer-Stundenplan → ⏰ Unterrichtszeiten: Beginn und Ende der vier Blöcke, Früh- und Spätaufsicht und die Tage mit 4. Block festlegen. Die Pausen ergeben sich von selbst. Gilt überall – auch im Arbeitszeit-Fenster.','Stundenplan'],
  ['Nov. 2026','✍️','Unterschrift in Briefen','Unter ⚙️ → Profil & Schule direkt unterschreiben (Maus, Trackpad, Finger) oder ein Foto der Unterschrift hochladen – sie erscheint in allen Briefen über der Unterschriftslinie, auch im PDF und in Word.','Briefe'],
  ['Nov. 2026','📖','Bibliothek als echtes Buch','Buchrücken im hellen Regal, Titelblatt, Inhaltsverzeichnis, jedes Thema als Doppelseite, Umblättern mit Pfeilen, Tastatur oder Wischen, Register am Rand. Material-Check und Bibliothek sind jetzt ein Modul: Die Kachel „Bibliothek“ schlägt das Buch beim nächsten Thema auf, ⚙️ öffnet die Planung.','Dashboard'],
@@ -20281,7 +20291,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v41',KLASSENTO_STAND='07.11.2026';
+const KLASSENTO_VER='v42',KLASSENTO_STAND='07.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -21341,6 +21351,61 @@ function ztSpeichern(){
 /* Arbeitszeit-Fenster: Raster vor jedem Laden noch einmal sicherstellen */
 (function(){const _pa=azPlanAbgleich;azPlanAbgleich=function(){const r=_pa.apply(this,arguments);let z=false;try{z=ztAnArbeitszeit(ztSt,false);}catch(e){}return r||z;};})();
 /* ===== UNTERRICHTSZEITEN ENDE ===== */
+/* ===== DIFFERENZIERUNG & LERNGRUPPEN-SPRUNG =====
+   1) Dashboard „Heute/Nächster Schultag“: Klick auf eine eigene Stunde öffnet die passende Lerngruppe (statt Stundenplan).
+      Kleiner 🧩-Hinweis, wenn in der Gruppe Kinder mit Förderstatus sind.
+   2) Bibliothek: Auf jeder Themen-Doppelseite links oben „🧩 Differenzierung beachten“ mit Namen und Förderstatus
+      aller Lerngruppen, die zu diesem Buch (Klassenordner) gehören.
+   Datenquelle: Schülerverzeichnis (eigene Klasse) bzw. Förderstatus der Lerngruppe – mit automatischem Namensabgleich (lgFoerderQuelle). */
+function foeKurz(k){const o=(typeof FOERDERSTATUS_OPTIONEN!=='undefined'?FOERDERSTATUS_OPTIONEN:[]).find(x=>x.k===k);return o?o.kurz:k;}
+function foeListe(lg){
+  const out=[];if(!lg)return out;
+  try{
+    const eigen=lgIstEigeneKlasse(lg);
+    const L=eigen?(sus||[]).map(s=>({s,q:s})):(lg.schueler||[]).map(s=>({s,q:lgFoerderQuelle(lg,s)}));
+    L.forEach(({s,q})=>{
+      const keys=foerderAktivKeys(q).filter(k=>k!=='kein');if(!keys.length)return;
+      out.push({name:((s.vn||'')+' '+(s.nn||'')).trim()||'?',keys,bem:keys.map(k=>String((q.foerderstatus||{})[k]||'').trim()).filter(Boolean)});
+    });
+  }catch(e){}
+  return out.sort((a,b)=>a.name.localeCompare(b.name,'de'));
+}
+function foeZusammen(L){const c={};L.forEach(x=>x.keys.forEach(k=>c[k]=(c[k]||0)+1));return Object.keys(c).map(k=>c[k]+' × '+foeKurz(k)).join(', ');}
+/* ---------- 1) Dashboard ---------- */
+function kdLgZuZelle(ich){try{return ich&&ich.fach?vtLgZuFach(ich.fach):null;}catch(e){return null;}}
+function kdLgAttr(ich,entfaellt){
+  const lg=entfaellt?null:kdLgZuZelle(ich);if(!lg)return '';
+  return ' class="kd-lg" data-lg="'+kdE(String(lg.id))+'" onclick="kdLgGo(event,this.dataset.lg)" title="Lerngruppe '+kdE(lg.name)+' öffnen"';
+}
+function kdFoeTag(ich,entfaellt){
+  const lg=entfaellt?null:kdLgZuZelle(ich);if(!lg)return '';
+  const L=foeListe(lg);if(!L.length)return '';
+  return ' <span class="kd-tag kd-foe" title="'+kdE('Differenzierung: '+L.map(x=>x.name+' ('+x.keys.map(foeKurz).join(', ')+')').join(' · '))+'">🧩 '+L.length+'</span>';
+}
+function kdLgGo(ev,id){
+  if(ev)ev.stopPropagation();
+  const lg=(lerngruppen||[]).find(g=>String(g.id)===String(id));
+  if(!lg){navGoTo('stundenplan');return;}
+  navGoTo('lerngruppen');setTimeout(()=>{try{openLerngruppe(lg.id);}catch(e){}},30);
+}
+/* ---------- 2) Bibliothek ---------- */
+function biFoeHtml(b){
+  let G=[];try{G=(lerngruppen||[]).filter(lg=>matOrdnerVon(lg)===b.name);}catch(e){}
+  const Z=G.map(lg=>({lg,L:foeListe(lg)})).filter(x=>x.L.length);
+  if(!Z.length)return '';
+  return '<div class="bi2-diff"><div class="bi2-diff-hd">🧩 Differenzierung beachten</div>'+Z.map(z=>'<div class="bi2-diff-g"><b>'+biE(z.lg.name)+'</b> <span>· '+biE(foeZusammen(z.L))+'</span><ul>'+z.L.map(x=>'<li>'+biE(x.name)+' – '+biE(x.keys.map(foeKurz).join(', '))+(x.bem.length?' <i>('+biE(x.bem.join('; '))+')</i>':'')+'</li>').join('')+'</ul></div>').join('')+'</div>';
+}
+(function(){
+  if(typeof biSeite!=='function')return;
+  const _bs=biSeite;biSeite=function(b,i,s){
+    const r=_bs.apply(this,arguments);
+    if(s!=='L'||i===0)return r;
+    let box='';try{box=biFoeHtml(b);}catch(e){}
+    return box?r.replace('<div class="bi2-pin">','<div class="bi2-pin">'+box):r;
+  };
+})();
+/* ===== DIFFERENZIERUNG ENDE ===== */
+
 
 
 
