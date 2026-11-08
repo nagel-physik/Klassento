@@ -1638,6 +1638,23 @@ tr.eg2-live td{background:#fefce8}
 #nav-zurueck:hover:not(:disabled){background:#e0e7ff;border-color:#818cf8}
 #nav-zurueck:disabled{opacity:.35;cursor:default;background:#f8fafc;border-color:#e2e8f0;color:#94a3b8}
 @media(max-width:820px){#nav-zurueck span{display:none}#nav-zurueck{padding:5px 10px}}
+/* Sichtschutz (Milchglas) */
+#sg-glas{position:fixed;inset:0;z-index:9990;display:none;align-items:center;justify-content:center;background:rgba(226,232,240,.55);-webkit-backdrop-filter:blur(22px) saturate(.5);backdrop-filter:blur(22px) saturate(.5)}
+@supports not ((backdrop-filter:blur(2px)) or (-webkit-backdrop-filter:blur(2px))){#sg-glas{background:rgba(226,232,240,.98)}}
+#sg-glas .sg-box{display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center;padding:28px 34px;border-radius:24px;background:rgba(255,255,255,.55);box-shadow:0 20px 60px rgba(15,23,42,.18)}
+#sg-glas .sg-icon{font-size:44px;line-height:1}
+#sg-glas .sg-t{font-size:15px;font-weight:700;color:#475569}
+#sg-glas .sg-mdl{border:0;border-radius:20px;padding:22px 36px;font-size:clamp(20px,3vw,28px);font-weight:800;color:#fff;cursor:pointer;background:linear-gradient(140deg,#9b6bf0,#6d3fd0);box-shadow:0 14px 34px rgba(109,63,208,.45);transition:transform .15s}
+#sg-glas .sg-mdl:hover{transform:translateY(-2px) scale(1.02)}
+#sg-glas .sg-aus{position:relative;overflow:hidden;border:1px solid #cbd5e1;background:rgba(255,255,255,.8);border-radius:12px;padding:9px 16px;font-size:13px;font-weight:700;color:#475569;cursor:pointer;user-select:none;-webkit-user-select:none;touch-action:none}
+#sg-glas .sg-aus .sg-bar{position:absolute;left:0;top:0;bottom:0;width:0;background:#bfdbfe}
+#sg-glas .sg-aus.halt .sg-bar{width:100%;transition:width 1s linear}
+#sg-glas .sg-aus .sg-txt{position:relative}
+#sg-btn{font-size:12px;padding:5px 11px;font-weight:700;color:#5b21b6;background:#f5f3ff;border:1.5px solid #c4b5fd;white-space:nowrap}
+#sg-btn:hover{background:#ede9fe}
+@media(max-width:820px){#sg-btn span{display:none}}
+body.sg-an #az-win,body.sg-an #kd-pop{visibility:hidden}
+@media print{#sg-glas{display:none!important}}
 </style>
 </head><body>
 <script>
@@ -4385,7 +4402,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v45 · Stand 07.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v47 · Stand 08.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -7215,9 +7232,9 @@ function matThemaFuer(lg,themen){
   }
   const cur=themen[best];
   const testImBericht=quelleCur==='bericht'&&/(^|[^a-zäöü])(test|klassenarbeit|kontrolle|lk)([^a-zäöü]|$)/i.test(letzter.thema||'');
-  const fertig=testIdx.has(best)||testImBericht;
-  if(!fertig)return {art:'thema',thema:cur,quelle:'auto',laeuft:true,letzter};
-  const grund=testIdx.has(best)?'Test eingetragen':'Test laut Stundenbericht';
+  const fertig=testIdx.has(best);
+  if(!fertig)return {art:'thema',thema:cur,quelle:'auto',laeuft:true,testErwaehnt:testImBericht,letzter};
+  const grund=matTestMitNoten(lg,themen,best)?'Noten eingetragen':'Test laut Datum geschrieben, Noten fehlen noch';
   // Nächstes Thema: im selben Kapitel weiter; am Kapitelende nur weiter, wenn das nächste Kapitel nummeriert ist
   const imKap=themen.filter(t=>t.kapRel===cur.kapRel);const pos=imKap.indexOf(cur);
   if(pos+1<imKap.length)return {art:'thema',thema:imKap[pos+1],quelle:'auto',nach:cur,grund,letzter};
@@ -7225,12 +7242,22 @@ function matThemaFuer(lg,themen){
   if(rest.length)return {art:'thema',thema:rest[0],quelle:'auto',nach:cur,grund,letzter};
   return {art:'neu',quelle:'auto',nach:cur,grund,letzter};
 }
+/* Test geschrieben? = mindestens eine Note in der Spalte – oder das Datum der Spalte liegt vor heute (geschrieben, noch nicht korrigiert) */
+function matSpalteGeschrieben(lg,sp){
+  const hatNote=(lg.schueler||[]).some(s=>(s.noten||[]).some(n=>n.spalteId===sp.id&&n.note!=null&&n.note!==''));
+  if(hatNote)return true;
+  const d=sp.datum||sp.dat||'';return !!(d&&d<today());
+}
+function matTestMitNoten(lg,themen,idx){
+  return (lg.spalten||[]).some(sp=>{const bez=String(sp.bez||'').trim();if(!bez||sp.mdlSammelSpalte||sp.art==='Mündlich'||sp.mdlRunde)return false;let best=-1,bs=0;themen.forEach((t,i)=>{const s=matWortScore(bez,t.titel);if(s>bs){bs=s;best=i;}});return best===idx&&bs>=4.5&&(lg.schueler||[]).some(s=>(s.noten||[]).some(n=>n.spalteId===sp.id&&n.note!=null&&n.note!==''));});
+}
 function matTestThemen(lg,themen){
   const set=new Set();
   (lg.spalten||[]).forEach(sp=>{
     if(sp.mdlSammelSpalte||sp.art==='Mündlich'||sp.mdlRunde)return;
     const bez=String(sp.bez||'').trim();if(!bez)return;
     if(!(/test|klassenarbeit|kurzkontrolle/i.test(sp.art||'')||/test|klassenarbeit|kontrolle/i.test(bez)))return;
+    if(!matSpalteGeschrieben(lg,sp))return;
     let best=-1,bs=0;themen.forEach((t,i)=>{const s=matWortScore(bez,t.titel);if(s>bs){bs=s;best=i;}});
     if(best>=0&&bs>=4.5)set.add(best);
   });
@@ -7288,7 +7315,7 @@ function matPanelRender(){
       const t=x.th,ZL=ZEITEN[x.ns.zi]||{};
       let titel,info,chips='',btn='';
       if(t.art==='thema'){titel=(t.thema.nr.length?t.thema.nr[t.thema.nr.length-1]+' · ':'')+t.thema.titel;
-        info=t.quelle==='hand'?'von dir gewählt':t.laeuft?('Thema läuft noch – dazu ist noch kein Test eingetragen'+(t.letzter?' (Bericht vom '+new Date(t.letzter.dat+'T12:00:00').toLocaleDateString('de-DE')+')':'')):('„'+E(t.nach.titel)+'“ abgeschlossen ('+E(t.grund||'')+') → weiter mit dem nächsten Thema');
+        info=t.quelle==='hand'?'von dir gewählt':t.laeuft?((t.testErwaehnt?'Test im Stundenbericht erwähnt – sobald die Noten dazu eingetragen sind, geht es mit dem nächsten Thema weiter':'Thema läuft noch – dazu sind noch keine Testnoten eingetragen')+(t.letzter?' (Bericht vom '+new Date(t.letzter.dat+'T12:00:00').toLocaleDateString('de-DE')+')':'')):('„'+E(t.nach.titel)+'“ abgeschlossen ('+E(t.grund||'')+') → weiter mit dem nächsten Thema');
         const h=t.thema.status.h;chips=[['Arbeitsblatt',h.ab],['PowerPoint',h.ppt],['Simulation',h.sim],['Test',h.test],['Lösung',h.lsg]].map(([l,n])=>`<span class="mat-chip ${n?'ok':'no'}">${n?'✓':'✗'} ${l}</span>`).join('');
         btn=`<button class="btn btnp" onclick="matOeffnen('${E(t.thema.rel).replace(/'/g,"\\'")}')">📂 Ordner öffnen</button>`;}
       else if(t.art==='neu'){titel='Neues Thema – noch nichts angelegt';info=t.nach?('„'+E(t.nach.titel)+'“ abgeschlossen ('+E(t.grund||'')+'), danach gibt es noch keinen nummerierten Ordner'):'von dir als neues Thema markiert';
@@ -19082,6 +19109,8 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','🫥','Sichtschutz fürs Smartboard','Oben rechts „🫥 Sichtschutz“: Die ganze App wird wie Milchglas – niemand kann Namen oder Noten lesen. Nur „🎡 Mündlich / Glücksrad“ bleibt sichtbar und bedienbar. Aufheben: Knopf 1 Sekunde gedrückt halten (oder Strg/⌘ + Umschalt + S).','Allgemein'],
+ ['Nov. 2026','📖','Bibliothek: Thema erst nach den Noten abgeschlossen','Ein Thema gilt erst als abgeschlossen, wenn es dazu eine Test- oder Klassenarbeits-Spalte mit eingetragenen Noten gibt (oder das Datum der Test-Spalte schon vorbei ist – dann steht „Noten fehlen noch“ dabei). „Test“ im Stundenbericht allein – z. B. „Test ankündigen“ – schließt kein Thema mehr ab.','Bibliothek'],
  ['Nov. 2026','←','Zurück-Knopf','Oben links neben dem Seitentitel: „← Zurück“ führt immer zum vorigen Schritt – z. B. von den Noten zurück in die Lerngruppe, vom Reiter „Schüler/in“ zurück zu „Erfassen“ oder aus einem Fenster heraus. Auch mit Alt + ← oder der Zurück-Taste der Maus.','Allgemein'],
  ['Nov. 2026','📅','Termine löschen','Im Klassenkalender einen Termin antippen → „🗑 Löschen“ unten links. „+2 mehr“ an einem Tag öffnet die Liste aller Termine dieses Tages. Die Kacheln „Fehlend heute“ und „Unentschuldigt“ sind jetzt kleiner und wachsen nicht mehr mit.','Kalender'],
  ['Nov. 2026','🔄','Update-Knopf','Oben rechts neben „💾 Sichern“: „🔄 Aktualisieren“ lädt die neueste Version, die Daten bleiben erhalten. Gibt es eine neue Version, wird der Knopf orange und zeigt die Nummer.','Allgemein'],
@@ -20336,7 +20365,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v45',KLASSENTO_STAND='07.11.2026';
+const KLASSENTO_VER='v47',KLASSENTO_STAND='08.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -21559,6 +21588,43 @@ function navKnopf(){
   navKnopf();
 })();
 /* ===== ZURÜCK-KNOPF ENDE ===== */
+/* ===== SICHTSCHUTZ (MILCHGLAS) =====
+   Knopf „🫥 Sichtschutz“ oben rechts: Die ganze App liegt hinter Milchglas – man erkennt nichts mehr.
+   Sichtbar und bedienbar bleibt nur „🎡 Mündlich / Glücksrad“ (liegt darüber, z-index 10000).
+   Ausschalten: Knopf 1 Sekunde gedrückt halten (damit am Smartboard niemand aus Versehen aufhebt). */
+const SG={an:false,halt:null};
+function sgAn(){
+  SG.an=true;let g=document.getElementById('sg-glas');
+  if(!g){g=document.createElement('div');g.id='sg-glas';
+    g.innerHTML='<div class="sg-box"><div class="sg-icon">🫥</div><div class="sg-t">Sichtschutz ist an</div>'
+     +'<button type="button" class="sg-mdl" onclick="sgMuendlich()">🎡 Mündlich / Glücksrad</button>'
+     +'<button type="button" class="sg-aus" id="sg-aus"><span class="sg-bar"></span><span class="sg-txt">🔓 Zum Aufheben gedrückt halten</span></button></div>';
+    document.body.appendChild(g);
+    const b=g.querySelector('#sg-aus');
+    const start=e=>{e.preventDefault();b.classList.add('halt');SG.halt=setTimeout(()=>{sgAus();},1000);};
+    const stop=()=>{b.classList.remove('halt');clearTimeout(SG.halt);};
+    b.addEventListener('pointerdown',start);['pointerup','pointerleave','pointercancel'].forEach(t=>b.addEventListener(t,stop));
+    b.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){if(!b.classList.contains('halt'))start(e);}});b.addEventListener('keyup',stop);
+  }
+  g.style.display='flex';document.body.classList.add('sg-an');
+  try{document.activeElement&&document.activeElement.blur&&document.activeElement.blur();}catch(e){}
+  sgKnopf();
+}
+function sgAus(){SG.an=false;const g=document.getElementById('sg-glas');if(g){g.style.display='none';const b=g.querySelector('#sg-aus');if(b)b.classList.remove('halt');}document.body.classList.remove('sg-an');sgKnopf();}
+function sgMuendlich(){try{mdlWahlOeffnen();}catch(e){}}
+function sgKnopf(){
+  let b=document.getElementById('sg-btn');
+  if(!b){const ziel=document.querySelector('button[onclick="exportBackup()"][title="Schnell-Backup erstellen"]');if(!ziel)return;
+    b=document.createElement('button');b.id='sg-btn';b.type='button';b.className='btn';b.title='Sichtschutz: alles verschwommen, nur „Mündlich“ bleibt sichtbar';b.onclick=()=>{if(!SG.an)sgAn();};
+    ziel.parentNode.insertBefore(b,ziel);}
+  b.innerHTML='🫥 <span>Sichtschutz</span>';
+}
+(function(){const st=()=>sgKnopf();if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',st);else st();
+  // Tastenkürzel für die Lehrkraft: Strg/⌘ + Umschalt + S schaltet um
+  document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.shiftKey&&(e.key==='S'||e.key==='s')){e.preventDefault();SG.an?sgAus():sgAn();}});
+})();
+/* ===== SICHTSCHUTZ ENDE ===== */
+
 
 
 /* ===== UPDATE-KNOPF (nur Browser-/Kollegen-Fassung) =====
