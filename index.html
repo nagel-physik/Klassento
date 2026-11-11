@@ -1772,7 +1772,7 @@ body.sg-an #az-win,body.sg-an #kd-pop{visibility:hidden}
 .ml-chip{display:inline-flex;align-items:center;gap:2px;background:#eff6ff;border:1px solid #bfdbfe;color:#1e3a8a;border-radius:999px;padding:1px 3px 1px 9px;font-size:12px;max-width:100%}
 .ml-chip button{border:0;background:transparent;color:#64748b;cursor:pointer;font-size:12px;width:18px;height:18px;border-radius:50%;line-height:1}
 .ml-chip button:hover{background:#fee2e2;color:#b91c1c}
-.ml-auto{font-size:11px;color:#64748b;font-style:italic}
+.ml-auto{font-size:11px;color:#64748b;font-style:italic}.ml-auto b{font-weight:600;font-style:normal;color:#185FA5}
 .ml-add{border:1px dashed #cbd5e1;border-radius:999px;padding:2px 9px;font-size:12px;width:130px;background:#fff}.ml-add:focus{border-style:solid;border-color:#185FA5;outline:none;width:200px}
 .ml-alle{margin-left:6px;border:1px solid #fecaca;background:#fff;color:#b91c1c;border-radius:6px;font:600 10.5px inherit;padding:1px 6px;cursor:pointer;text-transform:none}
 .ml-alle:hover{background:#fef2f2}
@@ -3849,7 +3849,7 @@ Verschiedenes und Fragen</textarea></div>
           <li><strong>Automatisch aus Noten:</strong> Wenn du in „Meine Lerngruppen" Noten einträgst und auf „💾 Speichern" klickst (und beim Start der App), prüft die App alle Spalten der Art Klassenarbeit, Test oder Kurzkontrolle: Wer dort keine Note hat, obwohl andere schon benotet sind, bekommt automatisch ein Nachschreiben (ein Ticket pro Spalte) mit Fach, Klasse, Thema (= Bezeichnung der Spalte) und den Schüler·innen. Termin, Zeit usw. trägst du selbst ein. Versuchsprotokolle und mündliche Noten lösen nie ein Nachschreiben aus. Trägst du später die Note nach, verschwindet der/die Schüler·in wieder aus dem Ticket (solange noch kein An/Ab gesetzt ist). Von Hand entfernte Schüler·innen oder gelöschte Tickets werden nicht erneut angelegt.</li>
           <li><strong>Ein Ticket pro Lerngruppe:</strong> Fehlen in einer Lerngruppe Noten, kommen alle Betroffenen auf <em>ein</em> offenes Ticket – auch bei verschiedenen Themen, die hinter jedem Namen stehen. Kommt jemand dazu, erscheint ein kurzer Hinweis. <b>Sobald das Ticket einen Termin hat, ist es fest:</b> Wer danach bei einem anderen Test fehlt, kommt auf ein <b>neues Ticket</b> (eigener Termin, eigener Ausdruck).</li>
           <li><strong>📧 Einladung per Mail:</strong> Im Ticket unten „Einladung per Mail“. Oben wählen: an <b>SuS</b>, <b>Eltern</b> oder <b>beide</b>. ✉️ je Kind oder <b>✉️ An alle</b> (Empfänger in BCC – sie sehen sich gegenseitig nicht). Der Text enthält Fach, Thema, Wochentag, Datum, <b>Uhrzeit</b> und <b>Raum</b> (Felder unter „Termin(e)“) und lässt sich vorher anpassen. Es öffnet sich dein Mailprogramm – nur noch „Senden“. Jede Einladung wird automatisch beim Kind im ✉️ Schriftverkehr abgelegt (Nachweis), in der Liste steht „✉️ eingeladen“.</li>
-          <li><strong>Mail-Adressen:</strong> In jeder Lerngruppe gibt es den Reiter <b>„📧 Mail-Adressen“</b>: alle SuS mit SuS-Mail und Eltern-Mail zum Eintippen, oben die Zählung „18 von 24 mit Adresse“. Zwei Knöpfe: <b>📥 SuS-Mails aus Datei</b> füllt nur die SuS-Spalte, <b>📥 Eltern-Mails aus Datei</b> nur die Eltern-Spalte. Gelesen wird der <b>Verteiler der Mail-Plattform (CSV)</b> oder der <b>weBBschule-Export (CSV)</b> – Zuordnung über den Namen. In der Vorschau steht bei jeder Adresse, woher sie kommt (Verteiler, privat, Schule, Mutter, Vater); per Häkchen entscheidest du, was übernommen wird. Lerngruppen aus mehreren Klassen: einfach mehrere Dateien nacheinander einlesen. Eine „private“ Mail, die gleich der Eltern-Mail ist, zählt nur als Eltern-Mail. Jede Adresse steht als Kärtchen mit <b>✕</b> zum Löschen; „+ Adresse“ + Enter fügt eine hinzu. Im Spaltenkopf <b>🗑 alle löschen</b> (mit Rückgängig). Auch möglich: beim Kind (✏️) eintragen. Kinder deiner Klasse (bzw. verknüpfte Kinder) bekommen die Adressen automatisch aus Schüler- und Elternverzeichnis.</li>
+          <li><strong>Mail-Adressen:</strong> In jeder Lerngruppe gibt es den Reiter <b>„📧 Mail-Adressen“</b>: alle SuS mit SuS-Mail und Eltern-Mail zum Eintippen, oben die Zählung „18 von 24 mit Adresse“. Zwei Knöpfe: <b>📥 SuS-Mails aus Datei</b> füllt nur die SuS-Spalte, <b>📥 Eltern-Mails aus Datei</b> nur die Eltern-Spalte. Gelesen wird der <b>Verteiler der Mail-Plattform (CSV)</b> oder der <b>weBBschule-Export (CSV)</b> – Zuordnung über den Namen. In der Vorschau steht bei jeder Adresse, woher sie kommt (Verteiler, privat, Schule, Mutter, Vater); per Häkchen entscheidest du, was übernommen wird. Lerngruppen aus mehreren Klassen: einfach mehrere Dateien nacheinander einlesen. Eine „private“ Mail, die gleich der Eltern-Mail ist, zählt nur als Eltern-Mail. <b>WP- und gemischte Gruppen:</b> Hat ein Kind dort keine eigene Adresse, nimmt Klassento automatisch die Adressen desselben Kindes (gleicher Vor- und Nachname) aus deinen anderen Lerngruppen bzw. aus deiner Klasse – angezeigt als „🔗 … (aus Physik 10b)“, immer aktuell. Ein eigener Eintrag in der Gruppe hat Vorrang. Jede Adresse steht als Kärtchen mit <b>✕</b> zum Löschen; „+ Adresse“ + Enter fügt eine hinzu. Im Spaltenkopf <b>🗑 alle löschen</b> (mit Rückgängig). Auch möglich: beim Kind (✏️) eintragen. Kinder deiner Klasse (bzw. verknüpfte Kinder) bekommen die Adressen automatisch aus Schüler- und Elternverzeichnis.</li>
           <li><strong>✂ Ticket aufteilen:</strong> Stehen in einem Ticket mehrere Themen, erscheint oben „✂ … → eigenes Ticket“. Ein Klick verschiebt alle SuS dieses Themas auf ein neues Ticket. Das alte nimmt danach keine Neuen mehr auf.</li>
           <li><strong>Automatisch erledigt:</strong> Trägst du die Nachschreib-Note in der Lerngruppe ein und speicherst, wird die Zeile „✓ nachgeschrieben“. Sind alle erledigt, wird das Ticket automatisch abgeschlossen und archiviert. (Noten, die du noch am selben Tag nachträgst, gelten als „Spalte war nur unvollständig“ – die Zeile verschwindet dann einfach.)</li>
           <li><strong>Archiv als Stapel:</strong> Ab 10 erledigten Tickets werden je 10 zu einem Stapel zusammengefasst (antippen = aufklappen). Bei gesetztem Filter siehst du wieder alle einzeln.</li>
@@ -4606,7 +4606,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v57 · Stand 11.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v58 · Stand 11.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -19314,6 +19314,7 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','🔗','WP-Gruppen holen Mail-Adressen automatisch','In gemischten Gruppen (z. B. WP NaWi aus 10a–d) übernimmt Klassento die Mail-Adressen automatisch aus deinen anderen Lerngruppen – nur für Kinder ohne eigenen Eintrag, immer aktuell.','Lerngruppen'],
  ['Nov. 2026','🎞','Info-Rollo als Leinwand','Das Info-Rollo fällt jetzt wie eine Leinwand über die Kacheln, leicht durchsichtig – Sichtbarkeit unten im Rollo einstellbar. Klick drauf rollt es hoch.','Dashboard'],
  ['Nov. 2026','✕','Mail-Adressen löschen','Jede Mail-Adresse mit ✕ zum Löschen, „+ Adresse“ zum Ergänzen und „🗑 alle löschen“ je Spalte (mit Rückgängig).','Lerngruppen'],
  ['Nov. 2026','🔀','SuS- und Eltern-Mails getrennt übernehmen','Im Reiter „📧 Mail-Adressen“ zwei Knöpfe: SuS-Mails bzw. Eltern-Mails aus Datei. Jede Adresse mit Herkunft und Häkchen – du entscheidest, was wohin kommt.','Lerngruppen'],
@@ -20586,7 +20587,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v57',KLASSENTO_STAND='11.11.2026';
+const KLASSENTO_VER='v58',KLASSENTO_STAND='11.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -22801,6 +22802,37 @@ function roAlphaSetzen(v){v=Math.max(50,Math.min(100,+v||85));roStateSet({alpha:
     setTimeout(()=>{const r=document.getElementById('ro');if(r&&r.classList.contains('auf'))roUmschalten();},10);},true);
 })();
 /* ===== LEINWAND & MAIL-KÄRTCHEN ENDE ===== */
+/* ===== WP-GRUPPEN: MAIL-ADRESSEN AUTOMATISCH (v58) =====
+   Gemischte Gruppen (z. B. WP NaWi 10 aus 10a–d): Hat ein Kind in dieser Gruppe keine eigene SuS- bzw. Eltern-Mail,
+   sucht Klassento dasselbe Kind (gleicher Vor- und Nachname) in deinen anderen Lerngruppen und im Schülerverzeichnis
+   und nimmt dessen Adressen – immer aktuell, ohne Kopieren. Eigene Einträge in der Gruppe haben Vorrang. */
+let mlAutoHerkunft={};
+function wpGleich(a,b){return mlNorm(a.nn)===mlNorm(b.nn)&&mlNorm((a.vn||'').split(/[\s-]+/)[0])===mlNorm((b.vn||'').split(/[\s-]+/)[0]);}
+(function(){
+  const _nm=nmMailsLgKind;
+  nmMailsLgKind=function(lg,ls,tiefe){
+    const r=_nm.apply(this,arguments);
+    if((tiefe||0)>0||!ls||(r.sus.length&&r.eltern.length))return r;
+    const brauchS=!r.sus.length,brauchE=!r.eltern.length;const S=[],E=[];let qS='',qE='';
+    // 1) eigene Klasse (Schülerverzeichnis + Elternverzeichnis)
+    if(!lgIstEigeneKlasse(lg)){const k=sus.find(x=>wpGleich(x,ls));if(k){const e=(eltern||[]).find(z=>z.kid===k.id)||{};const s1=nmSplit(k.mail),e1=[...nmSplit(e.e1m),...nmSplit(e.e2m)];
+      if(brauchS&&s1.length){S.push(...s1);qS=qS||('Klasse '+(meta.klasse||''));}if(brauchE&&e1.length){E.push(...e1);qE=qE||('Klasse '+(meta.klasse||''));}}}
+    // 2) andere Lerngruppen
+    (lerngruppen||[]).forEach(g=>{if(g.id===lg.id)return;(g.schueler||[]).forEach(k=>{if(!wpGleich(k,ls))return;const m=_nm(g,k,1);
+      if(brauchS&&m.sus.length){S.push(...m.sus);qS=qS||g.name;}if(brauchE&&m.eltern.length){E.push(...m.eltern);qE=qE||g.name;}});});
+    if(brauchS)r.sus=[...new Set(S)];if(brauchE)r.eltern=[...new Set(E)];
+    r.sus.forEach(m=>{if(qS&&brauchS)mlAutoHerkunft[m]=qS;});r.eltern.forEach(m=>{if(qE&&brauchE)mlAutoHerkunft[m]=qE;});
+    return r;
+  };
+  mlKindVerknuepft=function(){return true;};
+  const _ch=mlChips;mlChips=function(ls,feld,auto,eigen){
+    let h=_ch.apply(this,arguments);if(!auto.length)return h;
+    const q=[...new Set(auto.map(m=>mlAutoHerkunft[m]).filter(Boolean))];
+    return h.replace(/<span class="ml-auto"[^>]*>[^<]*<\/span>/,'<span class="ml-auto" title="Kommt automatisch aus deinen anderen Gruppen – immer aktuell. Eigener Eintrag hier hat Vorrang.">🔗 '+mlE(auto.join(', '))+(q.length?' <b>(aus '+mlE(q.join(', '))+')</b>':'')+'</span>');
+  };
+})();
+/* ===== WP-GRUPPEN ENDE ===== */
+
 
 
 
