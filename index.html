@@ -1762,6 +1762,10 @@ body.sg-an #az-win,body.sg-an #kd-pop{visibility:hidden}
 .ml-vor{max-height:300px;overflow:auto;border:1px solid #e2e8f0;border-radius:8px;margin-top:10px;font-size:12.5px}
 .ml-vor>div{display:flex;flex-wrap:wrap;gap:4px 12px;padding:6px 10px;border-bottom:1px solid #f1f5f9}.ml-vor span{color:#475569}
 .ml-ohne{margin-top:10px;font-size:12.5px;color:#92400e;background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:8px 10px}.ml-ohne small{color:#78716c}
+.ml-a{display:inline-flex;gap:5px;align-items:center;font-size:12.5px;color:#334155;margin-left:8px}.ml-a small{color:#64748b}
+.ml-a.ml-warn{background:#fffbeb;border-radius:6px;padding:1px 6px}
+.ml-hinw{font-size:11.5px;color:#92400e;margin-top:6px}
+.ml-kopf .btn{margin-left:4px}
 
 </style>
 </head><body>
@@ -3820,7 +3824,7 @@ Verschiedenes und Fragen</textarea></div>
           <li><strong>Automatisch aus Noten:</strong> Wenn du in „Meine Lerngruppen" Noten einträgst und auf „💾 Speichern" klickst (und beim Start der App), prüft die App alle Spalten der Art Klassenarbeit, Test oder Kurzkontrolle: Wer dort keine Note hat, obwohl andere schon benotet sind, bekommt automatisch ein Nachschreiben (ein Ticket pro Spalte) mit Fach, Klasse, Thema (= Bezeichnung der Spalte) und den Schüler·innen. Termin, Zeit usw. trägst du selbst ein. Versuchsprotokolle und mündliche Noten lösen nie ein Nachschreiben aus. Trägst du später die Note nach, verschwindet der/die Schüler·in wieder aus dem Ticket (solange noch kein An/Ab gesetzt ist). Von Hand entfernte Schüler·innen oder gelöschte Tickets werden nicht erneut angelegt.</li>
           <li><strong>Ein Ticket pro Lerngruppe:</strong> Fehlen in einer Lerngruppe Noten, kommen alle Betroffenen auf <em>ein</em> offenes Ticket – auch bei verschiedenen Themen, die hinter jedem Namen stehen. Kommt jemand dazu, erscheint ein kurzer Hinweis. <b>Sobald das Ticket einen Termin hat, ist es fest:</b> Wer danach bei einem anderen Test fehlt, kommt auf ein <b>neues Ticket</b> (eigener Termin, eigener Ausdruck).</li>
           <li><strong>📧 Einladung per Mail:</strong> Im Ticket unten „Einladung per Mail“. Oben wählen: an <b>SuS</b>, <b>Eltern</b> oder <b>beide</b>. ✉️ je Kind oder <b>✉️ An alle</b> (Empfänger in BCC – sie sehen sich gegenseitig nicht). Der Text enthält Fach, Thema, Wochentag, Datum, <b>Uhrzeit</b> und <b>Raum</b> (Felder unter „Termin(e)“) und lässt sich vorher anpassen. Es öffnet sich dein Mailprogramm – nur noch „Senden“. Jede Einladung wird automatisch beim Kind im ✉️ Schriftverkehr abgelegt (Nachweis), in der Liste steht „✉️ eingeladen“.</li>
-          <li><strong>Mail-Adressen:</strong> In jeder Lerngruppe gibt es den Reiter <b>„📧 Mail-Adressen“</b>: alle SuS mit SuS-Mail und Eltern-Mail zum Eintippen, oben die Zählung „18 von 24 mit Adresse“. <b>📥 Aus Datei übernehmen</b> liest den <b>weBBschule-Export (CSV)</b> oder den <b>Verteiler der Mail-Plattform (CSV)</b> – Zuordnung über den Namen, Vorschau vor dem Übernehmen, nur Mail-Adressen werden übernommen. Lerngruppen aus mehreren Klassen: einfach mehrere Dateien nacheinander einlesen. Eine „private“ Mail, die gleich der Eltern-Mail ist, zählt nur als Eltern-Mail. Auch möglich: beim Kind (✏️) eintragen. Kinder deiner Klasse (bzw. verknüpfte Kinder) bekommen die Adressen automatisch aus Schüler- und Elternverzeichnis.</li>
+          <li><strong>Mail-Adressen:</strong> In jeder Lerngruppe gibt es den Reiter <b>„📧 Mail-Adressen“</b>: alle SuS mit SuS-Mail und Eltern-Mail zum Eintippen, oben die Zählung „18 von 24 mit Adresse“. Zwei Knöpfe: <b>📥 SuS-Mails aus Datei</b> füllt nur die SuS-Spalte, <b>📥 Eltern-Mails aus Datei</b> nur die Eltern-Spalte. Gelesen wird der <b>Verteiler der Mail-Plattform (CSV)</b> oder der <b>weBBschule-Export (CSV)</b> – Zuordnung über den Namen. In der Vorschau steht bei jeder Adresse, woher sie kommt (Verteiler, privat, Schule, Mutter, Vater); per Häkchen entscheidest du, was übernommen wird. Lerngruppen aus mehreren Klassen: einfach mehrere Dateien nacheinander einlesen. Eine „private“ Mail, die gleich der Eltern-Mail ist, zählt nur als Eltern-Mail. Auch möglich: beim Kind (✏️) eintragen. Kinder deiner Klasse (bzw. verknüpfte Kinder) bekommen die Adressen automatisch aus Schüler- und Elternverzeichnis.</li>
           <li><strong>✂ Ticket aufteilen:</strong> Stehen in einem Ticket mehrere Themen, erscheint oben „✂ … → eigenes Ticket“. Ein Klick verschiebt alle SuS dieses Themas auf ein neues Ticket. Das alte nimmt danach keine Neuen mehr auf.</li>
           <li><strong>Automatisch erledigt:</strong> Trägst du die Nachschreib-Note in der Lerngruppe ein und speicherst, wird die Zeile „✓ nachgeschrieben“. Sind alle erledigt, wird das Ticket automatisch abgeschlossen und archiviert. (Noten, die du noch am selben Tag nachträgst, gelten als „Spalte war nur unvollständig“ – die Zeile verschwindet dann einfach.)</li>
           <li><strong>Archiv als Stapel:</strong> Ab 10 erledigten Tickets werden je 10 zu einem Stapel zusammengefasst (antippen = aufklappen). Bei gesetztem Filter siehst du wieder alle einzeln.</li>
@@ -3897,7 +3901,7 @@ Verschiedenes und Fragen</textarea></div>
           <li><strong>🎡 Mündlich prüfen:</strong> Über „🎡 Mündlich“ (Dashboard oder linke Leiste) wählst du eine Lerngruppe, das Glücksrad zieht einen heute anwesenden Schüler – bevorzugt den mit den wenigsten mündlichen Noten. Note verdeckt eintippen, Enter: Die Note erscheint in der blauen Spalte „🎤 Sammlung“, die es in jeder Lerngruppe pro Halbjahr gibt. Dort kannst du Noten auch von Hand eintragen, ändern oder löschen (mehrere mit Leerzeichen getrennt, z. B. „2 3“). Die Sammlung zählt noch nicht in den Durchschnitt. Mit „∑ Zensur bilden“ im Spaltenkopf wird für alle mit gesammelten Noten sofort eine Zensur gebildet – auch aus nur 1 oder 2 Noten. Erst mit der 3. Note entsteht eine Note im Raster: der Durchschnitt der drei (eine Nachkommastelle) in der Spalte „mdl. 1 (3er)“, beim nächsten Durchgang „mdl. 2 (3er)“ usw. Danach beginnt die Sammlung von vorn. Die Note in der Tabelle kannst du jederzeit von Hand ändern.</li>
           <li><strong>🎡 Glücksrad:</strong> Startet über „🎡 Mündlich“ im Dashboard – ganz ohne Notentabelle. Erst wählst du die Lerngruppe (es werden keine Noten gezeigt), dann öffnet sich das Rad. Ist für heute die Anwesenheit erfasst, stehen nur SuS mit grünem Haken („anwesend“) im Rad, sonst alle. Das Glücksrad ist für Smartboard/umgedrehten Laptop gedacht: Es deckt die ganze Seite ab, zeigt nur die Vornamen der heute anwesenden SuS (bei gleichen Vornamen mit Anfangsbuchstaben des Nachnamens), dreht mit Klacker-Geräusch und Konfetti und wählt nach demselben fairen Prinzip aus (wer die wenigsten mündlichen Prüfungen hat). Die Note wird verdeckt (●●) eingegeben und wie gewohnt gesammelt. Ton an/aus, Vollbild, Leertaste = Drehen, Esc = Schließen.</li>
           <li><strong>📖 Vorschriften &amp; Lehrpläne:</strong> Kachel im Dashboard bzw. „Basis“ in der linken Leiste. Suchfeld mit festen amtlichen Quellen (BRAVORS = Gesetze &amp; VV, Bildungsserver = Rahmenlehrplan, MBJS) – die Treffer öffnen sich im Browser. Dazu Schnell-Links zu Schulgesetz, Sek I-V, VV-Leistungsbewertung, VV-Schulbetrieb, VV-Aufsicht, VV-Schulfahrten, VV-Arbeitszeit, DSV und SopV sowie zum Rahmenlehrplan aller Fächer der Klassen 7–10 (Fachseite und „Themen“). Mit ☆ markierst du „Meine Fächer“, die dann oben stehen. Bitte nur Sachfragen eingeben, keine Namen – die Suche läuft über Google.</li>
-          <li><strong>📧 Reiter „Mail-Adressen“:</strong> alle SuS der Lerngruppe mit SuS- und Eltern-Mail; „📥 Aus Datei übernehmen“ für weBBschule-CSV oder Mail-Verteiler. Gebraucht für die Einladung zum Nachschreiben.</li>
+          <li><strong>📧 Reiter „Mail-Adressen“:</strong> alle SuS der Lerngruppe mit SuS- und Eltern-Mail; „📥 SuS-Mails aus Datei“ und „📥 Eltern-Mails aus Datei“ getrennt – aus dem Mail-Verteiler oder der weBBschule-CSV. Gebraucht für die Einladung zum Nachschreiben.</li>
           <li><strong>Kästchen:</strong> Jede Note steht in einem eigenen Kästchen, die Zeilen sind abwechselnd hell/grau und nach jedem 5. Kind kommt eine kräftigere Linie – so verrutscht man nicht.</li>
           <li><strong>Notentabelle:</strong> „+ Spalte“ klicken und direkt Noten (1–6) eintippen, Enter springt zur nächsten Zelle. Bezeichnung, Art und Datum sind optional über das ✏️ am Spaltenkopf. Über „⚡ Beobachten“ geht es direkt in die Schnellerfassung für diese Gruppe.</li>
         </ul>
@@ -4577,7 +4581,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v55 · Stand 11.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v56 · Stand 11.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -19285,6 +19289,7 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','🔀','SuS- und Eltern-Mails getrennt übernehmen','Im Reiter „📧 Mail-Adressen“ zwei Knöpfe: SuS-Mails bzw. Eltern-Mails aus Datei. Jede Adresse mit Herkunft und Häkchen – du entscheidest, was wohin kommt.','Lerngruppen'],
  ['Nov. 2026','📥','Mail-Adressen aus weBBschule übernehmen','Neuer Reiter „📧 Mail-Adressen“ in jeder Lerngruppe: alle SuS mit SuS- und Eltern-Mail. Mit einem Klick aus dem weBBschule-Export oder dem Mail-Verteiler übernehmen – mit Vorschau.','Lerngruppen'],
  ['Nov. 2026','✉️','Nachschreib-Mail überarbeitet','Die Einladung enthält jetzt auch Schreibzeug, den Hinweis zur Entschuldigung bei Krankheit und die Schule unter dem Namen.','Nachschreiben'],
  ['Nov. 2026','︾','Rollo zum Herunterziehen','Drei kleine laufende Pfeile auf dem Info-Streifen – einfach herunterziehen oder klicken.','Dashboard'],
@@ -20554,7 +20559,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v55',KLASSENTO_STAND='11.11.2026';
+const KLASSENTO_VER='v56',KLASSENTO_STAND='11.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -22558,22 +22563,23 @@ function mlAusDatei(text){
   const h=R[0].map(x=>x.trim());const hi=n=>h.findIndex(x=>x.toLowerCase()===n.toLowerCase());
   // A) Verteiler der Mail-Plattform: Spalte „Distribution list“ mit Mail;Name;Mail;Name …
   const di=hi('Distribution list');
-  if(di>=0){const L=[];R.slice(1).forEach(r=>{const t=(r[di]||'').split(';').map(x=>x.trim()).filter(Boolean);
-      for(let i=0;i+1<t.length;i+=2){const mail=mlMails(t[i])[0];const name=t[i+1];if(!mail||!name||!name.includes(','))continue;L.push(Object.assign(mlNameTeile(name),{sus:[],eltern:[mail]}));}});
+  if(di>=0){const L=[];const dn=hi('Display name');R.slice(1).forEach(r=>{const vt=dn>=0?(r[dn]||'').trim():'Verteiler';const t=(r[di]||'').split(';').map(x=>x.trim()).filter(Boolean);
+      for(let i=0;i+1<t.length;i+=2){const mail=mlMails(t[i])[0];const name=t[i+1];if(!mail||!name||!name.includes(','))continue;const a=[{m:mail,q:'Verteiler „'+vt+'“',an:true}];L.push(Object.assign(mlNameTeile(name),{sus:a,eltern:a}));}});
     return {art:'Verteiler der Mail-Plattform',L:mlZusammen(L)};}
   // B) weBBschule-Schülerliste
   const ni=hi('Name');
   if(ni>=0){const ip=hi('E-Mail (privat)'),is=hi('E-Mail (Schule)'),im=hi('Mutter des Schülers'),iem=hi('E-Mail (Mutter)'),iv=hi('Vater des Schülers'),iw=hi('Vormund des Schülers'),iev=hi('E-Mail (Vater)');
     const L=R.slice(1).filter(r=>(r[ni]||'').trim()).map(r=>{
       const g=i=>i>=0?(r[i]||''):'';
-      const eltern=[...new Set([...mlMails(g(im)),...mlMails(g(iem)),...mlMails(g(iv)),...mlMails(g(iev)),...mlMails(g(iw))])];
-      const priv=mlMails(g(ip)),schule=mlMails(g(is));
-      const sus=[...schule,...priv.filter(m=>!eltern.map(x=>x.toLowerCase()).includes(m.toLowerCase()))];
-      return Object.assign(mlNameTeile(r[ni]),{sus:[...new Set(sus)],eltern});});
+      const E=[];const dazu=(arr,q)=>arr.forEach(m=>{if(!E.some(x=>x.m.toLowerCase()===m.toLowerCase()))E.push({m,q,an:true});});
+      dazu(mlMails(g(im)),'Mutter');dazu(mlMails(g(iem)),'Mutter');dazu(mlMails(g(iv)),'Vater');dazu(mlMails(g(iev)),'Vater');dazu(mlMails(g(iw)),'Vormund');
+      const S=[];const sdazu=(arr,q)=>arr.forEach(m=>{if(S.some(x=>x.m.toLowerCase()===m.toLowerCase()))return;const el=E.find(x=>x.m.toLowerCase()===m.toLowerCase());S.push({m,q:el?q+' = Mail '+(el.q==='Mutter'?'der Mutter':el.q==='Vater'?'des Vaters':'des Vormunds'):q,an:!el});});
+      sdazu(mlMails(g(is)),'Schule');sdazu(mlMails(g(ip)),'privat');
+      return Object.assign(mlNameTeile(r[ni]),{sus:S,eltern:E});});
     return {art:'weBBschule-Schülerliste',L};}
   return {art:'unbekannt',L:[]};
 }
-function mlZusammen(L){const M={};L.forEach(x=>{const k=mlNorm(x.nn)+'|'+mlNorm(x.vn);if(!M[k])M[k]=x;else{M[k].eltern=[...new Set([...M[k].eltern,...x.eltern])];M[k].sus=[...new Set([...M[k].sus,...x.sus])];}});return Object.values(M);}
+function mlZusammen(L){const M={};const add=(a,b)=>{b.forEach(y=>{if(!a.some(x=>x.m.toLowerCase()===y.m.toLowerCase()))a.push(y);});return a;};L.forEach(x=>{const k=mlNorm(x.nn)+'|'+mlNorm(x.vn);if(!M[k])M[k]={...x,sus:[...x.sus],eltern:[...x.eltern]};else{add(M[k].eltern,x.eltern);if(M[k].sus!==M[k].eltern)add(M[k].sus,x.sus);}});return Object.values(M);}
 function mlPasst(ls,x){
   if(mlNorm(ls.nn)!==mlNorm(x.nn))return false;
   const v=mlNorm((ls.vn||'').split(/[\s-]+/)[0]);if(!v)return false;
@@ -22597,44 +22603,48 @@ function mlRender(){
      +'<td><input class="ml-in" value="'+mlE(ls.elternMail||'')+'" placeholder="'+(autoE.length?'automatisch: '+mlE(autoE.join(', ')):'Eltern-Mail (mehrere mit ;)')+'" onchange="mlSetzen(\''+ls.id+'\',\'elternMail\',this.value)"'+(eigen?' disabled':'')+'></td>'
      +'<td class="ml-st">'+(hat?'✓':'⚠️')+'</td></tr>';}).join('');
   w.innerHTML='<div class="ml-kopf"><div><b>📧 Mail-Adressen</b> <span class="ml-zahl '+(mit===L.length?'ok':'')+'">'+mit+' von '+L.length+' mit Adresse</span></div><span style="flex:1"></span>'
-   +(eigen?'':'<button class="btn btnp" onclick="mlImportStart()">📥 Aus Datei übernehmen</button>')+'</div>'
-   +'<div class="ib" style="margin-bottom:10px">'+(eigen?'Das ist deine eigene Klasse – die Adressen kommen automatisch aus dem <b>Schüler-</b> und <b>Elternverzeichnis</b>.':'Für Einladungen zum Nachschreiben. Direkt eintippen oder <b>📥 aus Datei übernehmen</b> (weBBschule-Export als CSV oder Verteiler der Mail-Plattform). Bei Kindern, die mit deiner Klasse verknüpft sind, kommen die Adressen automatisch („automatisch: …“).')+'</div>'
+   +(eigen?'':'<button class="btn btnp" onclick="mlImportStart(\'sus\')">📥 SuS-Mails aus Datei</button><button class="btn btnp" onclick="mlImportStart(\'eltern\')">📥 Eltern-Mails aus Datei</button>')+'</div>'
+   +'<div class="ib" style="margin-bottom:10px">'+(eigen?'Das ist deine eigene Klasse – die Adressen kommen automatisch aus dem <b>Schüler-</b> und <b>Elternverzeichnis</b>.':'Für Einladungen zum Nachschreiben. Direkt eintippen oder aus einer Datei übernehmen (Verteiler der Mail-Plattform oder weBBschule-Export als CSV): <b>📥 SuS-Mails</b> füllt nur die SuS-Spalte, <b>📥 Eltern-Mails</b> nur die Eltern-Spalte. Bei Kindern, die mit deiner Klasse verknüpft sind, kommen die Adressen automatisch („automatisch: …“).')+'</div>'
    +'<table class="ml-tab"><thead><tr><th>#</th><th>Name</th><th>✉️ SuS-Mail</th><th>👪 Eltern-Mail</th><th></th></tr></thead><tbody>'+zeilen+'</tbody></table>';
 }
 function mlSetzen(sid,feld,v){const lg=mlLg();const s=lg&&(lg.schueler||[]).find(x=>x.id===sid);if(!s)return;
   const t=String(v||'').trim();const ok=t.split(/[;,\s]+/).filter(Boolean).every(isValidEmail);
   if(t&&!ok){alert('Bitte gültige Mail-Adresse(n) eingeben – mehrere mit ; trennen.');mlRender();return;}
   s[feld]=t.split(/[;,\s]+/).filter(Boolean).join('; ');save();mlRender();}
-function mlImportStart(){
+let mlZiel='eltern';
+function mlImportStart(ziel){
+  mlZiel=ziel==='sus'?'sus':'eltern';
   let inp=document.getElementById('ml-datei');if(!inp){inp=document.createElement('input');inp.type='file';inp.id='ml-datei';inp.accept='.csv,.txt,text/csv';inp.style.display='none';document.body.appendChild(inp);
     inp.onchange=()=>{const f=inp.files&&inp.files[0];inp.value='';if(!f)return;const rd=new FileReader();
       rd.onload=()=>{let t=String(rd.result||'');if(t.includes('�')){const r2=new FileReader();r2.onload=()=>mlVorschau(String(r2.result||''),f.name);r2.readAsText(f,'windows-1252');return;}mlVorschau(t,f.name);};rd.readAsText(f,'utf-8');};}
   inp.click();
 }
 let mlPlan=null;
-function mlVorschau(text,name){
+function mlVorschau(text,name,ziel){
+  if(ziel)mlZiel=ziel;const Z=mlZiel,feld=Z==='sus'?'mail':'elternMail',wort=Z==='sus'?'SuS-Mail':'Eltern-Mail';
   const lg=mlLg();if(!lg)return;const D=mlAusDatei(text);
-  if(!D.L.length){alert('In dieser Datei wurden keine Schüler mit Mail-Adressen erkannt. Bitte den weBBschule-Export als CSV (mit „Name“ und den E-Mail-Spalten) oder den Verteiler der Mail-Plattform wählen.');return;}
-  const plan=[],gefunden=new Set();
-  (lg.schueler||[]).forEach(ls=>{const x=D.L.find(y=>mlPasst(ls,y));if(!x)return;gefunden.add(x);
-    const neuS=x.sus.filter(m=>!nmSplit(ls.mail).map(a=>a.toLowerCase()).includes(m.toLowerCase()));
-    const neuE=x.eltern.filter(m=>!nmSplit(ls.elternMail).map(a=>a.toLowerCase()).includes(m.toLowerCase()));
-    plan.push({ls,neuS,neuE});});
-  const ohne=(lg.schueler||[]).filter(ls=>!plan.find(p=>p.ls===ls));
-  mlPlan=plan;
-  const neu=plan.filter(p=>p.neuS.length||p.neuE.length);
+  if(!D.L.length){alert('In dieser Datei wurden keine Schüler mit Mail-Adressen erkannt. Bitte den Verteiler der Mail-Plattform oder den weBBschule-Export als CSV wählen.');return;}
+  const plan=[];let zug=0;
+  (lg.schueler||[]).forEach(ls=>{const x=D.L.find(y=>mlPasst(ls,y));if(!x)return;zug++;
+    const vorh=nmSplit(ls[feld]).map(a=>a.toLowerCase());
+    const A=(Z==='sus'?x.sus:x.eltern).filter(a=>!vorh.includes(a.m.toLowerCase()));
+    if(A.length)plan.push({ls,A:A.map(a=>({...a}))});});
+  const ohne=(lg.schueler||[]).filter(ls=>!D.L.some(y=>mlPasst(ls,y)));
+  mlPlan={feld,plan};
   let m=document.getElementById('m-ml');if(m)m.remove();m=document.createElement('div');m.className='mb';m.id='m-ml';m.style.display='flex';
-  m.innerHTML='<div class="md" style="width:640px"><div class="mhd"><h2>📥 Mail-Adressen übernehmen</h2><button class="btn" onclick="document.getElementById(\'m-ml\').remove()" style="padding:4px 8px;border:none">✕</button></div>'
-   +'<div class="ib">Datei: <b>'+mlE(name)+'</b> · erkannt als <b>'+mlE(D.art)+'</b> · '+D.L.length+' Kinder in der Datei.<br>Für <b>'+mlE(lg.name)+'</b>: <b>'+plan.length+' von '+(lg.schueler||[]).length+'</b> zugeordnet, davon <b>'+neu.length+'</b> mit neuen Adressen. Übernommen werden <b>nur Mail-Adressen</b> – sonst nichts aus der Datei.</div>'
-   +(neu.length?'<div class="ml-vor">'+neu.map(p=>'<div><b>'+mlE(p.ls.nn+', '+p.ls.vn)+'</b>'+(p.neuS.length?'<span>✉️ '+mlE(p.neuS.join(', '))+'</span>':'')+(p.neuE.length?'<span>👪 '+mlE(p.neuE.join(', '))+'</span>':'')+'</div>').join('')+'</div>':'<p style="font-size:13px;color:#64748b">Alle zugeordneten Kinder haben diese Adressen schon.</p>')
+  m.innerHTML='<div class="md" style="width:660px"><div class="mhd"><h2>📥 '+wort+'s übernehmen</h2><button class="btn" onclick="document.getElementById(\'m-ml\').remove()" style="padding:4px 8px;border:none">✕</button></div>'
+   +'<div class="ib">Datei: <b>'+mlE(name)+'</b> · erkannt als <b>'+mlE(D.art)+'</b> · '+D.L.length+' Kinder in der Datei.<br>Für <b>'+mlE(lg.name)+'</b>: <b>'+zug+' von '+(lg.schueler||[]).length+'</b> zugeordnet. Eingetragen wird <b>nur in die Spalte „'+wort+'“</b> – die andere Spalte bleibt unverändert. Häkchen weg = nicht übernehmen.</div>'
+   +(plan.length?'<div class="ml-vor">'+plan.map((p,i)=>'<div><b>'+mlE(p.ls.nn+', '+p.ls.vn)+'</b>'+p.A.map((a,j)=>'<label class="ml-a'+(a.an?'':' ml-warn')+'"><input type="checkbox" '+(a.an?'checked ':'')+'onchange="mlPlan.plan['+i+'].A['+j+'].an=this.checked"> '+mlE(a.m)+' <small>('+mlE(a.q)+')</small></label>').join('')+'</div>').join('')+'</div>'
+       +(plan.some(p=>p.A.some(a=>!a.an))?'<div class="ml-hinw">Gelb und ohne Häkchen: Diese „private“ Adresse ist dieselbe wie bei Mutter/Vater – vermutlich keine Schüler-Adresse. Bei Bedarf trotzdem anhaken.</div>':'')
+     :'<p style="font-size:13px;color:#64748b">Keine neuen Adressen für diese Spalte – entweder schon eingetragen oder in der Datei nicht vorhanden.</p>')
    +(ohne.length?'<div class="ml-ohne">⚠️ Nicht in der Datei gefunden ('+ohne.length+'): '+ohne.map(s=>mlE(s.vn+' '+s.nn)).join(', ')+'<br><small>Gehören sie zu einer anderen Klasse? Dann einfach deren Datei zusätzlich einlesen.</small></div>':'')
-   +'<div style="display:flex;justify-content:flex-end;gap:8px;margin-top:12px"><button class="btn" onclick="document.getElementById(\'m-ml\').remove()">Abbrechen</button><button class="btn btnp" '+(neu.length?'':'disabled ')+'onclick="mlUebernehmen()">✓ '+neu.length+' übernehmen</button></div></div>';
+   +'<div style="display:flex;justify-content:flex-end;gap:8px;margin-top:12px"><button class="btn" onclick="document.getElementById(\'m-ml\').remove()">Abbrechen</button><button class="btn btnp" '+(plan.length?'':'disabled ')+'onclick="mlUebernehmen()">✓ Als '+wort+' übernehmen</button></div></div>';
   document.body.appendChild(m);
 }
 function mlUebernehmen(){
-  (mlPlan||[]).forEach(p=>{if(p.neuS.length)p.ls.mail=[...nmSplit(p.ls.mail),...p.neuS].join('; ');if(p.neuE.length)p.ls.elternMail=[...nmSplit(p.ls.elternMail),...p.neuE].join('; ');});
-  save();const n=(mlPlan||[]).filter(p=>p.neuS.length||p.neuE.length).length;mlPlan=null;
-  const m=document.getElementById('m-ml');if(m)m.remove();mlRender();try{szToast('📧 Adressen bei '+n+' Kindern übernommen.');}catch(e){}
+  if(!mlPlan)return;const f=mlPlan.feld;let n=0;
+  mlPlan.plan.forEach(p=>{const neu=p.A.filter(a=>a.an).map(a=>a.m);if(!neu.length)return;p.ls[f]=[...nmSplit(p.ls[f]),...neu].join('; ');n++;});
+  save();mlPlan=null;const m=document.getElementById('m-ml');if(m)m.remove();mlRender();try{szToast('📧 '+(f==='mail'?'SuS-':'Eltern-')+'Adressen bei '+n+' Kindern übernommen.');}catch(e){}
 }
 (function(){
   const tabs=document.getElementById('lgtab-aw');
