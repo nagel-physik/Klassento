@@ -1792,6 +1792,52 @@ body.sg-an #az-win,body.sg-an #kd-pop{visibility:hidden}
 .ro-lasche::after{content:'';position:absolute;left:50%;top:3px;transform:translateX(-50%);width:12px;height:3px;border-radius:2px;background:#e2e8f0}
 .ro.ro-lw:not(.auf) .ro-gewicht{display:none}
 
+/* v59: Einrichtung */
+.ez{display:grid;grid-template-columns:270px 1fr;gap:18px;align-items:start}
+@media (max-width:900px){.ez{grid-template-columns:1fr}}
+.ez-nav{position:sticky;top:8px;background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:4px}
+.ez-nav-kopf{padding:4px 6px 10px;border-bottom:1px solid #f1f5f9;margin-bottom:6px;display:flex;flex-direction:column;gap:4px}
+.ez-nav-kopf b{font-size:15px}.ez-nav-kopf small{font-size:11.5px;color:#64748b}
+.ez-fort{height:6px;background:#e2e8f0;border-radius:6px;overflow:hidden}.ez-fort i{display:block;height:100%;background:#22c55e;border-radius:6px}
+.ez-nav-s{display:flex;align-items:center;gap:9px;border:1px solid transparent;background:transparent;border-radius:10px;padding:7px 8px;text-align:left;cursor:pointer;font:inherit;width:100%}
+.ez-nav-s:hover{background:#f8fafc}.ez-nav-s.an{background:#eff6ff;border-color:#bfdbfe}
+.ez-nav-nr{width:22px;height:22px;border-radius:50%;background:#f1f5f9;color:#475569;font-size:11.5px;font-weight:800;display:flex;align-items:center;justify-content:center;flex:none}
+.ez-nav-s.an .ez-nav-nr{background:#185FA5;color:#fff}
+.ez-nav-t{display:flex;flex-direction:column;min-width:0}.ez-nav-t b{font-size:13px}.ez-nav-t small{font-size:11px;color:#64748b;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ez-amp{width:10px;height:10px;border-radius:50%;flex:none;display:inline-block;background:#cbd5e1}.ez-amp.gruen{background:#22c55e}.ez-amp.gelb{background:#f59e0b}.ez-amp.grau{background:#cbd5e1}.ez-amp.rot{background:#e11d48}
+.ez-inhalt{min-width:0}
+.ez-kopf{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}.ez-kopf h2{font-size:20px;margin:0}.ez-kopf p{margin:2px 0 0;color:#64748b;font-size:13px}
+.ez-nr{width:34px;height:34px;border-radius:50%;background:#185FA5;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:15px;flex:none}
+.ez-amp-gross{font-size:12.5px;color:#475569;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.ez-brauch{font-size:12px;color:#64748b;display:inline-flex;gap:5px;align-items:center;margin-left:10px;cursor:pointer}
+.ez-karte{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.ez-karte h3{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#64748b;margin:0 0 10px;font-weight:800}
+.ez-karte.ez-start h3{font-size:15px;text-transform:none;letter-spacing:0;color:#0f172a}
+.ez-alt .ez-karte .sdiv{display:none}
+.ez-hinw{font-size:12.5px;color:#334155;background:#f8fafc;border:1px solid #e2e8f0;border-left:4px solid #185FA5;border-radius:10px;padding:9px 12px;margin-bottom:12px;line-height:1.5}
+.ez-zahlen{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:12px}.ez-zahlen>div{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:8px 10px}
+.ez-zahlen b{font-size:20px;display:block}.ez-zahlen small{font-size:11.5px;color:#64748b}.ez-zahlen .gelb{background:#fffbeb;border-color:#fde68a}
+.ez-wege{display:grid;grid-template-columns:1fr 1fr;gap:10px}@media (max-width:700px){.ez-wege,.ez-zahlen{grid-template-columns:1fr 1fr}}
+.ez-weg{border:1px dashed #cbd5e1;border-radius:12px;padding:11px 13px}.ez-weg b{font-size:14px}.ez-weg p{font-size:12.5px;color:#475569;margin:5px 0 9px;line-height:1.45}
+.ez-neu-lg{display:grid;grid-template-columns:1.4fr 1fr;gap:10px;margin-bottom:10px}
+.ez-lg{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 0;border-top:1px solid #f1f5f9}.ez-lg:first-of-type{border-top:0}
+.ez-lg-t{display:flex;flex-direction:column;min-width:140px}.ez-lg-t b{font-size:13.5px}.ez-lg-t small{font-size:11.5px;color:#64748b}
+.ez-chip{font-size:11.5px;border:1px solid #e2e8f0;background:#f8fafc;border-radius:999px;padding:2px 8px;color:#334155}.ez-chip.gelb{background:#fffbeb;border-color:#fde68a;color:#92400e}.ez-chip.grau{color:#94a3b8}
+.ez-lg .btn{padding:4px 10px;font-size:12.5px}
+.ez-leer{font-size:13px;color:#64748b}.ez-p{font-size:13px;color:#475569;margin:0 0 10px}
+.ez-weiter{display:flex;justify-content:space-between;gap:10px;margin:16px 0 30px}
+.ez-mini{border:1px solid #c7d2fe;background:#eef2ff;color:#3730a3;border-radius:999px;padding:3px 11px;font:600 12px inherit;cursor:pointer;margin-left:8px}.ez-mini:hover{background:#e0e7ff}
+#ez-pille{position:fixed;top:10px;left:50%;transform:translateX(-50%);z-index:9000;display:flex;background:#185FA5;border-radius:999px;box-shadow:0 6px 18px rgba(24,95,165,.35);overflow:hidden}
+#ez-pille button{border:0;background:transparent;color:#fff;font:700 13px inherit;padding:8px 14px;cursor:pointer}#ez-pille button.x{padding:8px 10px;opacity:.75;border-left:1px solid rgba(255,255,255,.25)}
+#ez-pille button:hover{background:rgba(255,255,255,.12)}
+@media print{#ez-pille{display:none}}
+.ez-such input{width:100%;margin:8px 0}
+.ez-liste{overflow:auto;flex:1;min-height:120px;border:1px solid #e2e8f0;border-radius:10px;padding:6px 10px;margin-top:4px}
+.ez-gr{margin-bottom:8px}.ez-gr-k{font-size:12px;color:#475569;padding:6px 0 4px;border-bottom:1px solid #f1f5f9;margin-bottom:4px;position:sticky;top:-6px;background:#fff}.ez-gr-k a{color:#185FA5}
+.ez-k{display:flex;align-items:center;gap:7px;padding:4px 2px;font-size:13px;flex-wrap:wrap}.ez-k small{color:#64748b;font-size:11.5px}.ez-k.schon{opacity:.55}
+.ez-tag{font-size:11px;border-radius:999px;padding:1px 8px;background:#f1f5f9;color:#475569}.ez-tag.gelb{background:#fffbeb;color:#92400e}.ez-tag.gruen{background:#f0fdf4;color:#166534}.ez-tag.rot{background:#fff1f2;color:#9f1239}
+.ez-m-fuss{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:12.5px;color:#475569}
+
 </style>
 </head><body>
 <script>
@@ -3285,12 +3331,17 @@ Verschiedenes und Fragen</textarea></div>
         <div class="anl-warn">Ohne Passwort <strong>und</strong> ohne Wiederherstellungsschlüssel sind die Daten für immer verloren – es gibt bewusst keine Hintertür.</div>
       </div>
     </div>
-    <div class="anl-section" data-anl="einstellungen zahnrad name passwort schuljahresabschluss archiv">
+    <div class="anl-section" data-anl="einstellungen einrichtung zentrale zahnrad name passwort schuljahresabschluss archiv import csv excel webbschule klasse anlegen lerngruppe anlegen">
       <div class="anl-section-hd" onclick="anlToggle(this)">
-        <span class="anl-icon">⚙️</span><span class="anl-section-title">Einstellungen (Zahnrad)</span><span class="anl-arrow">▶</span>
+        <span class="anl-icon">🧭</span><span class="anl-section-title">Einrichtung (Zahnrad ⚙️)</span><span class="anl-arrow">▶</span>
       </div>
       <div class="anl-section-body">
         <ul>
+          <li><strong>🧭 Einrichtung – alles an einem Ort:</strong> Das Zahnrad ⚙️ öffnet die große Seite „Einrichtung“. Links der rote Faden mit 8 Schritten: 👤 Profil &amp; Schule · 🎓 Meine Klasse · 📚 Meine Lerngruppen · 🗓 Stundenplan &amp; Zeiten · 📁 Unterrichtsordner · 🧩 Module &amp; Ansicht · 💾 Sicherung &amp; Datenschutz · 📅 Schuljahr &amp; Regeln. Jeder Schritt hat eine <b>Ampel</b>: 🟢 erledigt · 🟡 etwas fehlt (steht dabei, was) · ⚪ „brauche ich nicht“ (Häkchen oben im Schritt). Gesperrt wird nie etwas.</li>
+          <li><strong>🎓 Klasse aus Datei:</strong> Schritt 2 → „📥 Datei wählen“: weBBschule-Export (CSV oder Excel .xlsx). Neue Kinder werden angelegt (Name, Rufname, Geburtsdatum, SuS-Mail), Eltern mit Adresse, Telefon und Mail, dazu Einverständnisse (z. B. 📷 keine Fotos). Bei einer vorhandenen Klasse wird <b>nur ergänzt, was fehlt</b> – nichts überschrieben, nichts doppelt. Statistikdaten werden nie übernommen.</li>
+          <li><strong>📚 Lerngruppe aus Datei:</strong> Schritt 3 → Name und Fach eintragen → „📥 Anlegen aus Datei“. Alle Kinder der Datei erscheinen mit Häkchen; bei einer <b>WP-Gruppe</b> nur die passenden anhaken und mit „+ weitere Datei“ die nächste Klasse dazunehmen. Übernommen werden Name, SuS-Mail, Eltern-Mail. Oder „✏️ Von Hand“ – dann springt die App direkt in die neue Gruppe.</li>
+          <li><strong>← Zurück zur Einrichtung:</strong> Springst du aus der Einrichtung z. B. ins Schülerverzeichnis, erscheint oben ein blauer Knopf zurück. Umgekehrt führt <b>🧭 Einrichtung</b> in Lerngruppen und Schülerverzeichnis direkt zum passenden Schritt.</li>
+          <li><strong>Excel:</strong> Überall, wo Dateien eingelesen werden (Klasse, Lerngruppen, Mail-Adressen), geht CSV <b>und</b> Excel (.xlsx). Das alte .xls-Format bitte als .xlsx oder CSV speichern.</li>
           <li><strong>🖥 Ansicht auf diesem Gerät:</strong> 🔄 Automatisch, 💻 Computer oder 📱 Tablet (große Knöpfe, einklappbare Leiste – egal ob iPad, Android- oder Windows-Tablet). Lässt sich auch schon beim Anmelden unter dem Passwortfeld wählen und wird pro Gerät gemerkt.</li>
           <li><strong>Profil &amp; Schule (ganz oben):</strong> Die zentrale Stelle für alle eigenen Angaben – Anrede, Name, Bezeichnung unter der Unterschrift (z.B. „Klassenleiter"), eigene Adresse, Schule, Schulform, Anschrift, Telefon, E-Mail und Bundesland. Alles erscheint automatisch in Briefen, Protokollen, Ausdrucken, Word-Dateien, Stundenplan und Unterschriftszeilen. Klasse &amp; Schuljahr werden weiterhin über den Dialog oben links eingestellt (Knopf „ändern").</li>
           <li><strong>Briefkopf:</strong> Eigenes Briefkopf-Bild hochladen (am besten groß und scharf, z.B. PNG aus der Originaldatei), Größe per Regler mit Vorschau einstellen. Ist das Bild nur ein Logo, „Kontaktzeile als Text" anhaken – dann stehen Adresse, Telefon und E-Mail gestochen scharf darunter. „↺ Standardbild" stellt das mitgelieferte Bild wieder her.</li>
@@ -4606,7 +4657,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v58 · Stand 11.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v59 · Stand 12.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -19314,6 +19365,10 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','🧭','Neue Einrichtung – alles an einem Ort','Das Zahnrad öffnet jetzt die große Seite „Einrichtung“: 8 Schritte als roter Faden mit Ampel – Profil, Klasse, Lerngruppen, Stundenplan, Ordner, Module, Sicherung, Schuljahr.','Einrichtung'],
+ ['Nov. 2026','🎓','Klasse aus weBBschule anlegen','In der Einrichtung die weBBschule-Datei (CSV oder Excel) einlesen – Schüler, Eltern mit Kontakten und Einverständnisse in einem Rutsch. Bei bestehender Klasse wird nur ergänzt.','Einrichtung'],
+ ['Nov. 2026','📚','Lerngruppe aus Datei anlegen','Neue Lerngruppe direkt aus der weBBschule-Datei oder dem Mail-Verteiler – mit Namen und Mail-Adressen. WP-Gruppen aus mehreren Dateien zusammenstellen.','Einrichtung'],
+ ['Nov. 2026','📊','Excel-Dateien einlesen','Neben CSV können jetzt auch Excel-Dateien (.xlsx) eingelesen werden.','Einrichtung'],
  ['Nov. 2026','🔗','WP-Gruppen holen Mail-Adressen automatisch','In gemischten Gruppen (z. B. WP NaWi aus 10a–d) übernimmt Klassento die Mail-Adressen automatisch aus deinen anderen Lerngruppen – nur für Kinder ohne eigenen Eintrag, immer aktuell.','Lerngruppen'],
  ['Nov. 2026','🎞','Info-Rollo als Leinwand','Das Info-Rollo fällt jetzt wie eine Leinwand über die Kacheln, leicht durchsichtig – Sichtbarkeit unten im Rollo einstellbar. Klick drauf rollt es hoch.','Dashboard'],
  ['Nov. 2026','✕','Mail-Adressen löschen','Jede Mail-Adresse mit ✕ zum Löschen, „+ Adresse“ zum Ergänzen und „🗑 alle löschen“ je Spalte (mit Rückgängig).','Lerngruppen'],
@@ -20587,7 +20642,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v58',KLASSENTO_STAND='11.11.2026';
+const KLASSENTO_VER='v59',KLASSENTO_STAND='12.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -22832,6 +22887,351 @@ function wpGleich(a,b){return mlNorm(a.nn)===mlNorm(b.nn)&&mlNorm((a.vn||'').spl
   };
 })();
 /* ===== WP-GRUPPEN ENDE ===== */
+/* ===== EINRICHTUNG (v59) =====
+   Eine große Seite „🧭 Einrichtung“ statt des Einstellungs-Fensters: links der rote Faden (8 Schritte mit Ampel),
+   rechts der Inhalt. Alle bisherigen Einstellungen ziehen hierher um (gleiche Felder, gleiche Funktionen).
+   Neu: Klasse aus weBBschule-Datei anlegen/abgleichen, Lerngruppe aus Datei anlegen (auch WP aus mehreren Dateien),
+   CSV und Excel (.xlsx), „← Zurück zur Einrichtung“ nach jedem Sprung, „🧭 Einrichtung“-Knöpfe in Lerngruppen und Schülerverzeichnis.
+   Ampel: 🟢 fertig · 🟡 etwas fehlt (mit Hinweis) · ⚪ „brauche ich nicht“. Nichts wird gesperrt. */
+const EZ_SCHRITTE=[
+  {id:'profil',icon:'👤',titel:'Profil & Schule',sub:'Name, Rolle, Unterschrift, Schule, Briefkopf'},
+  {id:'klasse',icon:'🎓',titel:'Meine Klasse',sub:'Schüler- und Elternverzeichnis – aus Datei oder von Hand'},
+  {id:'lg',icon:'📚',titel:'Meine Lerngruppen',sub:'Gruppen anlegen, Schüler und Mail-Adressen'},
+  {id:'plan',icon:'🗓',titel:'Stundenplan & Zeiten',sub:'Stundenplan, Unterrichtszeiten, A/B-Woche'},
+  {id:'ordner',icon:'📁',titel:'Unterrichtsordner',sub:'Wo deine Vorbereitungen liegen'},
+  {id:'module',icon:'🧩',titel:'Module & Ansicht',sub:'Was du brauchst, Schnellzugriff, Gerät'},
+  {id:'sicher',icon:'💾',titel:'Sicherung & Datenschutz',sub:'Sichern, Passwort, Notfallblatt, DSV'},
+  {id:'jahr',icon:'📅',titel:'Schuljahr & Regeln',sub:'Regelwerk, Notengewichtung, Schuljahreswechsel'}];
+const EZ_ZUORDNUNG=[['darstellung','module'],['notengewichtung','jahr'],['rolle','profil'],['profil','profil'],['datenschutz','sicher'],['regelwerk','jahr'],['module','module'],['schnellzugriff','module'],['passwort','sicher'],['datensicherung','sicher'],['schuljahr','jahr'],['archiv','jahr']];
+function ezE(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function ezCfg(){try{return JSON.parse(localStorage.getItem('v1_ez')||'{}')||{};}catch(e){return {};}}
+function ezCfgSet(o){try{localStorage.setItem('v1_ez',JSON.stringify(Object.assign(ezCfg(),o)));}catch(e){}}
+let ezAkt='profil',ezUmgezogen=false,ezRueck=null;
+
+/* ---------- Datei lesen: CSV oder Excel (.xlsx) → Zeilen ---------- */
+async function ezUnzip(buf){
+  const u=new Uint8Array(buf),dv=new DataView(buf);let eocd=-1;
+  for(let i=u.length-22;i>=Math.max(0,u.length-70000);i--){if(dv.getUint32(i,true)===0x06054b50){eocd=i;break;}}
+  if(eocd<0)throw new Error('keine Excel-Datei');
+  const n=dv.getUint16(eocd+10,true);let p=dv.getUint32(eocd+16,true);const F={};
+  for(let k=0;k<n;k++){
+    const meth=dv.getUint16(p+10,true),csize=dv.getUint32(p+20,true),nl=dv.getUint16(p+28,true),el=dv.getUint16(p+30,true),cl=dv.getUint16(p+32,true),off=dv.getUint32(p+42,true);
+    const name=new TextDecoder().decode(u.slice(p+46,p+46+nl));p+=46+nl+el+cl;
+    F[name]=async()=>{const lnl=dv.getUint16(off+26,true),lel=dv.getUint16(off+28,true);const data=u.slice(off+30+lnl+lel,off+30+lnl+lel+csize);
+      if(meth===0)return new TextDecoder().decode(data);
+      if(typeof DecompressionStream==='undefined')throw new Error('Excel-Dateien kann dieses Gerät nicht entpacken – bitte als CSV speichern.');
+      const s=new Blob([data]).stream().pipeThrough(new DecompressionStream('deflate-raw'));return await new Response(s).text();};
+  }
+  return F;
+}
+function ezSpalte(ref){const m=/^([A-Z]+)/.exec(ref||'');if(!m)return 0;let n=0;for(const c of m[1])n=n*26+(c.charCodeAt(0)-64);return n-1;}
+async function ezXlsxZeilen(buf){
+  const F=await ezUnzip(buf);const dp=new DOMParser();
+  let ss=[];if(F['xl/sharedStrings.xml']){const x=dp.parseFromString(await F['xl/sharedStrings.xml'](),'application/xml');ss=[...x.getElementsByTagName('si')].map(si=>[...si.getElementsByTagName('t')].map(t=>t.textContent).join(''));}
+  const blatt=Object.keys(F).filter(k=>/^xl\/worksheets\/sheet\d+\.xml$/.test(k)).sort()[0];if(!blatt)throw new Error('keine Tabelle gefunden');
+  const x=dp.parseFromString(await F[blatt](),'application/xml');
+  return [...x.getElementsByTagName('row')].map(r=>{const z=[];[...r.getElementsByTagName('c')].forEach(c=>{const i=ezSpalte(c.getAttribute('r'));const t=c.getAttribute('t');const v=c.getElementsByTagName('v')[0];
+      let w='';if(t==='s')w=ss[+((v&&v.textContent)||0)]||'';else if(t==='inlineStr')w=[...c.getElementsByTagName('t')].map(q=>q.textContent).join('');else w=v?v.textContent:'';
+      z[i]=w;});for(let i=0;i<z.length;i++)if(z[i]===undefined)z[i]='';return z;}).filter(z=>z.some(x=>String(x).trim()));
+}
+function ezDateiLesen(f){
+  return new Promise((ok,nein)=>{
+    const name=(f.name||'').toLowerCase();
+    if(name.endsWith('.xls')){nein(new Error('Das alte Excel-Format (.xls) wird nicht unterstützt. Bitte in weBBschule „Excel (.xlsx)“ oder „CSV“ wählen.'));return;}
+    if(name.endsWith('.xlsx')){const r=new FileReader();r.onload=()=>ezXlsxZeilen(r.result).then(ok,nein);r.onerror=()=>nein(new Error('Datei nicht lesbar'));r.readAsArrayBuffer(f);return;}
+    const r=new FileReader();r.onload=()=>{let t=String(r.result||'');if(t.includes('�')){const r2=new FileReader();r2.onload=()=>ok(mlCsv(String(r2.result||'')));r2.readAsText(f,'windows-1252');return;}ok(mlCsv(t));};r.onerror=()=>nein(new Error('Datei nicht lesbar'));r.readAsText(f,'utf-8');
+  });
+}
+function ezDateiWaehlen(cb){
+  const inp=document.createElement('input');inp.type='file';inp.accept='.csv,.txt,.xlsx,text/csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';inp.style.display='none';document.body.appendChild(inp);
+  inp.onchange=()=>{const f=inp.files&&inp.files[0];inp.remove();if(!f)return;ezDateiLesen(f).then(R=>cb(R,f.name),e=>alert('Die Datei konnte nicht gelesen werden: '+(e&&e.message||e)));};
+  inp.click();
+}
+/* mlAusDatei nimmt jetzt auch fertige Zeilen (Excel) */
+(function(){const _a=mlAusDatei;const _c=mlCsv;mlAusDatei=function(t){if(Array.isArray(t)){const alt=mlCsv;mlCsv=()=>t;try{return _a.call(this,'');}finally{mlCsv=alt;}}return _a.apply(this,arguments);};
+  mlImportStart=function(ziel){mlZiel=ziel==='sus'?'sus':'eltern';ezDateiWaehlen((R,n)=>mlVorschau(R,n));};})();
+
+/* ---------- weBBschule-Zeilen → vollständige Kinder (für Klasse & Lerngruppe) ---------- */
+function ezDatum(v){v=String(v||'').trim();let m=/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/.exec(v);if(m)return m[3]+'-'+m[2].padStart(2,'0')+'-'+m[1].padStart(2,'0');
+  if(/^\d{4,6}(\.\d+)?$/.test(v)){const d=new Date(Date.UTC(1899,11,30)+Math.round(+v)*864e5);return d.toISOString().slice(0,10);}
+  m=/^(\d{4})-(\d{2})-(\d{2})/.exec(v);return m?m[0]:'';}
+function ezPerson(block){
+  const t=String(block||'').split(/\r?\n/).map(x=>x.trim()).filter(Boolean);if(!t.length)return null;
+  let kopf=t[0],anrede='';const ma=/^(Frau|Herr)\s+(.*)$/.exec(kopf);if(ma){anrede=ma[1];kopf=ma[2];}
+  let name=kopf;if(kopf.includes(',')){const [n,v]=kopf.split(',');name=(v||'').trim()+' '+n.trim();}
+  const adr=[],tel={tp:'',td:'',tm:''},mails=[];let sonst=[];
+  t.slice(1).forEach(l=>{
+    if(/@/.test(l)&&!/:/.test(l)){mails.push(...mlMails(l));return;}
+    const m=/^(Telefon privat|Telefon dienstlich|Mobil|Telefon sonstiges)\s*:\s*(.*)$/i.exec(l);
+    if(m){const k=m[1].toLowerCase();if(k.includes('privat'))tel.tp=tel.tp||m[2];else if(k.includes('dienst'))tel.td=tel.td||m[2];else if(k.includes('mobil'))tel.tm=tel.tm||m[2];else sonst.push(m[2]);return;}
+    if(/@/.test(l)){mails.push(...mlMails(l));return;}
+    adr.push(l);
+  });
+  return {anrede,name:name.trim(),adr:adr.join(', '),tel,mails:[...new Set(mails)],sonst};
+}
+function ezMerkmale(t){const o={};String(t||'').split(/\r?\n/).forEach(l=>{const m=/^(.+?):\s*(ja|nein)\s*$/i.exec(l.trim());if(m)o[m[1].trim()]=m[2].toLowerCase()==='ja';});return o;}
+function ezKinderAus(R){
+  if(!R||!R.length)return {art:'?',L:[]};
+  const h=R[0].map(x=>String(x||'').trim());const hi=n=>h.findIndex(x=>x.toLowerCase()===n.toLowerCase());
+  const ni=hi('Name');
+  if(ni<0){const D=mlAusDatei(R);return {art:D.art,L:D.L.map(x=>({...x,sus:(x.sus||[]).map(a=>a.m||a),eltern:(x.eltern||[]).map(a=>a.m||a),personen:[],gb:'',adr:'',merk:{}}))};}
+  const g=(r,n)=>{const i=hi(n);return i>=0?String(r[i]||''):'';};
+  const L=R.slice(1).filter(r=>String(r[ni]||'').trim()).map(r=>{
+    const nt=mlNameTeile(r[ni]);
+    const mu=ezPerson(g(r,'Mutter des Schülers')),va=ezPerson(g(r,'Vater des Schülers')),vo=ezPerson(g(r,'Vormund des Schülers'));
+    if(mu){mu.rolle='Mutter';mu.mails=[...new Set([...mu.mails,...mlMails(g(r,'E-Mail (Mutter)'))])];}
+    if(va){va.rolle='Vater';va.mails=[...new Set([...va.mails,...mlMails(g(r,'E-Mail (Vater)'))])];}
+    if(vo)vo.rolle='Vormund';
+    const personen=[mu,va,vo].filter(Boolean);
+    const em=new Set(personen.flatMap(p=>p.mails.map(x=>x.toLowerCase())));
+    const priv=mlMails(g(r,'E-Mail (privat)')),schule=mlMails(g(r,'E-Mail (Schule)'));
+    const sus=[...new Set([...schule,...priv.filter(m=>!em.has(m.toLowerCase()))])];
+    const fb=g(r,'Förderbedarfe (alle)').trim(),lrs=g(r,'LRS').trim();
+    return {...nt,gb:ezDatum(g(r,'Geburtsdatum')),adr:g(r,'Adresse').split(/\r?\n/).map(x=>x.trim()).filter(Boolean).join(', '),sus,eltern:[...em].length?personen.flatMap(p=>p.mails):[],personen,merk:ezMerkmale(g(r,'Schulmerkmale')),foerder:fb,lrs};
+  });
+  return {art:'weBBschule-Schülerliste',L};
+}
+function ezVorname(x){return x.ruf||x.vn||'';}
+
+/* ---------- Status / Ampel ---------- */
+function ezAus(id){return !!(ezCfg().aus||{})[id];}
+function ezAusSetzen(id,an){const c=ezCfg();c.aus=c.aus||{};if(an)c.aus[id]=true;else delete c.aus[id];ezCfgSet({aus:c.aus});ezRender();}
+function ezLGs(){return (lerngruppen||[]).filter(g=>!lgIstEigeneKlasse(g));}
+function ezStunden14(){let n=0;try{for(let i=0;i<14;i++)n+=(vbStunden(abPlusTage(today(),i))||[]).length;}catch(e){}return n;}
+function ezStatus(id){
+  if(ezAus(id))return {st:'grau',txt:'brauche ich nicht'};
+  try{
+  if(id==='profil'){const f=[];if(!(lehrkraftName||'').trim())f.push('Name');let sn='';try{sn=schulName();}catch(e){}if(!sn||/^schule$/i.test(sn))f.push('Schule');let us=false;try{us=usAktiv();}catch(e){}if(!us)f.push('Unterschrift (optional)');
+    const echt=f.filter(x=>!x.includes('optional'));return echt.length?{st:'gelb',txt:'fehlt: '+f.join(', ')}:{st:'gruen',txt:f.length?'fertig · Unterschrift fehlt noch (optional)':'fertig'};}
+  if(id==='klasse'){if(rolleFL())return {st:'grau',txt:'Fachlehrkraft – keine eigene Klasse'};if(!sus.length)return {st:'gelb',txt:'noch keine Schüler'};
+    let fe=0;try{fe=fehlendeElternListe().length;}catch(e){}return fe?{st:'gelb',txt:sus.length+' SuS · '+fe+' Elternangaben fehlen'}:{st:'gruen',txt:sus.length+' SuS · Eltern vollständig'};}
+  if(id==='lg'){const L=ezLGs();if(!L.length)return {st:'gelb',txt:'noch keine Lerngruppe'};const leer=L.filter(g=>!(g.schueler||[]).length).length;
+    return leer?{st:'gelb',txt:L.length+' Gruppen · '+leer+' ohne Schüler'}:{st:'gruen',txt:L.length+' Gruppen'};}
+  if(id==='plan'){const n=ezStunden14();return n?{st:'gruen',txt:n+' Stunden in den nächsten 14 Tagen'}:{st:'gelb',txt:'noch kein Stundenplan'};}
+  if(id==='ordner'){if(!matApp())return {st:'grau',txt:'nur in der Desktop-App'};return matCfg.root?{st:'gruen',txt:matCfg.root.split(/[\\/]/).pop()}:{st:'gelb',txt:'noch nicht gewählt'};}
+  if(id==='module')return {st:'gruen',txt:'nach Wunsch'};
+  if(id==='sicher'){const t=((document.getElementById('sets-backup-info')||{}).textContent||'').trim();return /Noch kein/i.test(t)||!t?{st:'gelb',txt:'noch keine Sicherung'}:{st:'gruen',txt:t.replace(/^Letztes Backup:\s*/,'zuletzt ').slice(0,40)};}
+  if(id==='jahr')return meta.jahr?{st:'gruen',txt:'Schuljahr '+meta.jahr+(meta.regelwerk==='alt'?' · altes Regelwerk':'')}:{st:'gelb',txt:'Schuljahr fehlt'};
+  }catch(e){}
+  return {st:'gruen',txt:''};
+}
+
+/* ---------- Umzug der bisherigen Einstellungen ---------- */
+const _ezOpenSettings=openSettings;
+function ezEinstellungenFuellen(){try{_ezOpenSettings();}catch(e){console.error(e);}const m=document.getElementById('m-settings');if(m)m.style.display='none';}
+function ezUmziehen(){
+  if(ezUmgezogen)return;ezEinstellungenFuellen();
+  const md=document.querySelector('#m-settings .md');if(!md)return;
+  const kids=[...md.children].filter(c=>!c.classList.contains('mhd'));
+  let ziel='profil',titel='Allgemein',grp=null;const G=[];
+  kids.forEach(c=>{
+    if(c.classList.contains('sdiv')){titel=c.textContent.trim();const t=titel.toLowerCase();const z=EZ_ZUORDNUNG.find(([k])=>t.includes(k));ziel=z?z[1]:'module';grp={ziel,titel,nodes:[]};G.push(grp);return;}
+    if(!grp){grp={ziel:'profil',titel:'Allgemein',nodes:[]};G.push(grp);}grp.nodes.push(c);
+  });
+  G.forEach(g=>{const box=document.getElementById('ez-alt-'+g.ziel);if(!box)return;const k=document.createElement('div');k.className='ez-karte';k.innerHTML='<h3>'+ezE(g.titel)+'</h3>';g.nodes.forEach(n=>k.appendChild(n));box.appendChild(k);});
+  ezUmgezogen=true;
+}
+
+/* ---------- Seite ---------- */
+function ezViewAnlegen(){
+  if(document.getElementById('view-einrichtung'))return;
+  const d=document.getElementById('view-dashboard');const v=document.createElement('div');v.id='view-einrichtung';v.style.display='none';
+  v.innerHTML='<div class="ez"><aside class="ez-nav" id="ez-nav"></aside><section class="ez-inhalt">'
+    +EZ_SCHRITTE.map((s,i)=>'<div class="ez-schritt" id="ez-s-'+s.id+'" style="display:none"><div class="ez-kopf"><span class="ez-nr">'+(i+1)+'</span><div><h2>'+s.icon+' '+s.titel+'</h2><p>'+s.sub+'</p></div><span style="flex:1"></span><span class="ez-amp-gross" id="ez-amp-'+s.id+'"></span></div><div id="ez-neu-'+s.id+'"></div><div id="ez-alt-'+s.id+'" class="ez-alt"></div><div class="ez-weiter" id="ez-w-'+s.id+'"></div></div>').join('')
+    +'</section></div>';
+  d.parentNode.insertBefore(v,d.nextSibling);
+}
+function ezOeffnen(schritt){
+  ezViewAnlegen();ezUmziehen();ezEinstellungenFuellen();
+  if(schritt)ezAkt=schritt;ezRueck=null;ezPille();
+  const btn=document.querySelector('.ni[onclick*="einrichtung"]');
+  show('einrichtung',btn);try{document.getElementById('pg-title').textContent='🧭 Einrichtung';}catch(e){}
+  ezRender();try{document.querySelector('.main').scrollTo(0,0);}catch(e){}
+}
+function ezRender(){
+  const nav=document.getElementById('ez-nav');if(!nav)return;
+  const S=EZ_SCHRITTE.map(s=>({...s,...ezStatus(s.id)}));
+  const fertig=S.filter(s=>s.st!=='gelb').length;
+  nav.innerHTML='<div class="ez-nav-kopf"><b>🧭 Einrichtung</b><small>Alles an einem Ort – Schritt für Schritt</small><div class="ez-fort"><i style="width:'+Math.round(fertig/S.length*100)+'%"></i></div><small>'+fertig+' von '+S.length+' erledigt</small></div>'
+   +S.map((s,i)=>'<button class="ez-nav-s'+(s.id===ezAkt?' an':'')+'" onclick="ezGehe(\''+s.id+'\')"><span class="ez-amp '+s.st+'"></span><span class="ez-nav-nr">'+(i+1)+'</span><span class="ez-nav-t"><b>'+s.icon+' '+s.titel+'</b><small>'+ezE(s.txt||'')+'</small></span></button>').join('');
+  EZ_SCHRITTE.forEach((s,i)=>{const el=document.getElementById('ez-s-'+s.id);if(el)el.style.display=s.id===ezAkt?'block':'none';
+    const st=ezStatus(s.id);const a=document.getElementById('ez-amp-'+s.id);
+    if(a)a.innerHTML='<span class="ez-amp '+st.st+'"></span> '+ezE(st.st==='gruen'?'erledigt':st.st==='grau'?'ausgeblendet':'noch offen')+(s.id!=='module'?' <label class="ez-brauch"><input type="checkbox" '+(ezAus(s.id)?'checked':'')+' onchange="ezAusSetzen(\''+s.id+'\',this.checked)"> brauche ich nicht</label>':'');
+    const w=document.getElementById('ez-w-'+s.id);if(w)w.innerHTML=(i>0?'<button class="btn" onclick="ezGehe(\''+EZ_SCHRITTE[i-1].id+'\')">← '+EZ_SCHRITTE[i-1].titel+'</button>':'<span></span>')+(i<EZ_SCHRITTE.length-1?'<button class="btn btnp" onclick="ezGehe(\''+EZ_SCHRITTE[i+1].id+'\')">Weiter: '+EZ_SCHRITTE[i+1].icon+' '+EZ_SCHRITTE[i+1].titel+' →</button>':'<button class="btn btnp" onclick="navGoTo(\'dashboard\')">✓ Fertig – zum Dashboard</button>');
+  });
+  const n=document.getElementById('ez-neu-'+ezAkt);if(n)n.innerHTML=ezNeuHtml(ezAkt);
+}
+function ezGehe(id){ezAkt=id;ezRender();try{document.querySelector('.main').scrollTo(0,0);}catch(e){}}
+function ezHinweis(t){return '<div class="ez-hinw">'+t+'</div>';}
+function ezNeuHtml(id){
+  const st=ezStatus(id);
+  if(id==='profil')return ezHinweis('Diese Angaben stehen in allen Briefen, Protokollen und Ausdrucken. <b>Speichern</b> nicht vergessen („Profil speichern“).');
+  if(id==='klasse'){
+    if(rolleFL())return ezHinweis('Du bist als <b>Fachlehrkraft</b> eingestellt – eine eigene Klasse brauchst du nicht. (Ändern unter Schritt 1 → Rolle.)');
+    let fe=0;try{fe=fehlendeElternListe().length;}catch(e){}
+    return '<div class="ez-karte ez-start"><h3>Klasse '+ezE(meta.klasse||'')+' · Schuljahr '+ezE(meta.jahr||'')+'</h3>'
+     +'<div class="ez-zahlen"><div><b>'+sus.length+'</b><small>Schüler·innen</small></div><div><b>'+(eltern||[]).length+'</b><small>Elterneinträge</small></div><div class="'+(fe?'gelb':'')+'"><b>'+fe+'</b><small>Elternangaben fehlen</small></div><div><b>'+sus.filter(s=>s.mail).length+'</b><small>SuS mit Mail</small></div></div>'
+     +'<div class="ez-wege"><div class="ez-weg"><b>📥 Aus Datei</b><p>weBBschule-Export (CSV oder Excel) einlesen: Schüler, Geburtsdatum, Eltern mit Adresse, Telefon und Mail, Einverständnisse (Fotos …). Bei vorhandener Klasse wird nur <b>abgeglichen</b> – nichts doppelt.</p><button class="btn btnp" onclick="ezKlasseImport()">📥 Datei wählen</button></div>'
+     +'<div class="ez-weg"><b>✏️ Von Hand</b><p>Kinder einzeln im Schülerverzeichnis anlegen, Eltern im Elternverzeichnis.</p><button class="btn" onclick="ezSpringe(\'sus\',\'klasse\')">👥 Schülerverzeichnis</button> <button class="btn" onclick="ezSpringe(\'eltern\',\'klasse\')">👪 Elternverzeichnis</button></div></div></div>'
+     +ezHinweis('Tipp für weBBschule: beim Export <b>Grunddaten</b> (Name, Geburtsdatum, Adresse, E-Mail), <b>Mutter, Vater, Vormund</b> und <b>Schulmerkmale</b> anhaken. <b>Statistikdaten weglassen</b> – Klassento übernimmt sie ohnehin nie.');
+  }
+  if(id==='lg'){
+    const L=ezLGs();
+    const karten=L.map(g=>{const n=(g.schueler||[]).length;let mit=0;try{(g.schueler||[]).forEach(s=>{const m=nmMailsLgKind(g,s);if(m.sus.length||m.eltern.length)mit++;});}catch(e){}
+      let inPlan=false;try{for(let i=0;i<14&&!inPlan;i++)inPlan=(vbStunden(abPlusTage(today(),i))||[]).some(x=>x.lg&&x.lg.id===g.id);}catch(e){}
+      const amp=!n?'gelb':'gruen';
+      return '<div class="ez-lg"><span class="ez-amp '+amp+'"></span><div class="ez-lg-t"><b>'+ezE(g.name)+'</b><small>'+ezE(g.fach||'')+'</small></div>'
+       +'<span class="ez-chip '+(n?'':'gelb')+'">👥 '+n+' SuS</span><span class="ez-chip '+(n&&mit<n?'gelb':'')+'">📧 '+mit+'/'+n+'</span><span class="ez-chip '+(inPlan?'':'grau')+'">🗓 '+(inPlan?'im Stundenplan':'nicht im Plan')+'</span>'
+       +'<span style="flex:1"></span><button class="btn" onclick="ezLgAusDatei(\''+g.id+'\')" title="Weitere Schüler aus Datei hinzufügen">📥 SuS</button><button class="btn" onclick="ezSpringeLg(\''+g.id+'\',\'mail\')">📧 Mails</button><button class="btn btnp" onclick="ezSpringeLg(\''+g.id+'\',\'sus\')">Öffnen →</button></div>';}).join('');
+    return '<div class="ez-karte ez-start"><h3>➕ Neue Lerngruppe</h3><div class="ez-neu-lg"><div class="fg"><label>Name</label><input id="ez-lg-name" placeholder="z. B. Physik 10a, WP NaWi 10"></div><div class="fg"><label>Fach</label><input id="ez-lg-fach" placeholder="z. B. Physik"></div></div>'
+     +'<div class="ez-wege"><div class="ez-weg"><b>📥 Aus Datei</b><p>weBBschule-Export oder Mail-Verteiler (CSV/Excel). Alle Kinder werden angezeigt – Häkchen bei denen, die in der Gruppe sind. <b>WP-Gruppe:</b> nacheinander mehrere Dateien (10a, 10b …) einlesen.</p><button class="btn btnp" onclick="ezLgNeu(\'datei\')">📥 Anlegen aus Datei</button></div>'
+     +'<div class="ez-weg"><b>✏️ Von Hand</b><p>Gruppe anlegen und Kinder einzeln eintragen.</p><button class="btn" onclick="ezLgNeu(\'hand\')">✏️ Anlegen und öffnen</button></div></div></div>'
+     +'<div class="ez-karte"><h3>📚 Deine Lerngruppen ('+L.length+')</h3>'+(L.length?karten:'<p class="ez-leer">Noch keine Lerngruppe – oben anlegen.</p>')+'</div>'
+     +ezHinweis('In gemischten Gruppen (WP) holt Klassento fehlende Mail-Adressen automatisch aus deinen anderen Gruppen.');
+  }
+  if(id==='plan')return '<div class="ez-karte ez-start"><h3>'+ezE(st.txt)+'</h3><div class="ez-wege"><div class="ez-weg"><b>🗓 Stundenplan</b><p>Deine Stunden mit Lerngruppen eintragen – daraus entstehen Dashboard, Vorbereitung, Korrektur-Erinnerung und Arbeitszeit.</p><button class="btn btnp" onclick="ezSpringe(\'stundenplan\',\'plan\')">🗓 Stundenplan öffnen</button></div>'
+     +'<div class="ez-weg"><b>⏰ Unterrichtszeiten</b><p>Beginn und Ende der Stunden an deiner Schule (gilt auch für die Arbeitszeit).</p><button class="btn" onclick="try{ztOeffnen()}catch(e){alert(\'Im Stundenplan unter ⏰ einstellbar.\')}">⏰ Zeiten einstellen</button></div></div></div>';
+  if(id==='ordner'){
+    if(!matApp())return ezHinweis('Der Unterrichtsordner (für <b>Bibliothek</b> und <b>Material-Check</b>) funktioniert nur in der installierten <b>Desktop-App</b>. In der Browser-Fassung kannst du diesen Schritt überspringen.');
+    return '<div class="ez-karte ez-start"><h3>📁 '+(matCfg.root?ezE(matCfg.root):'Noch kein Ordner gewählt')+'</h3><p class="ez-p">Der Hauptordner mit deinen Unterrichtsmaterialien, z. B. „Unterricht 26/27“. Die App liest nur Ordner- und Dateinamen und verändert nichts. Bibliothek, Material-Check und „bereitlegen“ nutzen ihn.</p>'
+     +'<button class="btn btnp" onclick="ezOrdnerWaehlen()">📁 '+(matCfg.root?'Anderen Ordner wählen':'Ordner wählen')+'</button> '+(matCfg.root?'<button class="btn" onclick="matPanelOeffnen()">📂 Zuordnung der Lerngruppen</button>':'')+'</div>';
+  }
+  if(id==='sicher')return ezHinweis('<b>Regelmäßig sichern</b> – die Sicherungsdatei ist verschlüsselt. Bewahre dein <b>Notfallblatt</b> (Wiederherstellungsschlüssel) sicher auf: ohne Passwort und ohne Notfallblatt kommt niemand mehr an die Daten – auch nicht der Hersteller.');
+  if(id==='module')return ezHinweis('Blende aus, was du nicht brauchst – es verschwindet aus Leiste und Dashboard und kann jederzeit wieder eingeschaltet werden.');
+  if(id==='jahr')return ezHinweis('Klasse und Schuljahr änderst du in Schritt 1 („Klasse &amp; Schuljahr“). Hier: Regelwerk der Klasse, Notengewichtung und der Schuljahreswechsel.');
+  return '';
+}
+async function ezOrdnerWaehlen(){await matRootWaehlen();ezRender();}
+
+/* ---------- Springen & Rückweg ---------- */
+function ezSpringe(view,schritt,danach){
+  ezRueck=schritt||ezAkt;
+  const btn=document.querySelector(`.ni[onclick*="show('${view}'"]`);show(view,btn);
+  if(typeof danach==='function')setTimeout(danach,60);ezPille();
+}
+function ezSpringeLg(id,tab){ezRueck='lg';navGoTo('lerngruppen');openLerngruppe(id);setTimeout(()=>{try{switchLGTab(tab||'sus');}catch(e){}},60);ezPille();}
+function ezPille(){
+  let p=document.getElementById('ez-pille');
+  if(!ezRueck){if(p)p.remove();return;}
+  if(!p){p=document.createElement('div');p.id='ez-pille';document.body.appendChild(p);}
+  const s=EZ_SCHRITTE.find(x=>x.id===ezRueck);
+  p.innerHTML='<button onclick="ezOeffnen(\''+ezRueck+'\')">← Zurück zur Einrichtung'+(s?' · '+s.icon+' '+s.titel:'')+'</button><button class="x" title="ausblenden" onclick="ezRueck=null;ezPille()">✕</button>';
+}
+
+/* ---------- Lerngruppe anlegen / Kinder aus Datei ---------- */
+function ezLgNeu(wie){
+  const name=document.getElementById('ez-lg-name').value.trim(),fach=document.getElementById('ez-lg-fach').value.trim();
+  if(!name||!fach){alert('Bitte Name und Fach der Lerngruppe eintragen.');return;}
+  const lg={id:Date.now().toString(),name,fach,schueler:[]};lerngruppen.push(lg);save();
+  if(wie==='hand'){ezSpringeLg(lg.id,'sus');setTimeout(()=>{try{openAddLGSuS();}catch(e){}},200);return;}
+  ezLgAusDatei(lg.id,true);
+}
+let ezAuswahl=null;
+function ezLgAusDatei(lgId,neu){
+  ezAuswahl={lgId,neu:!!neu,dateien:[],L:[]};
+  ezDateiWaehlen((R,n)=>ezLgDateiDazu(R,n));
+}
+function ezLgDateiDazu(R,n){
+  const D=ezKinderAus(R);
+  if(!D.L.length){alert('In dieser Datei wurden keine Schüler erkannt (weBBschule-Export oder Mail-Verteiler als CSV/Excel).');if(ezAuswahl&&!ezAuswahl.dateien.length&&ezAuswahl.neu)ezLgLeerPruefen();return;}
+  const lg=lerngruppen.find(g=>g.id===ezAuswahl.lgId);
+  D.L.forEach(x=>{const schon=(lg.schueler||[]).some(s=>mlPasst(s,x));const doppelt=ezAuswahl.L.some(y=>mlNorm(y.nn)===mlNorm(x.nn)&&mlNorm(ezVorname(y))===mlNorm(ezVorname(x)));
+    if(!doppelt)ezAuswahl.L.push({...x,datei:n,an:!schon&&ezAuswahl.dateien.length===0&&ezAuswahl.neu?true:!schon&&!ezAuswahl.neu?false:false,schon});});
+  // Erste Datei bei neuer Gruppe: alle vorab angehakt (reine Klassengruppe); weitere Dateien: nichts vorab (WP-Auswahl)
+  if(ezAuswahl.neu&&ezAuswahl.dateien.length===0)ezAuswahl.L.forEach(x=>{if(!x.schon)x.an=true;});
+  ezAuswahl.dateien.push(n+' ('+D.art+', '+D.L.length+')');
+  ezLgAuswahlZeigen();
+}
+function ezLgLeerPruefen(){const lg=lerngruppen.find(g=>g.id===(ezAuswahl&&ezAuswahl.lgId));if(lg&&!(lg.schueler||[]).length&&ezAuswahl.neu){/* leere neue Gruppe bleibt bestehen – kann von Hand gefüllt werden */}}
+function ezLgAuswahlZeigen(){
+  const A=ezAuswahl;const lg=lerngruppen.find(g=>g.id===A.lgId);if(!lg)return;
+  let m=document.getElementById('m-ez');if(m)m.remove();m=document.createElement('div');m.className='mb';m.id='m-ez';m.style.display='flex';
+  const gr={};A.L.forEach((x,i)=>{(gr[x.datei]=gr[x.datei]||[]).push(i);});
+  const n=A.L.filter(x=>x.an).length;
+  m.innerHTML='<div class="md" style="width:720px;max-height:92vh;display:flex;flex-direction:column"><div class="mhd"><h2>📥 Schüler für „'+ezE(lg.name)+'“</h2><button class="btn" onclick="ezAbbruch()" style="padding:4px 8px;border:none">✕</button></div>'
+   +'<div class="ib">Häkchen = kommt in die Gruppe. Übernommen werden <b>Name</b> (Rufname als Vorname), <b>SuS-Mail</b> und <b>Eltern-Mail</b> – sonst nichts. Wer schon in der Gruppe ist, ist grau. <b>WP-Gruppe?</b> Unten „+ weitere Datei“ für die nächste Klasse.</div>'
+   +'<div class="ez-such"><input placeholder="🔍 Name suchen …" oninput="ezFilter(this.value)"></div>'
+   +'<div class="ez-liste" id="ez-liste">'+Object.keys(gr).map(d=>'<div class="ez-gr"><div class="ez-gr-k"><b>'+ezE(d)+'</b> <a href="#" onclick="event.preventDefault();ezAlle(\''+ezE(d)+'\',true)">alle</a> · <a href="#" onclick="event.preventDefault();ezAlle(\''+ezE(d)+'\',false)">keine</a></div>'
+      +gr[d].map(i=>{const x=A.L[i];return '<label class="ez-k'+(x.schon?' schon':'')+'" data-n="'+ezE((x.nn+' '+ezVorname(x)).toLowerCase())+'"><input type="checkbox" '+(x.an?'checked ':'')+(x.schon?'disabled ':'')+'onchange="ezAuswahl.L['+i+'].an=this.checked;ezZaehl()"> <b>'+ezE(x.nn+', '+ezVorname(x))+'</b>'+(x.schon?' <small>schon in der Gruppe</small>':'')+'<small>'+(x.sus.length?' ✉️ '+x.sus.length:'')+(x.eltern.length?' 👪 '+x.eltern.length:'')+'</small></label>';}).join('')+'</div>').join('')+'</div>'
+   +'<div class="ez-m-fuss"><button class="btn" onclick="ezDateiWaehlen((R,n)=>ezLgDateiDazu(R,n))">+ weitere Datei</button><span style="flex:1"></span><span id="ez-zahl">'+n+' ausgewählt</span><button class="btn" onclick="ezAbbruch()">Abbrechen</button><button class="btn btnp" onclick="ezLgUebernehmen()">✓ In die Gruppe übernehmen</button></div></div>';
+  document.body.appendChild(m);
+}
+function ezZaehl(){const z=document.getElementById('ez-zahl');if(z)z.textContent=ezAuswahl.L.filter(x=>x.an).length+' ausgewählt';}
+function ezAlle(d,an){ezAuswahl.L.forEach(x=>{if(x.datei===d&&!x.schon)x.an=an;});ezLgAuswahlZeigen();}
+function ezFilter(q){q=(q||'').toLowerCase();document.querySelectorAll('#ez-liste .ez-k').forEach(l=>{l.style.display=!q||l.dataset.n.includes(q)?'':'none';});}
+function ezAbbruch(){const m=document.getElementById('m-ez');if(m)m.remove();ezAuswahl=null;ezRender();}
+function ezLgUebernehmen(){
+  const A=ezAuswahl;const lg=lerngruppen.find(g=>g.id===A.lgId);if(!lg)return;lg.schueler=lg.schueler||[];
+  let k=0;A.L.filter(x=>x.an&&!x.schon).forEach(x=>{
+    lg.schueler.push({id:(Date.now()+k++).toString(),vn:ezVorname(x),nn:x.nn,noten:[],quelle:null,foerderstatus:{},mail:x.sus.join('; '),elternMail:x.eltern.join('; ')});});
+  save();const m=document.getElementById('m-ez');if(m)m.remove();ezAuswahl=null;
+  try{szToast('📚 '+k+' Kinder in „'+lg.name+'“ übernommen.');}catch(e){}
+  if(document.getElementById('view-einrichtung')&&document.getElementById('view-einrichtung').style.display==='block')ezRender();
+  else{try{openLerngruppe(lg.id);}catch(e){}}
+}
+
+/* ---------- Klasse aus Datei: anlegen oder abgleichen ---------- */
+let ezKPlan=null;
+function ezKlasseImport(){ezDateiWaehlen((R,n)=>ezKlasseVorschau(R,n));}
+function ezElternVon(kid){return (eltern||[]).find(e=>e.kid===kid);}
+function ezKlasseVorschau(R,n){
+  const D=ezKinderAus(R);
+  if(D.art!=='weBBschule-Schülerliste'||!D.L.length){alert('Für die Klasse bitte den weBBschule-Export (Schülerliste mit „Name“, „Geburtsdatum“, Mutter/Vater …) als CSV oder Excel wählen.');return;}
+  const plan=D.L.map(x=>{
+    const s=sus.find(k=>mlPasst(k,x)||(mlNorm(k.nn)===mlNorm(x.nn)&&mlNorm(k.rufname||'')===mlNorm(x.ruf)&&x.ruf));
+    const neu={vn:x.vns.join(' ')||ezVorname(x),nn:x.nn,rufname:x.ruf||'',gb:x.gb,mail:x.sus.join('; ')};
+    const aend=[];
+    if(s){if(!s.gb&&neu.gb)aend.push('Geburtsdatum');if(!s.rufname&&neu.rufname)aend.push('Rufname');if(!(s.mail||'').trim()&&neu.mail)aend.push('SuS-Mail');
+      const e=ezElternVon(s.id)||{};x.personen.slice(0,2).forEach((p,j)=>{const k=j?'e2':'e1';const leer=!(e[k+'n']||'').trim();if(leer)aend.push(p.rolle);else{if(!(e[k+'m']||'').trim()&&p.mails[0])aend.push(p.rolle+'-Mail');if(!(e[k+'tm']||e[k+'tp']||'').trim()&&(p.tel.tm||p.tel.tp))aend.push(p.rolle+'-Telefon');if(!(e[k+'a']||'').trim()&&p.adr)aend.push(p.rolle+'-Adresse');}});}
+    if(Object.keys(x.merk).length&&(!s||!s.merkmale))aend.push('Einverständnisse');
+    return {x,s,neu,aend,an:!s||aend.length>0};
+  });
+  const ohne=sus.filter(s=>!plan.some(p=>p.s===s));
+  ezKPlan=plan;
+  let m=document.getElementById('m-ez');if(m)m.remove();m=document.createElement('div');m.className='mb';m.id='m-ez';m.style.display='flex';
+  const nNeu=plan.filter(p=>!p.s).length,nAend=plan.filter(p=>p.s&&p.aend.length).length,nGleich=plan.filter(p=>p.s&&!p.aend.length).length;
+  m.innerHTML='<div class="md" style="width:760px;max-height:92vh;display:flex;flex-direction:column"><div class="mhd"><h2>📥 Klasse '+ezE(meta.klasse||'')+' aus Datei</h2><button class="btn" onclick="ezAbbruch()" style="padding:4px 8px;border:none">✕</button></div>'
+   +'<div class="ib">Datei: <b>'+ezE(n)+'</b> · '+plan.length+' Kinder · <b>'+nNeu+' neu</b> · <b>'+nAend+' werden ergänzt</b> · '+nGleich+' schon vollständig. Vorhandene Angaben werden <b>nicht überschrieben</b> – nur leere Felder ergänzt. Statistikdaten (Herkunft, Status, Religion …) werden nie übernommen.</div>'
+   +'<div class="ez-liste">'+plan.map((p,i)=>'<label class="ez-k'+(p.s&&!p.aend.length?' schon':'')+'"><input type="checkbox" '+(p.an?'checked ':'')+(p.s&&!p.aend.length?'disabled ':'')+'onchange="ezKPlan['+i+'].an=this.checked"> <b>'+ezE(p.x.nn+', '+ezVorname(p.x))+'</b> '
+      +(p.s?(p.aend.length?'<span class="ez-tag gelb">ergänzen: '+ezE(p.aend.join(', '))+'</span>':'<span class="ez-tag">vollständig</span>'):'<span class="ez-tag gruen">✚ neu · '+(p.x.gb?ezE(a52Dat(p.x.gb)):'')+' · '+p.x.personen.length+' Elternteil(e)</span>')
+      +(p.x.merk&&p.x.merk['Fotos']===false?' <span class="ez-tag rot">📷 keine Fotos</span>':'')+'</label>').join('')+'</div>'
+   +(ohne.length?'<div class="ml-ohne">ℹ️ In Klassento, aber nicht in der Datei ('+ohne.length+'): '+ohne.map(s=>ezE(s.vn+' '+s.nn)).join(', ')+' – bleiben unverändert.</div>':'')
+   +'<div class="ez-m-fuss"><span style="flex:1"></span><button class="btn" onclick="ezAbbruch()">Abbrechen</button><button class="btn btnp" onclick="ezKlasseUebernehmen()">✓ Übernehmen</button></div></div>';
+  document.body.appendChild(m);
+}
+function ezKlasseUebernehmen(){
+  let nNeu=0,nErg=0,k=0;
+  (ezKPlan||[]).filter(p=>p.an).forEach(p=>{
+    let s=p.s;
+    if(!s){s={id:(Date.now()+k++).toString(),vn:p.neu.vn,nn:p.neu.nn,rufname:p.neu.rufname,geschlecht:'',gb:p.neu.gb,bg:'',tel:'',mail:p.neu.mail,foerderstatus:{},km:'',ke:'',kd:'',kp:'',kc:'',kb:''};sus.push(s);nNeu++;}
+    else{if(!s.gb&&p.neu.gb)s.gb=p.neu.gb;if(!s.rufname&&p.neu.rufname)s.rufname=p.neu.rufname;if(!(s.mail||'').trim()&&p.neu.mail)s.mail=p.neu.mail;nErg++;}
+    if(Object.keys(p.x.merk||{}).length)s.merkmale=Object.assign({},p.x.merk,s.merkmale||{});
+    let e=ezElternVon(s.id);if(!e&&p.x.personen.length){e={kid:s.id};eltern.push(e);}
+    if(e)p.x.personen.slice(0,2).forEach((q,j)=>{const kk=j?'e2':'e1';
+      if(!(e[kk+'n']||'').trim()){e[kk+'n']=q.name;e[kk+'b']=q.rolle;e[kk+'s']=true;}
+      if(!(e[kk+'b']||''))e[kk+'b']=q.rolle;
+      if(!(e[kk+'a']||'').trim()&&q.adr)e[kk+'a']=q.adr;
+      if(!(e[kk+'m']||'').trim()&&q.mails.length)e[kk+'m']=q.mails[0];
+      if(!(e[kk+'tp']||'').trim()&&q.tel.tp)e[kk+'tp']=q.tel.tp;
+      if(!(e[kk+'td']||'').trim()&&q.tel.td)e[kk+'td']=q.tel.td;
+      if(!(e[kk+'tm']||'').trim()&&q.tel.tm)e[kk+'tm']=q.tel.tm;});
+  });
+  save();try{updateStats();}catch(e){}const m=document.getElementById('m-ez');if(m)m.remove();ezKPlan=null;
+  try{szToast('🎓 '+nNeu+' neu angelegt, '+nErg+' ergänzt.');}catch(e){}ezRender();
+}
+
+/* ---------- Einhängen ---------- */
+(function(){
+  openSettings=function(){ezOeffnen(ezAkt||'profil');};
+  // „🧭 Einrichtung“-Knöpfe in Lerngruppen und Schülerverzeichnis
+  const t=document.getElementById('lg-sus-title');if(t&&!document.getElementById('ez-lg-knopf'))t.insertAdjacentHTML('afterend','<button id="ez-lg-knopf" class="ez-mini" onclick="ezOeffnen(\'lg\')" title="Zur Einrichtung: Schüler aus Datei, Mail-Adressen, neue Gruppen">🧭 Einrichtung</button>');
+  const sb=document.querySelector('#view-sus .sb');if(sb&&!document.getElementById('ez-sus-knopf'))sb.insertAdjacentHTML('beforebegin','<div style="display:flex;justify-content:flex-end;margin:-4px 0 8px"><button id="ez-sus-knopf" class="ez-mini" onclick="ezOeffnen(\'klasse\')" title="Klasse aus weBBschule-Datei einlesen oder abgleichen">🧭 Einrichtung · Klasse aus Datei</button></div>');
+  const ov=document.getElementById('lg-overview');if(ov&&!document.getElementById('ez-lgo-knopf'))ov.insertAdjacentHTML('afterbegin','<div style="display:flex;justify-content:flex-end;margin-bottom:8px"><button id="ez-lgo-knopf" class="ez-mini" onclick="ezOeffnen(\'lg\')">🧭 Einrichtung · Lerngruppe aus Datei anlegen</button></div>');
+  // Pille ausblenden, sobald man wieder in der Einrichtung ist
+  try{const _sh=show;show=function(v){const r=_sh.apply(this,arguments);if(v==='einrichtung'){const p=document.getElementById('ez-pille');if(p)p.style.display='none';}else{const p=document.getElementById('ez-pille');if(p)p.style.display='';}return r;};}catch(e){}
+})();
+/* ===== EINRICHTUNG ENDE ===== */
+
 
 
 
