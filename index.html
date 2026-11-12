@@ -1916,6 +1916,56 @@ td.p61-tag{border-left:1px solid #e2e8f0;border-right:2px solid #cbd5e1}
 .p61-fuss{font-size:11px;color:#94a3b8;text-align:right;margin:6px 0 20px}
 @media print{.p61-btn,#p61-ausw{display:none!important}}
 
+/* v62 A: Anwesenheit – Symbole wie Legende */
+.p61-i.anw{background:#dcfce7;color:#15803d;font-size:12px}
+.p61-i.ent{background:#dbeafe;color:#1d4ed8}
+.p61-i.unent{background:#fee2e2;color:#b91c1c;font-size:15px}
+.p61-i.fehlt{background:#fef3c7;color:#b45309}
+.p61-i.p62-versp{width:auto;min-width:22px;padding:0 5px;border-radius:11px;font-size:11px}
+.p62-min{padding:6px 8px 8px}.p62-min-t{font-size:12.5px;font-weight:700;color:#1e3a5f;margin-bottom:7px}
+.p62-min-k{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-bottom:7px}
+#p61-menue .p62-min button{justify-content:center;border:1px solid #cbd5e1;background:#f8fafc;font-weight:700;padding:7px 0}
+#p61-menue .p62-min button.on{background:#185FA5;color:#fff;border-color:#185FA5}
+.p62-min-e{display:flex;gap:5px}.p62-min-e input{flex:1;min-width:0;padding:6px 8px;border:1px solid #cbd5e1;border-radius:7px;font-size:13px}
+#p61-menue .p62-min button.ok{background:#185FA5;color:#fff;border-color:#185FA5;padding:6px 12px}
+/* v62 B: Stundenplan modern – nur Bildschirm */
+@media screen{
+.p62-sp .p62-rahmen{background:#fff;border:1px solid #dbe3ee;border-radius:18px;box-shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.06);padding:14px 16px 16px;margin-bottom:22px}
+.p62-sp .p62-rkopf{margin:0 0 12px!important;padding-bottom:10px;border-bottom:2px solid #185FA5}
+.p62-sp .p62-rkopf h3{font-size:18px!important;font-weight:800!important;color:#0f172a!important;letter-spacing:-.01em}
+.p62-sp .sp-grid.p62-grid{gap:6px;border:0;border-radius:0;overflow:visible;background:transparent;grid-template-columns:84px repeat(5,minmax(0,1fr))}
+.p62-grid .p62-kopf{background:#eef4fb;color:#1e3a5f;font-weight:800;font-size:12.5px;text-align:center;padding:9px 4px;border-radius:10px;letter-spacing:.02em}
+.p62-grid.p62-b .p62-kopf{background:#eef2ff;color:#3730a3}
+.p62-grid .p62-ecke{background:#185FA5;color:#fff;font-size:11px}
+.p62-grid.p62-b .p62-ecke{background:#4f46e5}
+.p62-grid .p62-kopf.p62-heute{background:#185FA5;color:#fff;box-shadow:0 3px 10px rgba(24,95,165,.3)}
+.p62-grid.p62-b .p62-kopf.p62-heute{background:#4f46e5}
+.p62-grid .p62-zeit{display:flex;flex-direction:column;justify-content:center;padding:4px 6px;line-height:1.3;border-radius:10px}
+.p62-grid .p62-zeit div:first-child{font-weight:800;font-size:11.5px;color:#334155}.p62-grid .p62-zeit div+div{font-size:10px;color:#94a3b8}
+.p62-grid .p62-zeit.p62-jetzt-z{background:#fff7ed}.p62-grid .p62-zeit.p62-jetzt-z div:first-child{color:#c2410c}
+.p62-grid .p62-st{position:relative;min-height:62px;border:1.5px solid var(--c);border-left-width:5px;border-radius:10px;padding:7px 9px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;cursor:pointer;
+  background:color-mix(in srgb,var(--c) 9%,#fff);transition:transform .12s,box-shadow .12s}
+.p62-grid .p62-st:hover{transform:translateY(-1px);box-shadow:0 6px 14px color-mix(in srgb,var(--c) 25%,transparent)}
+.p62-grid .p62-f{font-size:14px;font-weight:800;color:var(--c);line-height:1.15;text-align:left}
+.p62-grid .p62-r{position:absolute;right:6px;bottom:5px;font-size:10px;font-weight:800;color:#fff;background:var(--c);border-radius:999px;padding:1px 7px;margin:0}
+.p62-grid .p62-st.p62-jetzt{box-shadow:0 0 0 3px #fb923c,0 6px 14px rgba(251,146,60,.3)}
+.p62-grid .p62-st.p62-jetzt::after{content:'jetzt';position:absolute;top:-8px;right:8px;background:#f97316;color:#fff;font-size:9.5px;font-weight:800;padding:1px 6px;border-radius:999px;letter-spacing:.04em}
+.p62-grid .p62-leer{min-height:62px;border:1.5px dashed #e2e8f0;border-radius:10px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#cbd5e1;font-size:18px;background:#fff}
+.p62-grid .p62-leer .sp-empty{font-size:18px;color:#cbd5e1}.p62-grid .p62-leer:hover{border-color:#185FA5;background:#f8fbff}.p62-grid .p62-leer:hover .sp-empty{color:#185FA5}
+.p62-grid .p62-frei{min-height:62px;border-radius:10px;background:repeating-linear-gradient(135deg,#f8fafc 0 6px,#f1f5f9 6px 12px)}
+.p62-grid .p62-pause{grid-column:1/-1;display:flex;align-items:center;justify-content:center;gap:10px;font-size:10.5px;font-weight:700;color:#94a3b8;letter-spacing:.06em;min-height:18px;text-transform:uppercase}
+.p62-grid .p62-pause::before,.p62-grid .p62-pause::after{content:'';flex:1;border-top:1px dashed #dbe3ee}
+.p62-grid .p62-heute-sp.p62-leer,.p62-grid .p62-heute-sp.p62-frei{background-color:#f5f9ff}
+.p62-grid .aufs-c{border-radius:8px}
+}
+@media screen{
+.p62-grid .p62-kopf.p62-ecke{color:#fff!important;font-size:11px}
+.p62-grid .aufs-l.a,.p62-grid .aufs-l.b{background:transparent}.p62-grid .aufs-l b{color:#475569}
+.p62-sp .sp-seg button.b.on{background:#e0e7ff;color:#3730a3}
+.p62-sp .sp-abw.b{background:#eef2ff;color:#3730a3}
+.p62-sp .woche-b{background:#e0e7ff;color:#3730a3;border-color:#c7d2fe}
+}
+
 </style>
 </head><body>
 <script>
@@ -3416,6 +3466,8 @@ Verschiedenes und Fragen</textarea></div>
       <div class="anl-section-body">
         <ul>
           <li><strong>🧭 Einrichtung – alles an einem Ort:</strong> Das Zahnrad ⚙️ öffnet die große Seite „Einrichtung“. Links der rote Faden mit 8 Schritten: 👤 Profil &amp; Schule · 🎓 Meine Klasse · 📚 Meine Lerngruppen · 🗓 Stundenplan &amp; Zeiten · 📁 Unterrichtsordner · 🧩 Module &amp; Ansicht · 💾 Sicherung &amp; Datenschutz · 📅 Schuljahr &amp; Regeln. Jeder Schritt hat eine <b>Ampel</b>: 🟢 erledigt · 🟡 etwas fehlt (steht dabei, was) · ⚪ „brauche ich nicht“ (Häkchen oben im Schritt). Gesperrt wird nie etwas.</li>
+          <li><strong>🗓 Stundenplan:</strong> Auf dem Bildschirm farbige Kacheln je Fach (dieselben Farben wie im SuS-Ausdruck), der heutige Tag und die laufende Stunde („jetzt“) sind markiert. Der Ausdruck „Für SuS drucken“ bleibt unverändert.</li>
+          <li><strong>⏰ Verspätet:</strong> Im Anwesenheits-Raster auf einen Block klicken → „verspätet“ → Minuten wählen (5, 10, 15 … oder eigene Zahl). Im Kästchen steht dann z. B. „10′“.</li>
           <li><strong>📇 Auswertung:</strong> Fester Knopf oben neben „Sichtschutz“. Erst Klasse oder Lerngruppe wählen, dann das Kind (oder oben nach dem Namen suchen). Kinder der eigenen Klasse: ausführliche Auswertung (früher „Elterngespräch“). Lerngruppen-Kinder: Noten je Spalte mit Ø, Fehlstunden, Nachschreiben, Beobachtungen, Logbuch, Schriftverkehr, Förderstatus und Mails – mit Drucken/PDF. Unter dem Sichtschutz nicht sichtbar.</li>
           <li><strong>🧹 Neu anfangen:</strong> Einrichtung → Meine Klasse → ganz unten: alle Elterneinträge oder alle Schüler löschen. Vorher wird automatisch eine Sicherung gespeichert, bestätigt wird mit „LÖSCHEN“.</li>
           <li><strong>📋 Anwesenheit als Raster:</strong> Spalten „Tag“ und je Block. Ein Klick auf ein Kästchen öffnet das Menü: anwesend, fehlt, entschuldigt, unentschuldigt, verspätet, vorzeitig gegangen. Jede 5. Zeile hat eine dickere Linie.</li>
@@ -4741,7 +4793,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v61 · Stand 12.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v62 · Stand 12.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -19449,6 +19501,8 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','🗓','Stundenplan farbig','Farbige Kacheln je Fach mit Raum-Plakette, Rahmen, heutiger Tag und laufende Stunde markiert. Der SuS-Ausdruck bleibt wie er ist.','Stundenplan'],
+ ['Nov. 2026','⏰','Verspätung in Minuten','„verspätet“ fragt jetzt nach den Minuten. „Alle anwesend“ zeigt im Raster grüne Haken.','Klassenleitung'],
  ['Nov. 2026','📇','Auswertung: alles zu einem Kind','Neuer fester Knopf oben neben „Sichtschutz“: Gruppe wählen, Kind antippen – Noten, Fehlzeiten, Nachschreiben, Beobachtungen, Logbuch, Schriftverkehr auf einer Seite, druckbar. Ersetzt den Eintrag „Elterngespräch“ in der Leiste.','Auswertung'],
  ['Nov. 2026','📋','Anwesenheit als Raster mit Menü','Kästchen für den Tag und jeden Block, Klick öffnet die Auswahl (auch „verspätet“ und „vorzeitig gegangen“). Zebrastreifen, jede 5. Zeile dicker.','Klassenleitung'],
  ['Nov. 2026','📅','Kalender moderner','„Heute“-Knopf, Farben der Legende zum Ein-/Ausblenden, Wochenenden markiert, nächster Termin hervorgehoben.','Kalender'],
@@ -20733,7 +20787,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v61',KLASSENTO_STAND='12.11.2026';
+const KLASSENTO_VER='v62',KLASSENTO_STAND='12.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -23559,7 +23613,7 @@ function p61Menue(ev,datum,sid,zi){
   const opts=[['anwesend','anwesend'],['fehlt','fehlt (noch offen)'],['entschuldigt','entschuldigt'],['unentschuldigt','unentschuldigt']];
   if(!tag){opts.push(['verspaetet','verspätet']);opts.push(['abholung','vorzeitig gegangen / abgeholt …']);}
   const m=document.createElement('div');m.id='p61-menue';
-  m.innerHTML='<div class="p61-m-k">'+p61E(s?s.vn+' '+s.nn:'')+' · '+(tag?'ganzer Tag':'Block '+p61E((ZEITEN[zi]&&ZEITEN[zi].label)||''))+'</div>'
+  m.innerHTML='<div class="p61-m-k">'+p61E(s?s.vn+' '+s.nn:'')+' · '+(tag?'ganzer Tag':p61E((ZEITEN[zi]&&ZEITEN[zi].label)||''))+'</div>'
     +opts.map(([k,l])=>'<button onclick="p61Setzen(\''+datum+'\',\''+sid+'\','+zi+',\''+k+'\')">'+(k==='abholung'?'<span class="p61-i abh">🚪</span>':p61Sym(k==='anwesend'?'anwesend':k))+' '+l+'</button>').join('');
   document.body.appendChild(m);
   const r=ev.currentTarget.getBoundingClientRect();const w=m.offsetWidth,h=m.offsetHeight;
@@ -23674,6 +23728,103 @@ function p61Knopf(){if(document.getElementById('p61-btn'))return;
   document.querySelectorAll('.ni[onclick*="\'elterngespraech\'"]').forEach(b=>b.classList.add('p61-weg'));
 })();
 /* ===== PAKET v61 ENDE ===== */
+/* ===== PAKET v62 =====
+   A) Anwesenheit: Symbole wie in der Legende (✓ ? × E) – „Alle anwesend“ ist jetzt sichtbar; „verspätet“ mit Minuten.
+   B) Stundenplan auf dem Bildschirm moderner: farbige Kacheln je Fach (gleiche Farben wie der SuS-Ausdruck), Rahmen,
+      heutiger Tag + laufende Stunde markiert. Der Ausdruck für die SuS bleibt unverändert. */
+/* ---------- A) Anwesenheit ---------- */
+P61_SYM.anwesend=['anw','✓'];P61_SYM.fehlt=['fehlt','?'];P61_SYM.entschuldigt=['ent','E'];P61_SYM.unentschuldigt=['unent','×'];
+function p62Min(d,sid,zi){const v=p61Versp[d]&&p61Versp[d][sid]&&p61Versp[d][sid][zi];return v===true||v===1?0:(+v||0);}
+function p62VerspSym(d,sid,zi){const m=p62Min(d,sid,zi);return '<span class="p61-i versp p62-versp" title="verspätet'+(m?' – '+m+' Minuten':'')+'">'+(m?m+'′':'⏰')+'</span>';}
+(function(){
+  const _ra=renderAnwesenheit;
+  renderAnwesenheit=function(){const r=_ra.apply(this,arguments);
+    try{const datum=document.getElementById('aw-datum').value;const sorted=[...sus].sort(susCmp);let B=[];try{B=abholungBlockOptions(weekdayIndexOfDate(datum));}catch(e){}
+      [...document.querySelectorAll('#aw-table-wrap table.p61-tab tbody tr')].forEach((tr,i)=>{const s=sorted[i];if(!s)return;
+        const zellen=[...tr.querySelectorAll('td.p61-c:not(.p61-tag)')];
+        B.forEach((o,j)=>{const td=zellen[j];if(!td)return;const be=getBlockAwEntry(datum,s.id);if(!be[o.zi]&&p61IstVersp(datum,s.id,o.zi))td.innerHTML=p62VerspSym(datum,s.id,o.zi);});});
+    }catch(e){console.error(e);}return r;};
+})();
+function p61Setzen(datum,sid,zi,k){
+  if(k==='verspaetet'){p62MinutenWahl(datum,sid,zi);return;}
+  p61MenueZu();
+  if(zi<0){const alt=(anwesenheit[datum]||{})[sid];if(alt!==k)setAw(datum,sid,k);return;}
+  if(k==='abholung'){openAbholung(datum,sid);return;}
+  p61VerspSetzen(datum,sid,zi,false);setBlockAw(datum,sid,zi,k);
+}
+function p62MinutenWahl(datum,sid,zi){
+  const m=document.getElementById('p61-menue');if(!m)return;
+  const alt=p62Min(datum,sid,zi);
+  [...m.querySelectorAll('button')].forEach(b=>b.remove());
+  m.insertAdjacentHTML('beforeend','<div class="p62-min"><div class="p62-min-t">⏰ Wie viele Minuten zu spät?</div><div class="p62-min-k">'
+    +[5,10,15,20,30,45].map(x=>'<button class="'+(alt===x?'on':'')+'" onclick="p62VerspFertig(\''+datum+'\',\''+sid+'\','+zi+','+x+')">'+x+'</button>').join('')
+    +'</div><div class="p62-min-e"><input type="number" min="1" max="90" id="p62-min-in" placeholder="andere" value="'+(alt&&![5,10,15,20,30,45].includes(alt)?alt:'')+'" onkeydown="if(event.key===\'Enter\')p62VerspFertig(\''+datum+'\',\''+sid+'\','+zi+',this.value)"><button class="ok" onclick="p62VerspFertig(\''+datum+'\',\''+sid+'\','+zi+',document.getElementById(\'p62-min-in\').value)">OK</button></div></div>');
+  m.addEventListener('click',e=>e.stopPropagation());
+  setTimeout(()=>{document.removeEventListener('click',p61MenueZu);document.addEventListener('click',p61MenueZu,{once:true});},0);
+}
+function p62VerspFertig(datum,sid,zi,min){
+  min=Math.max(0,Math.min(240,parseInt(min,10)||0));p61MenueZu();
+  setBlockAw(datum,sid,zi,'anwesend');
+  ((p61Versp[datum]=p61Versp[datum]||{})[sid]=p61Versp[datum][sid]||{})[zi]=min||1;p61VerspSave();
+  renderAnwesenheit();
+}
+
+(function(){try{
+  const _tl=awTagLoeschen;awTagLoeschen=async function(art,datum){const d=datum||(document.getElementById('aw-datum')||{}).value;const r=await _tl.apply(this,arguments);
+    try{if(art==='klasse'&&d&&!anwesenheit[d]&&p61Versp[d]){localStorage.setItem('v1_aw_versp_undo',JSON.stringify({d,v:p61Versp[d]}));delete p61Versp[d];p61VerspSave();renderAnwesenheit();}}catch(e){}return r;};
+  const _un=awUndo;awUndo=function(art){const r=_un.apply(this,arguments);
+    try{if(art==='klasse'){const u=JSON.parse(localStorage.getItem('v1_aw_versp_undo')||'null');if(u&&u.d&&anwesenheit[u.d]){p61Versp[u.d]=Object.assign({},u.v,p61Versp[u.d]||{});p61VerspSave();localStorage.removeItem('v1_aw_versp_undo');renderAnwesenheit();}}}catch(e){}return r;};
+}catch(e){}})();
+/* ---------- B) Stundenplan modern (nur Bildschirm) ---------- */
+function p62FachFarbe(txt,lehrer){
+  let f=String(txt||'').trim();
+  if(lehrer){const g=(lerngruppen||[]).find(x=>(x.name||'').trim().toLowerCase()===f.toLowerCase());if(g&&g.fach)f=g.fach;
+    else if(meta&&meta.klasse&&f.toLowerCase()===String(meta.klasse).toLowerCase())return '#185FA5';}
+  try{return spDruckFarbe(spDruckTeile(f).fach||f);}catch(e){return '#4C79A0';}
+}
+function p62SpSchmuck(gridId,lehrer){
+  const grid=document.getElementById(gridId);if(!grid||!grid.children.length)return;
+  grid.classList.add('p62-grid');const w=spWoche(),isA=w==='A';grid.classList.toggle('p62-b',!isA);
+  const heute=new Date();const tagHeute=(heute.getDay()+6)%7;const zeigtAktuelleWoche=w===aktuelleWoche;
+  const jetzt=('0'+heute.getHours()).slice(-2)+':'+('0'+heute.getMinutes()).slice(-2);
+  const kids=[...grid.children];const spalten=TAGE.length+1;
+  // Kopfzeile
+  kids.slice(0,spalten).forEach((el,i)=>{el.removeAttribute('style');el.className='p62-kopf'+(i===0?' p62-ecke':'')+(i>0&&zeigtAktuelleWoche&&i-1===tagHeute?' p62-heute':'');if(i===0)el.textContent=w+'-Woche';});
+  // Zellen: Spalte über die Reihenfolge innerhalb einer Zeile bestimmen
+  let col=0,zi=-1;
+  kids.slice(spalten).forEach(el=>{
+    const c=el.className||'';
+    if(/sp-pause-/.test(c)){el.className='p62-pause';col=0;return;}
+    if(el.style&&el.style.gridColumn==='1 / -1'){col=0;return;}
+    if(col===0){ // Zeitspalte oder Aufsicht-Beschriftung
+      if(!/aufs-l/.test(c)){el.removeAttribute('style');el.className='p62-zeit';const lab=el.querySelector('div');zi=ZEITEN.findIndex(z=>lab&&z.label===lab.textContent);
+        const z=ZEITEN[zi];if(z&&zeigtAktuelleWoche&&jetzt>=z.t1&&jetzt<z.t2)el.classList.add('p62-jetzt-z');}
+      else zi=-2;
+      col=1;return;}
+    const ti=col-1;col=col>=TAGE.length?0:col+1;
+    if(zeigtAktuelleWoche&&ti===tagHeute)el.classList.add('p62-heute-sp');
+    if(/sp-grey/.test(c)){el.className='p62-frei';el.innerHTML='';return;}
+    if(/sp-cell-/.test(c)){
+      const f=el.querySelector('.sp-fach-a,.sp-fach-b');
+      if(f){const col2=p62FachFarbe(f.textContent,lehrer);el.className='p62-st';el.style.setProperty('--c',col2);f.className='p62-f';
+        const r=el.querySelector('.sp-raum');if(r){if(r.textContent.trim()&&r.textContent.trim()!=='?')r.className='p62-r';else r.remove();}
+        const z=ZEITEN[zi];if(z&&zeigtAktuelleWoche&&ti===tagHeute&&jetzt>=z.t1&&jetzt<z.t2)el.classList.add('p62-jetzt');}
+      else{el.className='p62-leer';const e=el.querySelector('.sp-empty');if(e)e.textContent='+';}
+    }
+  });
+}
+(function(){
+  const v=document.getElementById('view-stundenplan');if(v)v.classList.add('p62-sp');
+  const rahmen=(id,titelId)=>{const g=document.getElementById(id);if(!g||g.parentElement.classList.contains('p62-rahmen'))return;
+    const r=document.createElement('div');r.className='p62-rahmen';g.parentNode.insertBefore(r,g);
+    const t=document.getElementById(titelId);const kopf=t&&t.parentElement;if(kopf&&kopf.parentNode===r.parentNode){r.appendChild(kopf);kopf.classList.add('p62-rkopf');}
+    r.appendChild(g);};
+  try{rahmen('sp-grid','sp-sus-titel');rahmen('sp-grid-lehrer','sp-lehrer-titel');}catch(e){console.error(e);}
+  const _rs=renderStundenplan;renderStundenplan=function(){const r=_rs.apply(this,arguments);try{p62SpSchmuck('sp-grid',false);}catch(e){console.error(e);}return r;};
+  const _rl=renderStundenplanLehrer;renderStundenplanLehrer=function(){const r=_rl.apply(this,arguments);try{p62SpSchmuck('sp-grid-lehrer',true);}catch(e){console.error(e);}return r;};
+})();
+/* ===== PAKET v62 ENDE ===== */
+
 
 
 
