@@ -1838,6 +1838,17 @@ body.sg-an #az-win,body.sg-an #kd-pop{visibility:hidden}
 .ez-tag{font-size:11px;border-radius:999px;padding:1px 8px;background:#f1f5f9;color:#475569}.ez-tag.gelb{background:#fffbeb;color:#92400e}.ez-tag.gruen{background:#f0fdf4;color:#166534}.ez-tag.rot{background:#fff1f2;color:#9f1239}
 .ez-m-fuss{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:12.5px;color:#475569}
 
+/* v60: Klassen-Import getrennt */
+.ez-wege3{grid-template-columns:1fr 1fr 1fr}@media (max-width:900px){.ez-wege3{grid-template-columns:1fr}}
+.ki-tab{width:100%;border-collapse:collapse;font-size:12.5px}.ki-tab th{position:sticky;top:-6px;background:#f8fafc;text-align:left;font-size:11px;text-transform:uppercase;color:#64748b;padding:6px;border-bottom:1px solid #e2e8f0}
+.ki-tab td{padding:5px 6px;border-bottom:1px solid #f1f5f9;vertical-align:top}.ki-tab tr.ki-fertig{opacity:.5}
+.ki-neu{color:#166534;background:#f0fdf4;border-radius:4px}.ki-alt{color:#64748b}.ki-leer{color:#cbd5e1}
+td.ki-neu,td.ki-alt{padding:5px 6px}.ki-tab td div.ki-neu{margin-top:2px;padding:1px 5px;display:block}
+.ki-leg{padding:1px 6px;border-radius:4px;font-size:11.5px;margin-left:6px}
+.ez-anl{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:10px 14px;margin-bottom:12px;font-size:13px}
+.ez-anl summary{cursor:pointer;font-weight:700;color:#185FA5}.ez-anl ol{margin:10px 0 2px 18px;padding:0;line-height:1.55;color:#334155}.ez-anl li{margin-bottom:5px}
+.sus-info{font-size:11px;color:#64748b;font-weight:400;white-space:nowrap}
+
 </style>
 </head><body>
 <script>
@@ -3338,6 +3349,7 @@ Verschiedenes und Fragen</textarea></div>
       <div class="anl-section-body">
         <ul>
           <li><strong>🧭 Einrichtung – alles an einem Ort:</strong> Das Zahnrad ⚙️ öffnet die große Seite „Einrichtung“. Links der rote Faden mit 8 Schritten: 👤 Profil &amp; Schule · 🎓 Meine Klasse · 📚 Meine Lerngruppen · 🗓 Stundenplan &amp; Zeiten · 📁 Unterrichtsordner · 🧩 Module &amp; Ansicht · 💾 Sicherung &amp; Datenschutz · 📅 Schuljahr &amp; Regeln. Jeder Schritt hat eine <b>Ampel</b>: 🟢 erledigt · 🟡 etwas fehlt (steht dabei, was) · ⚪ „brauche ich nicht“ (Häkchen oben im Schritt). Gesperrt wird nie etwas.</li>
+          <li><strong>🎓 Klasse aus Datei – zwei Schritte:</strong> <b>a) 📥 Schüler einlesen</b> (Name, Rufname, Geburtsdatum, Anschrift, SuS-Mail, Einverständnisse) und danach <b>b) 📥 Eltern einlesen</b> (Mutter, Vater, Vormund mit Adresse, Telefon, Mail) – gern mit derselben Datei. Die Vorschau zeigt als Tabelle, was eingetragen wird (grün) und was schon da ist (grau). Eine Anleitung für den weBBschule-Export (inkl. „Vorlage speichern“) steht direkt darunter. Spalten werden flexibel erkannt – auch Einzelspalten wie „Nachname“, „Rufname“, „Name (Mutter)“, „Telefon alle (Mutter)“.</li>
           <li><strong>🎓 Klasse aus Datei:</strong> Schritt 2 → „📥 Datei wählen“: weBBschule-Export (CSV oder Excel .xlsx). Neue Kinder werden angelegt (Name, Rufname, Geburtsdatum, SuS-Mail), Eltern mit Adresse, Telefon und Mail, dazu Einverständnisse (z. B. 📷 keine Fotos). Bei einer vorhandenen Klasse wird <b>nur ergänzt, was fehlt</b> – nichts überschrieben, nichts doppelt. Statistikdaten werden nie übernommen.</li>
           <li><strong>📚 Lerngruppe aus Datei:</strong> Schritt 3 → Name und Fach eintragen → „📥 Anlegen aus Datei“. Alle Kinder der Datei erscheinen mit Häkchen; bei einer <b>WP-Gruppe</b> nur die passenden anhaken und mit „+ weitere Datei“ die nächste Klasse dazunehmen. Übernommen werden Name, SuS-Mail, Eltern-Mail. Oder „✏️ Von Hand“ – dann springt die App direkt in die neue Gruppe.</li>
           <li><strong>← Zurück zur Einrichtung:</strong> Springst du aus der Einrichtung z. B. ins Schülerverzeichnis, erscheint oben ein blauer Knopf zurück. Umgekehrt führt <b>🧭 Einrichtung</b> in Lerngruppen und Schülerverzeichnis direkt zum passenden Schritt.</li>
@@ -4657,7 +4669,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v59 · Stand 12.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v60 · Stand 12.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -19365,6 +19377,8 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','👥','Klasse: Schüler und Eltern getrennt einlesen','In der Einrichtung zuerst „Schüler einlesen“, dann „Eltern einlesen“ – mit Tabellen-Vorschau, was wohin kommt. Mit Anleitung für den weBBschule-Export.','Einrichtung'],
+ ['Nov. 2026','🏠','Anschrift beim Kind','Im Schülerformular gibt es das Feld „Anschrift“ (falls das Kind woanders wohnt). Im Schülerverzeichnis stehen jetzt Geburtsdatum, Rufname und 📷-Hinweis unter dem Namen.','Klassenleitung'],
  ['Nov. 2026','🧭','Neue Einrichtung – alles an einem Ort','Das Zahnrad öffnet jetzt die große Seite „Einrichtung“: 8 Schritte als roter Faden mit Ampel – Profil, Klasse, Lerngruppen, Stundenplan, Ordner, Module, Sicherung, Schuljahr.','Einrichtung'],
  ['Nov. 2026','🎓','Klasse aus weBBschule anlegen','In der Einrichtung die weBBschule-Datei (CSV oder Excel) einlesen – Schüler, Eltern mit Kontakten und Einverständnisse in einem Rutsch. Bei bestehender Klasse wird nur ergänzt.','Einrichtung'],
  ['Nov. 2026','📚','Lerngruppe aus Datei anlegen','Neue Lerngruppe direkt aus der weBBschule-Datei oder dem Mail-Verteiler – mit Namen und Mail-Adressen. WP-Gruppen aus mehreren Dateien zusammenstellen.','Einrichtung'],
@@ -20642,7 +20656,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v59',KLASSENTO_STAND='12.11.2026';
+const KLASSENTO_VER='v60',KLASSENTO_STAND='12.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -23231,6 +23245,163 @@ function ezKlasseUebernehmen(){
   try{const _sh=show;show=function(v){const r=_sh.apply(this,arguments);if(v==='einrichtung'){const p=document.getElementById('ez-pille');if(p)p.style.display='none';}else{const p=document.getElementById('ez-pille');if(p)p.style.display='';}return r;};}catch(e){}
 })();
 /* ===== EINRICHTUNG ENDE ===== */
+/* ===== KLASSEN-IMPORT GETRENNT (v60) =====
+   „Meine Klasse“: 📥 Schüler aus Datei und 📥 Eltern aus Datei getrennt, jeweils mit genauer Vorschau (welches Feld wohin).
+   Spalten werden flexibel erkannt – auch Einzelspalten aus weBBschule wie „Nachname“, „Vorname“, „Rufname“,
+   „Name (Mutter)“, „Adresse (Mutter)“, „Telefon alle (Mutter)“, „E-Mail (Mutter)“ oder die Sammelspalte „Mutter des Schülers“.
+   Neues Feld „Anschrift“ beim Kind; im Schülerverzeichnis stehen Geburtsdatum, Rufname und 📷-Hinweis unter dem Namen. */
+function kiNorm(h){return String(h||'').toLowerCase().replace(/\s+/g,' ').trim();}
+function kiRolle(h){h=kiNorm(h);if(/mutter/.test(h))return 'Mutter';if(/vater/.test(h))return 'Vater';if(/vormund|erziehungsber|sorgeber/.test(h))return 'Vormund';return '';}
+function kiSpalten(H){
+  const M={p:{Mutter:{},Vater:{},Vormund:{}}};
+  H.forEach((h0,i)=>{const h=kiNorm(h0);if(!h)return;const r=kiRolle(h);
+    if(r){const P=M.p[r];
+      if(/des schülers|des schuelers/.test(h)&&!/name|adresse|telefon|e-?mail|mobil/.test(h.replace(/des schülers|des schuelers/,'')))P.block=i;
+      else if(/e-?mail/.test(h))P.mail=i;else if(/telefon|mobil|handy/.test(h))(P.tel=P.tel||[]).push(i);else if(/adresse|anschrift|straße|strasse/.test(h))P.adr=i;else if(/name/.test(h))P.name=i;else P.block=P.block==null?i:P.block;
+      return;}
+    if(h==='nachname')M.nn=i;else if(h==='vorname'||h==='vornamen')M.vn=i;else if(h==='rufname')M.ruf=i;else if(h==='name'||h==='schüler'||h==='schülername')M.name=i;
+    else if(/geburtsdatum/.test(h))M.gb=i;else if(/^adresse|^anschrift|wohnanschrift/.test(h))M.adr=i;
+    else if(/e-?mail.*privat/.test(h))M.mp=i;else if(/e-?mail.*schul/.test(h))M.ms=i;else if(/^e-?mail$/.test(h))M.mp=M.mp==null?i:M.mp;
+    else if(/förderbedarf|foerderbedarf/.test(h))M.fb=i;else if(h==='lrs')M.lrs=i;else if(/schulmerkmale/.test(h))M.merk=i;
+    else if(/fotos|homepage|tagespresse|jahresbericht|video|fahrschüler|personenbezogen/.test(h))(M.merkEinzel=M.merkEinzel||[]).push(i);
+  });
+  return M;
+}
+function kiTel(t){const o={tp:'',td:'',tm:''};String(t||'').split(/\r?\n|;|,(?=\s*\D)/).map(x=>x.trim()).filter(Boolean).forEach(l=>{
+  const m=/^(telefon privat|privat|telefon dienstlich|dienstlich|mobil|handy|telefon sonstiges|sonstiges)\s*:?\s*(.*)$/i.exec(l);
+  if(m){const k=m[1].toLowerCase();if(k.includes('privat'))o.tp=o.tp||m[2];else if(k.includes('dienst'))o.td=o.td||m[2];else if(k.includes('mobil')||k.includes('handy'))o.tm=o.tm||m[2];return;}
+  if(/\d{3}/.test(l)){if(/^\+?49\s?1|^01/.test(l.replace(/\s/g,'')))o.tm=o.tm||l;else o.tp=o.tp||l;}});return o;}
+ezKinderAus=function(R){
+  if(!R||!R.length)return {art:'?',L:[]};
+  const H=R[0].map(x=>String(x||'').trim());const M=kiSpalten(H);
+  const hatName=M.name!=null||M.nn!=null;
+  if(!hatName){const D=mlAusDatei(R);return {art:D.art,L:D.L.map(x=>({...x,sus:(x.sus||[]).map(a=>a.m||a),eltern:(x.eltern||[]).map(a=>a.m||a),personen:[],gb:'',adr:'',merk:{}}))};}
+  const g=(r,i)=>i==null?'':String(r[i]||'');
+  const L=R.slice(1).filter(r=>(M.name!=null?g(r,M.name):g(r,M.nn)).trim()).map(r=>{
+    let nt;
+    if(M.nn!=null){const vn=g(r,M.vn).trim();nt={nn:g(r,M.nn).trim(),vn,vns:vn.split(/[\s-]+/).filter(Boolean),ruf:g(r,M.ruf).trim()};if(!nt.ruf&&M.name!=null){const x=mlNameTeile(g(r,M.name));nt.ruf=x.ruf;}}
+    else{nt=mlNameTeile(g(r,M.name));if(M.ruf!=null&&g(r,M.ruf).trim())nt.ruf=g(r,M.ruf).trim();}
+    const personen=[];
+    ['Mutter','Vater','Vormund'].forEach(rolle=>{const P=M.p[rolle];let p=P.block!=null?ezPerson(g(r,P.block)):null;
+      if(P.name!=null&&g(r,P.name).trim()){const t=ezPerson(g(r,P.name));if(!p)p=t;else if(t&&t.name)p.name=t.name;}
+      if(!p&&(P.mail!=null&&g(r,P.mail).trim()||P.adr!=null&&g(r,P.adr).trim()))p={anrede:'',name:'',adr:'',tel:{tp:'',td:'',tm:''},mails:[],sonst:[]};
+      if(!p)return;
+      if(P.adr!=null&&g(r,P.adr).trim())p.adr=g(r,P.adr).split(/\r?\n/).map(x=>x.trim()).filter(Boolean).join(', ');
+      (P.tel||[]).forEach(i=>{const t=kiTel(g(r,i));['tp','td','tm'].forEach(k=>{if(!p.tel[k]&&t[k])p.tel[k]=t[k];});});
+      if(P.mail!=null)p.mails=[...new Set([...p.mails,...mlMails(g(r,P.mail))])];
+      p.rolle=rolle;personen.push(p);});
+    const em=new Set(personen.flatMap(p=>p.mails.map(x=>x.toLowerCase())));
+    const priv=mlMails(g(r,M.mp)),schule=mlMails(g(r,M.ms));
+    let merk=ezMerkmale(g(r,M.merk));(M.merkEinzel||[]).forEach(i=>{const v=g(r,i).trim().toLowerCase();if(v==='ja'||v==='nein')merk[H[i]]=v==='ja';});
+    return {...nt,gb:ezDatum(g(r,M.gb)),adr:g(r,M.adr).split(/\r?\n/).map(x=>x.trim()).filter(Boolean).join(', '),
+      sus:[...new Set([...schule,...priv.filter(m=>!em.has(m.toLowerCase()))])],privEltern:priv.filter(m=>em.has(m.toLowerCase())),
+      eltern:personen.flatMap(p=>p.mails),personen,merk,foerder:g(r,M.fb).trim(),lrs:g(r,M.lrs).trim()};
+  });
+  return {art:'weBBschule-Schülerliste',L,spalten:M};
+};
+function kiFinde(x){return sus.find(k=>mlPasst(k,x)||(x.ruf&&mlNorm(k.nn)===mlNorm(x.nn)&&(mlNorm(k.rufname||'')===mlNorm(x.ruf)||mlNorm((k.vn||'').split(/[\s-]+/)[0])===mlNorm(x.ruf))));}
+
+/* ---------- 📥 Schüler ---------- */
+let kiPlan=null;
+function kiSchuelerStart(){ezDateiWaehlen((R,n)=>kiSchuelerVorschau(R,n));}
+function kiSchuelerVorschau(R,n){
+  const D=ezKinderAus(R);
+  if(D.art!=='weBBschule-Schülerliste'||!D.L.length){alert('In der Datei wurden keine Schüler erkannt. Bitte einen weBBschule-Export mit „Name“ (oder „Nachname“/„Vorname“) als CSV oder Excel wählen.');return;}
+  kiPlan=D.L.map(x=>{const s=kiFinde(x);
+    const F=[];const neu=(k,l,v,alt)=>{if(!v)return;if(!s||!String(alt||'').trim())F.push({k,l,v});};
+    neu('vn','Vorname',x.vns.join(' ')||x.vn,s&&s.vn);neu('rufname','Rufname',x.ruf,s&&s.rufname);neu('gb','Geburtsdatum',x.gb,s&&s.gb);neu('adresse','Anschrift',x.adr,s&&s.adresse);neu('mail','SuS-Mail',x.sus.join('; '),s&&s.mail);
+    if(Object.keys(x.merk||{}).length&&!(s&&s.merkmale))F.push({k:'merkmale',l:'Einverständnisse',v:x.merk});
+    return {x,s,F,an:!s||F.length>0};});
+  const nNeu=kiPlan.filter(p=>!p.s).length,nErg=kiPlan.filter(p=>p.s&&p.F.length).length;
+  const ohne=sus.filter(s=>!kiPlan.some(p=>p.s===s));
+  const zelle=(p,k)=>{const f=p.F.find(f=>f.k===k);const alt=p.s?(k==='adresse'?p.s.adresse:p.s[k]):'';
+    if(k==='merkmale'){const m=f?f.v:(p.s&&p.s.merkmale);if(!m)return '<td class="ki-leer">–</td>';const nein=Object.keys(m).filter(z=>m[z]===false&&!/fahrsch/i.test(z));return '<td class="'+(f?'ki-neu':'')+'">'+(nein.length?'✗ '+ezE(nein.join(', ')):'alle ja')+'</td>';}
+    if(f)return '<td class="ki-neu">'+ezE(k==='gb'?a52Dat(f.v):f.v)+'</td>';return alt?'<td class="ki-alt">'+ezE(k==='gb'?a52Dat(alt):alt)+'</td>':'<td class="ki-leer">–</td>';};
+  let m=document.getElementById('m-ez');if(m)m.remove();m=document.createElement('div');m.className='mb';m.id='m-ez';m.style.display='flex';
+  m.innerHTML='<div class="md" style="width:960px;max-width:96vw;max-height:92vh;display:flex;flex-direction:column"><div class="mhd"><h2>📥 Schüler für Klasse '+ezE(meta.klasse||'')+'</h2><button class="btn" onclick="ezAbbruch()" style="padding:4px 8px;border:none">✕</button></div>'
+   +'<div class="ib">Datei: <b>'+ezE(n)+'</b> · '+kiPlan.length+' Kinder · <b>'+nNeu+' neu</b> · <b>'+nErg+' werden ergänzt</b>. <span class="ki-neu ki-leg">grün = wird eingetragen</span> <span class="ki-alt ki-leg">grau = steht schon da (bleibt)</span>. Nur die <b>Schüler</b> – die Eltern kommen im zweiten Schritt.</div>'
+   +'<div class="ez-liste"><table class="ki-tab"><thead><tr><th></th><th>Name</th><th>Vorname</th><th>Rufname</th><th>Geburtsdatum</th><th>Anschrift</th><th>SuS-Mail</th><th>Einverständnis</th></tr></thead><tbody>'
+   +kiPlan.map((p,i)=>'<tr class="'+(p.s&&!p.F.length?'ki-fertig':'')+'"><td><input type="checkbox" '+(p.an?'checked ':'')+(p.s&&!p.F.length?'disabled ':'')+'onchange="kiPlan['+i+'].an=this.checked"></td><td><b>'+ezE(p.x.nn)+'</b>'+(p.s?'':' <span class="ez-tag gruen">neu</span>')+'</td>'+zelle(p,'vn')+zelle(p,'rufname')+zelle(p,'gb')+zelle(p,'adresse')+zelle(p,'mail')+zelle(p,'merkmale')+'</tr>').join('')
+   +'</tbody></table></div>'
+   +(kiPlan.some(p=>p.x.privEltern&&p.x.privEltern.length)?'<div class="ml-hinw">Hinweis: Bei einigen Kindern steht unter „E-Mail (privat)“ die Adresse von Mutter/Vater – die kommt nicht zum Kind, sondern im nächsten Schritt zu den Eltern.</div>':'')
+   +(ohne.length?'<div class="ml-ohne">ℹ️ In Klassento, aber nicht in der Datei ('+ohne.length+'): '+ohne.map(s=>ezE(s.vn+' '+s.nn)).join(', ')+' – bleiben unverändert.</div>':'')
+   +'<div class="ez-m-fuss"><span style="flex:1"></span><button class="btn" onclick="ezAbbruch()">Abbrechen</button><button class="btn btnp" onclick="kiSchuelerUebernehmen()">✓ Schüler übernehmen</button></div></div>';
+  document.body.appendChild(m);
+}
+function kiSchuelerUebernehmen(){
+  let nNeu=0,nErg=0,k=0;
+  (kiPlan||[]).filter(p=>p.an).forEach(p=>{let s=p.s;
+    if(!s){s={id:(Date.now()+k++).toString(),vn:p.x.vns.join(' ')||p.x.vn,nn:p.x.nn,rufname:'',geschlecht:'',gb:'',bg:'',tel:'',mail:'',foerderstatus:{},km:'',ke:'',kd:'',kp:'',kc:'',kb:''};sus.push(s);nNeu++;}else if(p.F.length)nErg++;
+    p.F.forEach(f=>{if(f.k==='merkmale')s.merkmale=Object.assign({},f.v,s.merkmale||{});else if(!String(s[f.k]||'').trim())s[f.k]=f.v;});});
+  save();try{updateStats();renderSuS();}catch(e){}const m=document.getElementById('m-ez');if(m)m.remove();kiPlan=null;
+  try{szToast('🎓 '+nNeu+' Schüler neu, '+nErg+' ergänzt. Jetzt die Eltern einlesen (Schritt b).');}catch(e){}ezRender();
+}
+
+/* ---------- 📥 Eltern ---------- */
+let kiEPlan=null;
+function kiElternStart(){if(!sus.length){alert('Bitte zuerst die Schüler einlesen (📥 Schüler aus Datei) – die Eltern werden den Kindern zugeordnet.');return;}ezDateiWaehlen((R,n)=>kiElternVorschau(R,n));}
+function kiElternVorschau(R,n){
+  const D=ezKinderAus(R);
+  if(!D.L.length){alert('In der Datei wurden keine Schüler erkannt.');return;}
+  if(!D.L.some(x=>x.personen.length)){alert('In dieser Datei stehen keine Eltern-Angaben. Beim weBBschule-Export bitte „Mutter des Schülers“, „Vater des Schülers“ (und ggf. „Vormund“) bzw. Name/Adresse/Telefon/E-Mail der Mutter und des Vaters mit auswählen.');return;}
+  const fehlt=[];
+  kiEPlan=D.L.map(x=>{const s=kiFinde(x);if(!s){fehlt.push(x.nn+', '+ezVorname(x));return null;}
+    const e=ezElternVon(s.id)||{};const Z=[];
+    x.personen.slice(0,2).forEach((q,j)=>{const kk=j?'e2':'e1';const f=[];
+      const setz=(k,l,v)=>{if(v&&!String(e[kk+k]||'').trim())f.push({k:kk+k,l,v});};
+      setz('n','Name',q.name);setz('a','Adresse',q.adr);setz('tm','Mobil',q.tel.tm);setz('tp','Tel. privat',q.tel.tp);setz('td','Tel. dienstlich',q.tel.td);setz('m','Mail',q.mails[0]);
+      if(!String(e[kk+'b']||'').trim())f.push({k:kk+'b',l:'',v:q.rolle,still:true});
+      Z.push({q,f,alt:String(e[kk+'n']||'').trim()});});
+    return {x,s,Z,an:Z.some(z=>z.f.some(f=>!f.still))};}).filter(Boolean);
+  const bl=(z)=>{if(!z)return '<td class="ki-leer">–</td>';const neu=z.f.filter(f=>!f.still);
+    return '<td><b>'+ezE(z.q.rolle)+'</b>'+(z.alt?' · <span class="ki-alt">'+ezE(z.alt)+'</span>':'')+(neu.length?neu.map(f=>'<div class="ki-neu">'+ezE(f.l)+': '+ezE(f.v)+'</div>').join(''):'<div class="ki-alt">vollständig</div>')+'</td>';};
+  let m=document.getElementById('m-ez');if(m)m.remove();m=document.createElement('div');m.className='mb';m.id='m-ez';m.style.display='flex';
+  m.innerHTML='<div class="md" style="width:960px;max-width:96vw;max-height:92vh;display:flex;flex-direction:column"><div class="mhd"><h2>📥 Eltern für Klasse '+ezE(meta.klasse||'')+'</h2><button class="btn" onclick="ezAbbruch()" style="padding:4px 8px;border:none">✕</button></div>'
+   +'<div class="ib">Datei: <b>'+ezE(n)+'</b> · '+kiEPlan.length+' Kinder zugeordnet. <span class="ki-neu ki-leg">grün = wird eingetragen</span> – vorhandene Angaben bleiben. Nur ins <b>Elternverzeichnis</b>.</div>'
+   +'<div class="ez-liste"><table class="ki-tab"><thead><tr><th></th><th>Kind</th><th>1. Elternteil</th><th>2. Elternteil</th></tr></thead><tbody>'
+   +kiEPlan.map((p,i)=>'<tr class="'+(p.an?'':'ki-fertig')+'"><td><input type="checkbox" '+(p.an?'checked ':'disabled ')+'onchange="kiEPlan['+i+'].an=this.checked"></td><td><b>'+ezE(p.s.nn+', '+p.s.vn)+'</b></td>'+bl(p.Z[0])+bl(p.Z[1])+'</tr>').join('')
+   +'</tbody></table></div>'
+   +(fehlt.length?'<div class="ml-ohne">⚠️ Nicht im Schülerverzeichnis ('+fehlt.length+'): '+fehlt.map(ezE).join(', ')+' – bitte zuerst mit „📥 Schüler aus Datei“ anlegen.</div>':'')
+   +'<div class="ez-m-fuss"><span style="flex:1"></span><button class="btn" onclick="ezAbbruch()">Abbrechen</button><button class="btn btnp" onclick="kiElternUebernehmen()">✓ Eltern übernehmen</button></div></div>';
+  document.body.appendChild(m);
+}
+function kiElternUebernehmen(){
+  let n=0;(kiEPlan||[]).filter(p=>p.an).forEach(p=>{let e=ezElternVon(p.s.id);if(!e){e={kid:p.s.id,e1s:true,e2s:true};eltern.push(e);}
+    p.Z.forEach((z,j)=>{z.f.forEach(f=>{if(!String(e[f.k]||'').trim())e[f.k]=f.v;});const kk=j?'e2':'e1';if(e[kk+'s']===undefined)e[kk+'s']=true;});n++;});
+  save();try{updateStats();}catch(e){}const m=document.getElementById('m-ez');if(m)m.remove();kiEPlan=null;try{szToast('👪 Eltern bei '+n+' Kindern eingetragen.');}catch(e){}ezRender();
+}
+
+/* ---------- Einhängen ---------- */
+(function(){
+  const _nh=ezNeuHtml;ezNeuHtml=function(id){
+    let h=_nh.apply(this,arguments);if(id!=='klasse'||rolleFL())return h;
+    const a=h.indexOf('<div class="ez-wege">'),b=h.indexOf('</div></div></div>',a);
+    const wege='<div class="ez-wege ez-wege3"><div class="ez-weg"><b>📥 a) Schüler aus Datei</b><p>Name, Rufname, Geburtsdatum, Anschrift, SuS-Mail und Einverständnisse (Fotos …). Neue Kinder werden angelegt, vorhandene nur ergänzt.</p><button class="btn btnp" onclick="kiSchuelerStart()">📥 Schüler einlesen</button></div>'
+      +'<div class="ez-weg"><b>📥 b) Eltern aus Datei</b><p>Mutter, Vater, Vormund mit Adresse, Telefon und Mail – den Kindern zugeordnet. Dieselbe oder eine eigene Datei.</p><button class="btn btnp" onclick="kiElternStart()">📥 Eltern einlesen</button></div>'
+      +'<div class="ez-weg"><b>✏️ Von Hand</b><p>Kinder im Schülerverzeichnis, Eltern im Elternverzeichnis.</p><button class="btn" onclick="ezSpringe(\'sus\',\'klasse\')">👥 Schülerverzeichnis</button> <button class="btn" onclick="ezSpringe(\'eltern\',\'klasse\')">👪 Elternverzeichnis</button></div></div>';
+    if(a>=0&&b>a)h=h.slice(0,a)+wege+h.slice(b+'</div></div></div>'.length-6);
+    h=h.replace(/<div class="ez-hinw">Tipp für weBBschule:[\s\S]*?<\/div>/,'<details class="ez-anl"><summary>📋 So bekommst du die Datei aus weBBschule (einmal einrichten)</summary><ol>'
+      +'<li>In weBBschule die Klasse öffnen → <b>Liste exportieren</b>.</li>'
+      +'<li>Mit <b>„neue Spalte hinzufügen“</b> diese Spalten wählen: <b>Name</b> (bringt Nachname, Vorname, Rufname mit), <b>Geburtsdatum</b>, <b>Adresse</b>, <b>E-Mail (privat)</b>, <b>E-Mail (Schule)</b>, <b>Förderbedarfe</b>, <b>LRS</b>, <b>Mutter des Schülers</b>, <b>Vater des Schülers</b>, <b>Vormund des Schülers</b>, <b>Schulmerkmale</b>. Einzelspalten wie „Name (Mutter)“, „Adresse (Mutter)“, „Telefon alle (Mutter)“, „E-Mail (Mutter)“ gehen auch.</li>'
+      +'<li><b>Nicht</b> nötig und bitte weglassen: Statistikdaten (Herkunft, Staatsangehörigkeit, Religion …) – Klassento übernimmt sie ohnehin nie.</li>'
+      +'<li>Unten <b>„Vorlage speichern“</b> → Name z. B. <b>„Klassento“</b>. Ab dann nur noch: Vorlagen → Klassento → <b>CSV</b> oder <b>Excel</b>.</li>'
+      +'<li>Hier zuerst <b>a) Schüler</b>, dann <b>b) Eltern</b> mit derselben Datei einlesen.</li></ol></details>');
+    return h;
+  };
+  // Feld „Anschrift“ im Schülerformular
+  const mail=document.getElementById('s-mail');const fg=mail&&mail.closest('.fg');
+  if(fg&&!document.getElementById('s-adresse')){const row=fg.parentElement;row.insertAdjacentHTML('afterend','<div class="fg" style="margin-bottom:10px"><label>Anschrift des Kindes <span style="font-weight:400;color:#94a3b8">(falls anders als bei den Eltern)</span></label><input id="s-adresse" placeholder="Straße Hausnr., PLZ Ort"></div>');}
+  const _oa=openAdd;openAdd=function(t){const r=_oa.apply(this,arguments);if(t==='sus'){const a=document.getElementById('s-adresse');if(a)a.value='';}return r;};
+  const _ed=editSuS;editSuS=function(id){const r=_ed.apply(this,arguments);const s=sus.find(x=>x.id===id);const a=document.getElementById('s-adresse');if(a)a.value=(s&&s.adresse)||'';return r;};
+  const _sv=saveSuS;saveSuS=function(){const a=((document.getElementById('s-adresse')||{}).value||'').trim();const ed=editSuSId;const vor=sus.length;const r=_sv.apply(this,arguments);
+    const s=ed?sus.find(x=>x.id===ed):(sus.length>vor?sus[sus.length-1]:null);if(s){s.adresse=a;save();}return r;};
+  // Schülerverzeichnis: Geburtsdatum, Rufname, 📷 unter dem Namen
+  const _ag=agExternBadgeHtml;agExternBadgeHtml=function(s){let h=_ag.apply(this,arguments)||'';const t=[];
+    if(s.gb)t.push('🎂 '+a52Dat(s.gb));if(s.rufname)t.push('„'+ezE(s.rufname)+'“');if(s.merkmale&&s.merkmale['Fotos']===false)t.push('<span style="color:#be123c">📷 keine Fotos</span>');
+    return h+(t.length?'<span class="sus-info">'+t.join(' · ')+'</span>':'');};
+})();
+/* ===== KLASSEN-IMPORT GETRENNT ENDE ===== */
+
 
 
 
