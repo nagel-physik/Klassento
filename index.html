@@ -1980,6 +1980,28 @@ td.p61-tag{border-left:1px solid #e2e8f0;border-right:2px solid #cbd5e1}
 @media print{#p63-tools{display:none!important}}
 table.p63-lgtab td.p61-tag{border-right:1px solid #e2e8f0}
 
+/* v64: farbige Werkzeug-Knöpfe */
+#p63-tools{background:transparent!important;border:0!important;padding:0!important;gap:7px!important}
+#p63-tools .p63-t{color:#fff!important;border:0!important;box-shadow:0 2px 6px rgba(15,23,42,.18)!important;text-shadow:0 1px 1px rgba(0,0,0,.12);width:auto!important;min-width:44px;padding:0 13px!important;height:36px!important}
+#p63-tools .p63-t:hover{filter:brightness(1.08);transform:translateY(-1px)}
+#p63-tools #p63-bib{background:linear-gradient(140deg,#f59e0b,#d97706)!important}
+#p63-tools #p63-stb{background:linear-gradient(140deg,#14b8a6,#0f766e)!important}
+#p63-tools #p61-btn{background:linear-gradient(140deg,#6366f1,#4338ca)!important}
+#p63-tools #sg-btn{background:linear-gradient(140deg,#a855f7,#7e22ce)!important;color:#fff!important}
+#p63-tools .p64-sichern{background:linear-gradient(140deg,#22c55e,#15803d)!important}
+#p63-tools.p64-unten{margin:0 4px 0 0}
+#p63-tools.p64-unten .p63-t{height:38px!important;font-size:13px!important;padding:0 15px!important}
+#p63-tools.p64-unten .p63-t span{display:inline!important}
+@media(max-width:1300px){#p63-tools.p64-unten{flex-wrap:wrap}}
+.p64-einst{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 13px;border-radius:9px;border:1px solid #cbd5e1;background:#fff;color:#1e3a5f;font:700 12.5px inherit;cursor:pointer;box-shadow:0 1px 2px rgba(15,23,42,.06)}
+.p64-einst:hover{background:#f1f5f9}
+@media(max-width:1100px){.p64-einst span{display:none}}
+/* oben (alle Seiten außer Dashboard): nur Symbole, farbige Quadrate */
+#p63-tools:not(.p64-unten) .p63-t{width:38px!important;min-width:38px;padding:0!important}
+#p63-tools:not(.p64-unten) .p63-t span{display:none!important}
+@media(max-width:1440px){#p63-tools.p64-unten .p63-t{padding:0 11px!important;font-size:12.5px!important}#kd-root .kd-top .kd-auto{display:none}}
+@media(max-width:1350px){#p63-tools.p64-unten{order:5;flex-basis:100%;margin:2px 0 0}}
+
 </style>
 </head><body>
 <script>
@@ -4807,7 +4829,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v63 · Stand 13.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v64 · Stand 13.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -19515,6 +19537,7 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','🎨','Farbige Werkzeug-Knöpfe','Bibliothek, Stundenberichte, Auswertung, Sichtschutz und Sichern sind farbig. Auf dem Dashboard stehen sie direkt neben „Woche A/B“, auf allen anderen Seiten oben. Das Zahnrad heißt jetzt „⚙️ Einstellungen“.','Bedienung'],
  ['Nov. 2026','↩','Wiederherstellen räumt sich auf','Nach „Tag löschen“ bleibt „↩ … wiederherstellen“ nur noch 3 Tage stehen und lässt sich mit ✕ wegklicken.','Klassenleitung'],
  ['Nov. 2026','🗓','Lerngruppen: Anwesenheit als Raster','Auch in den Lerngruppen: Kästchen antippen → anwesend, fehlt, entschuldigt, unentschuldigt oder verspätet (mit Minuten).','Lerngruppen'],
  ['Nov. 2026','🧰','Werkzeuge oben in einer Reihe','Bibliothek, Stundenberichte, Auswertung und Sichtschutz stehen oben gleich groß nebeneinander – auf jeder Seite.','Bedienung'],
@@ -20805,7 +20828,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v63',KLASSENTO_STAND='12.11.2026';
+const KLASSENTO_VER='v64',KLASSENTO_STAND='12.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -23940,6 +23963,31 @@ function p63Leiste(){
   try{const _k=kdRender;kdRender=function(){const r=_k.apply(this,arguments);try{p63Leiste();}catch(e){}return r;};}catch(e){}
 })();
 /* ===== PAKET v63 ENDE ===== */
+/* ===== PAKET v64 =====
+   Werkzeug-Knöpfe farbig; auf dem Dashboard eine Ebene tiefer direkt neben „Woche A/B“, auf allen anderen Seiten oben.
+   „💾 Sichern“ gehört jetzt dazu. Zahnrad → Knopf „⚙️ Einstellungen“ (neben dem Schloss). */
+function p64Ort(){
+  const g=document.getElementById('p63-tools');if(!g)return;
+  const sichern=document.querySelector('button[onclick="exportBackup()"][title="Schnell-Backup erstellen"]');
+  if(sichern&&sichern.parentNode!==g){sichern.classList.add('p63-t','p64-sichern');sichern.removeAttribute('style');sichern.innerHTML='💾 <span>Sichern</span>';g.appendChild(sichern);}
+  else if(sichern&&g.lastElementChild!==sichern)g.appendChild(sichern);
+  const dash=document.getElementById('view-dashboard');const istDash=dash&&dash.style.display!=='none'&&getComputedStyle(dash).display!=='none';
+  const wk=document.querySelector('#kd-root .kd-top .kd-wk');
+  if(istDash&&wk){if(g.nextElementSibling!==wk)wk.parentNode.insertBefore(g,wk);g.classList.add('p64-unten');}
+  else{const lock=document.querySelector('.topbar button[onclick="lockApp()"]');const ta=lock&&lock.parentNode;
+    if(ta&&g.parentNode!==ta)ta.insertBefore(g,lock);g.classList.remove('p64-unten');}
+}
+function p64Parken(){const g=document.getElementById('p63-tools');const lock=document.querySelector('.topbar button[onclick="lockApp()"]');if(g&&lock&&g.parentNode!==lock.parentNode){lock.parentNode.insertBefore(g,lock);g.classList.remove('p64-unten');}}
+(function(){
+  const z=document.querySelector('button[onclick="openSettings()"][title^="Einstellungen"]');
+  if(z){z.removeAttribute('style');z.classList.add('p64-einst');z.innerHTML='⚙️ <span>Einstellungen</span>';}
+  try{const _l=p63Leiste;p63Leiste=function(){const r=_l.apply(this,arguments);try{p64Ort();}catch(e){}return r;};}catch(e){}
+  try{const _s=show;show=function(){const r=_s.apply(this,arguments);try{p64Ort();}catch(e){}return r;};}catch(e){}
+  try{const _k=kdRender;kdRender=function(){try{p64Parken();}catch(e){}const r=_k.apply(this,arguments);try{p64Ort();}catch(e){}return r;};}catch(e){}
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(()=>{try{p63Leiste();}catch(e){}},60));else setTimeout(()=>{try{p63Leiste();}catch(e){}},0);
+})();
+/* ===== PAKET v64 ENDE ===== */
+
 
 
 
