@@ -2043,6 +2043,19 @@ table.p63-lgtab td.p61-tag{border-right:1px solid #e2e8f0}
 .rs-hin{margin-top:10px;font-size:12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:8px 10px;color:#475569}
 .rs-band{display:flex;align-items:center;gap:10px;background:#fff7ed;border:1px solid #fdba74;border-radius:12px;padding:9px 12px;margin:0 0 12px;font-size:13px;color:#7c2d12}.rs-band span{flex:1}
 
+/* v67 Förderpläne */
+.fo-cb.fo-vor{outline:2px solid #3b82f6;outline-offset:1px;background:#dbeafe}
+.fo-in.fo-vor,.fo-bl.fo-vor{box-shadow:0 0 0 2px #3b82f6;background:#eff6ff}
+.fo-hin-vor{background:#eff6ff;border-color:#93c5fd}
+.fo-blatt.mit-bs{align-items:flex-start;gap:16px}
+.fo-bs{position:sticky;top:76px;width:270px;flex:0 0 270px;background:#fff;border:1px solid #dbe3ee;border-radius:12px;padding:10px;box-shadow:0 4px 16px rgba(15,23,42,.08);max-height:calc(100vh - 110px);overflow:auto}
+.fo-bs-k{font-weight:800;font-size:13px;color:#1e3a5f;margin-bottom:8px}.fo-bs-k small{display:block;font-weight:500;color:#64748b;font-size:11px}
+.fo-bs-b{display:flex;flex-direction:column;align-items:flex-start;gap:2px;width:100%;text-align:left;border:1px solid #e2e8f0;background:#f8fafc;border-radius:9px;padding:7px 9px;margin-bottom:6px;cursor:pointer;font:inherit}
+.fo-bs-b:hover{border-color:#3b82f6;background:#eff6ff}.fo-bs-b b{font-size:12px;color:#1e3a5f}.fo-bs-b span{font-size:11.5px;color:#475569;line-height:1.35}
+@media(max-width:1400px){.fo-bs{width:220px;flex-basis:220px}}
+.fo-fp-leiste{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:12px}.fo-fp-leiste select{min-width:280px;padding:7px 10px;border-radius:8px;border:1px solid #cbd5e1;font-size:13px}
+.fo-h4{margin:16px 0 6px;font-size:13px;color:#475569}
+
 </style>
 </head><body>
 <script>
@@ -3545,6 +3558,7 @@ Verschiedenes und Fragen</textarea></div>
           <li><strong>🧭 Einrichtung – alles an einem Ort:</strong> Das Zahnrad ⚙️ öffnet die große Seite „Einrichtung“. Links der rote Faden mit 8 Schritten: 👤 Profil &amp; Schule · 🎓 Meine Klasse · 📚 Meine Lerngruppen · 🗓 Stundenplan &amp; Zeiten · 📁 Unterrichtsordner · 🧩 Module &amp; Ansicht · 💾 Sicherung &amp; Datenschutz · 📅 Schuljahr &amp; Regeln. Jeder Schritt hat eine <b>Ampel</b>: 🟢 erledigt · 🟡 etwas fehlt (steht dabei, was) · ⚪ „brauche ich nicht“ (Häkchen oben im Schritt). Gesperrt wird nie etwas.</li>
           <li><strong>🗓 Stundenplan:</strong> Auf dem Bildschirm farbige Kacheln je Fach (dieselben Farben wie im SuS-Ausdruck), der heutige Tag und die laufende Stunde („jetzt“) sind markiert. Der Ausdruck „Für SuS drucken“ bleibt unverändert.</li>
           <li><strong>⏰ Verspätet:</strong> Im Anwesenheits-Raster auf einen Block klicken → „verspätet“ → Minuten wählen (5, 10, 15 … oder eigene Zahl). Im Kästchen steht dann z. B. „10′“.</li>
+          <li><strong>📋 Förderpläne:</strong> Linke Leiste → Förderpläne. Kind wählen → „＋ Förderplan ausfüllen“. Aus Klassento vorausgefüllt (blau umrandet, bitte prüfen): Kopfdaten, Förderschwerpunkte aus dem Förderstatus, Nachteilsausgleich (ja + passende Maßnahmen) aus den Beschlüssen der Klassenkonferenz, Datum des Beschlusses, Mitwirkende. Rechts die 🧩 Bausteine: erst in ein Feld klicken, dann Baustein wählen. Fertige Dateien (PDF, Scan) lassen sich weiterhin mit „📎 Fertige Datei ablegen“ zuordnen.</li>
           <li><strong>📄 Formulare &amp; Förderpläne:</strong> Einstellungen → Profil &amp; Schule → „Formular-Vorlagen“: eine Word-Datei (.docx) hochladen, z. B. euren Förderplan. Klassento erkennt Kästchen ☐ und Schreibfelder; unter „🔧 Felder prüfen“ schaltet ein Klick auf eine Zeile ein Feld an oder aus. Ausfüllen je Kind über 📇 Auswertung → „📄 Formulare“. Kästchen anklicken, in die gelben Felder schreiben; „⬇️ Word-Datei“ liefert das Original mit deinen Eintragungen. „⧉ Fortschreiben“ kopiert einen Plan als Grundlage für den nächsten; 🗄 archiviert. PDF-Vorlagen vorher in Word öffnen und als .docx speichern.</li>
           <li><strong>⚖️ Rechtsstand:</strong> Einstellungen → Schuljahr: „Rechtsstand jetzt prüfen“ – Links zu den amtlichen Fassungen, du bestätigst „unverändert“ oder notierst Änderungen. Nach 6 Monaten erinnert das Dashboard.</li>
           <li><strong>📇 Auswertung:</strong> Fester Knopf oben neben „Sichtschutz“. Erst Klasse oder Lerngruppe wählen, dann das Kind (oder oben nach dem Namen suchen). Kinder der eigenen Klasse: ausführliche Auswertung (früher „Elterngespräch“). Lerngruppen-Kinder: Noten je Spalte mit Ø, Fehlstunden, Nachschreiben, Beobachtungen, Logbuch, Schriftverkehr, Förderstatus und Mails – mit Drucken/PDF. Unter dem Sichtschutz nicht sichtbar.</li>
@@ -4872,7 +4886,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v66 · Stand 13.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v67 · Stand 13.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -19580,6 +19594,7 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','📋','Förderpläne direkt ausfüllen','Die Seite „Förderpläne“ ist jetzt die Ablage: Kind wählen → „＋ Förderplan ausfüllen“. Klassento trägt Förderstatus, Nachteilsausgleich der Klassenkonferenz und Mitwirkende schon ein (blau markiert). Rechts: 🧩 Bausteine (Noten, Fehlzeiten, Beobachtungen) per Klick ins Feld.','Klassenleitung'],
  ['Nov. 2026','📄','Formulare & Förderpläne','Eigene Word-Vorlagen (z. B. euren Förderplan) unter Einstellungen → Profil & Schule hochladen. Je Kind ausfüllen (📇 Auswertung → 📄 Formulare), Kästchen anklicken, Felder ausfüllen – heraus kommt die Original-Word-Datei mit deinen Eintragungen. Verschlüsselt gespeichert, mit Archiv und Fortschreibung.','Klassenleitung'],
  ['Nov. 2026','⚖️','Rechtsstand prüfen','Ist die letzte Prüfung älter als 6 Monate, erinnert das Dashboard daran. Der Prüf-Assistent öffnet die amtlichen Fassungen bei BRAVORS; du bestätigst oder notierst Änderungen.','Schulrecht'],
  ['Nov. 2026','🪟','Rollo kommt beim Start','Steht etwas an (Nachschreiben, Korrekturen …), fährt das Info-Rollo nach dem Start nach etwa 3 Sekunden von selbst herunter – nicht bei eingeschaltetem Sichtschutz.','Dashboard'],
@@ -20874,7 +20889,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v66',KLASSENTO_STAND='12.11.2026';
+const KLASSENTO_VER='v67',KLASSENTO_STAND='12.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -24411,6 +24426,170 @@ function rsMerken(fertig){
 function rsAnzeige(){try{const d=rsDatum();if(d&&d>rsDe2Iso(RS_BUILTIN))RECHTSSTAND.geprueft=d.split('-').reverse().join('.');}catch(e){}}
 rsAnzeige();
 /* ===== PAKET v66 ENDE ===== */
+/* ===== PAKET v67 =====
+   Förderpläne: digitale Formulare landen auf der Seite „Förderpläne“ (Ablage) – Kind wählen, ausfüllen, archivieren.
+   Mehr Vorbelegung aus Klassento: Förderstatus → Kästchen, Nachteilsausgleich (Klassenkonferenz) → ja + Maßnahmen,
+   Datum Bescheid/Beschluss, Mitwirkende. Alles Vorgeschlagene ist blau markiert und muss nur geprüft werden.
+   „🧩 Bausteine“: Texte aus Klassento (Noten, Fehlzeiten, Beobachtungen …) per Klick in ein Feld übernehmen. */
+function foIstFoerder(v){return !!v&&(v.typ==='foerder'||/f(ö|oe)rder/i.test(v.name||''));}
+
+/* ---------- Kästchen-Beschriftungen ---------- */
+function foCbInfo(A){
+  // für jedes ☐: Text dahinter (bis zum nächsten ☐), Text davor im selben Absatz, Abschnitt (letzte Überschrift mit „Nachteilsausgleich“ o. Ä.)
+  const out=[];let abschnitt='';
+  A.paras.forEach(p=>{const t=foText(p);if(/nachteilsausgleich|unterstützungssysteme|förderbedarf|schwierigkeiten/i.test(t)&&t.replace(/☐|☒/g,'').trim().length>12)abschnitt=t;
+    const teile=t.split(/(☐|☒)/);let vor='';
+    for(let i=0;i<teile.length;i++){if(teile[i]==='☐'||teile[i]==='☒'){const nach=(teile[i+1]||'').trim();out.push({label:nach.split(/\s{3,}/)[0].trim(),vor:vor.trim().split(/\s{2,}/).pop()||'',zeile:t,abschnitt});}else vor=teile[i];}});
+  return out;
+}
+const FO_FS_REGELN=[['lernen',/^lernen$/i],['sprache',/^sprache$/i],['ese',/^emotionale und soziale/i],['geistige',/^geistige entwicklung/i],['hoeren',/^hören$/i],['sehen',/^sehen$/i],['koerperlich',/^körperliche und motorische/i],['autismus',/^autistisch/i]];
+function foVorschlaege(A,f){
+  const s=foKind(f.g,f.s);if(!s)return {cb:[],f:[]};
+  const quelle=f.g==='__klasse'?s:(function(){try{return lgFoerderQuelle((lerngruppen||[]).find(x=>x.id===f.g),s);}catch(e){return s;}})();
+  const keys=foerderAktivKeys(quelle);const info=foCbInfo(A);const cb=[],ff=[];
+  const setz=i=>{if(i>=0&&!(f.cb||{})[i]){f.cb=f.cb||{};f.cb[i]=true;cb.push(i);}};
+  const finde=(re,abRe)=>info.findIndex(x=>re.test(x.label)&&(!abRe||abRe.test(x.abschnitt)));
+  // Förderschwerpunkte
+  FO_FS_REGELN.forEach(([k,re])=>{if(keys.includes(k))setz(finde(re,/förderbedarf/i));});
+  if(keys.includes('lrs')){setz(finde(/^besondere schwierigkeiten/i));setz(finde(/^lesen$/i,/schwierigkeiten|förderbedarf/i));setz(finde(/^rechtschreiben$/i,/schwierigkeiten|förderbedarf/i));}
+  if(keys.includes('rechnen'))setz(finde(/^rechnen$/i));
+  // Nachteilsausgleich aus der Klassenkonferenz
+  let nta=[];try{nta=((typeof konf!=='undefined'&&konf.beschluesse)||[]).filter(b=>b.sid===s.id&&b.aktiv!==false&&f.g==='__klasse');}catch(e){}
+  nta.forEach(b=>{
+    const art=b.art||'';const abRe=art==='lrs'||art==='rechnen'?/LRSRV/i:art==='chronisch'?/chronisch/i:/sop|förderbedarf|sonderpäd/i;
+    const ja=info.findIndex(x=>/^ja$/i.test(x.vor)&&/nachteilsausgleich/i.test(x.zeile)&&abRe.test(x.zeile));setz(ja);
+    const t=((b.mass||'')+'\n'+(b.abw||'')).toLowerCase();
+    const regeln=[[/zeit/,/verlängerung des zeitlichen/i],[/technisch/,/technischer hilfen/i],[/personell|schulbegleit|assistenz/,/personeller hilfen/i],[/mündlich/,/^mündliche statt schriftliche/i],
+      [/hilfsmittel|didaktisch|methodisch|arbeitsbl/,/methodisch didaktischer/i],[/verzicht.*(lese|rechtschreib)/,/^verzicht auf eine bewertung/i],[/gewichtung|maßst/,/^abweichungen von den allgemeinen/i]];
+    regeln.forEach(([wo,re])=>{if(wo.test(t))setz(info.findIndex(x=>re.test(x.label)&&abRe.test(x.abschnitt)));});
+  });
+  // Texte
+  const dat=x=>x&&/^\d{4}-\d\d-\d\d$/.test(x)?x.split('-').reverse().join('.'):'';
+  Object.keys(A.felder).forEach(k=>{if((f.f||{})[k])return;const l=String(A.label[k]||'').toLowerCase();let w='';
+    if(/bescheid vom/.test(l)){const m=Object.values(quelle.foerderstatus||{}).join(' ').match(/\d{1,2}\.\d{1,2}\.\d{2,4}/);if(m)w=m[0];}
+    else if(/beschluss kk am|klassenkonferenz am/.test(l)&&nta.length){try{w=dat(konf.datum);}catch(e){}}
+    else if(/mitwirkende/.test(l)){const L=[];try{const n=profilAnzeigeName();if(n)L.push(n+' (Klassenleitung)');}catch(e){}
+      const e=(eltern||[]).find(x=>x.kid===s.id);if(e){[e.e1n,e.e2n].forEach(x=>{if(x&&String(x).trim())L.push(String(x).trim()+' (Erziehungsberechtigte)');});}
+      if(f.g==='__klasse')L.push((s.vn||'')+' '+(s.nn||'')+' (Schüler/in)');w=L.join(', ');}
+    if(w){f.f=f.f||{};f.f[k]=w;ff.push(k);}});
+  return {cb,f:ff};
+}
+
+/* ---------- Bausteine aus Klassento ---------- */
+function foBausteine(f){
+  const s=foKind(f.g,f.s);if(!s)return [];const B=[];const add=(t,x)=>{x=String(x||'').trim();if(x)B.push({t,x});};
+  const quelle=f.g==='__klasse'?s:(function(){try{return lgFoerderQuelle((lerngruppen||[]).find(x=>x.id===f.g),s);}catch(e){return s;}})();
+  try{const k=foerderAktivKeys(quelle);if(k.length)add('Förderbedarf',foerderPlainText(quelle));}catch(e){}
+  if(f.g==='__klasse'){
+    let D=null;try{D=egSammeln(s.id);}catch(e){}
+    if(D){
+      try{if(D.nta.length)add('Nachteilsausgleich (Beschluss)',D.nta.map(b=>(b.titel||'')+(b.mass?':\n– '+b.mass.split('\n').filter(Boolean).join('\n– '):'')).join('\n'));}catch(e){}
+      try{const F=D.faecher.filter(x=>x.ges!=null);if(F.length)add('Noten (Ø je Fach)',F.map(x=>x.fach+': '+String(x.ges).replace('.',',')).join(', '));
+        const gut=F.filter(x=>x.ges<=2.5).map(x=>x.fach),schw=F.filter(x=>x.ges>=3.6).map(x=>x.fach);
+        if(gut.length)add('Stärken in den Fächern','gute Leistungen in '+gut.join(', '));if(schw.length)add('Schwierigkeiten in den Fächern','Schwierigkeiten in '+schw.join(', '));}catch(e){}
+      try{const z=D.fz;if(z&&z.ges)add('Fehlzeiten','Fehltage im Schuljahr: '+z.ges+' (davon '+(z.u||0)+' unentschuldigt)'+(z.blockAnz?', zusätzlich '+z.blockAnz+' einzelne Blöcke':''));}catch(e){}
+      try{const kat=id=>((boDat.kat||[]).find(x=>x.id===id)||{}).t||'';const zaehl=w=>{const m={};D.bo.filter(e=>w>0?e.w>0:e.w<0).forEach(e=>{const t=kat(e.k);if(t)m[t]=(m[t]||0)+1;});return Object.entries(m).sort((a,b)=>b[1]-a[1]).slice(0,6).map(([t,n])=>t+(n>1?' ('+n+'×)':''));};
+        const p=zaehl(1),n=zaehl(-1);if(p.length)add('Positive Beobachtungen',p.join(', '));if(n.length)add('Auffälligkeiten (Beobachtungen)',n.join(', '));}catch(e){}
+      try{if(D.konfSt)add('Notiz Klassenkonferenz',D.konfSt);}catch(e){}
+    }
+    const e=(eltern||[]).find(x=>x.kid===s.id);if(e){const n=[e.e1n,e.e2n].filter(x=>x&&String(x).trim());if(n.length)add('Erziehungsberechtigte',n.join(', '));}
+  }else{
+    const lg=(lerngruppen||[]).find(x=>x.id===f.g);
+    if(lg){try{const a=calcAvg(s.noten||[]);if(a!=null)add('Note in '+(lg.fach||lg.name),'Ø '+a.toFixed(1).replace('.',',')+' ('+(lg.fach||lg.name)+')');}catch(e){}
+      try{let u=0,n=0;Object.values(lg.anwesenheit||{}).forEach(o=>{const st=(o||{})[s.id];if(st&&st!=='anwesend'){n++;if(st==='unentschuldigt')u++;}});if(n)add('Fehlstunden in '+lg.name,n+' Stunden gefehlt, davon '+u+' unentschuldigt');}catch(e){}}
+  }
+  add('Datum heute',foDat());
+  return B;
+}
+let foLetztesFeld=null;
+document.addEventListener('focusin',e=>{const f=e.target.closest&&e.target.closest('#fo-ed [data-k]');if(f)foLetztesFeld=f;});
+function foBausteinEinfuegen(i){
+  if(!foAkt)return;const B=foBausteine(foAkt);const b=B[i];if(!b)return;
+  const el=foLetztesFeld&&document.body.contains(foLetztesFeld)?foLetztesFeld:null;
+  if(!el){alert('Bitte zuerst in das Feld klicken, in das der Text soll.');return;}
+  el.focus();const sel=window.getSelection();
+  if(!sel.rangeCount||!el.contains(sel.anchorNode)){const r=document.createRange();r.selectNodeContents(el);r.collapse(false);sel.removeAllRanges();sel.addRange(r);}
+  const vorher=el.innerText.trim();document.execCommand('insertText',false,(vorher&&!/\s$/.test(el.innerText)?(el.classList.contains('fo-bl')?'\n':' '):'')+b.x);
+  foAkt.f=foAkt.f||{};foAkt.f[el.dataset.k]=el.innerText.replace(/\n$/,'');foGeaendert=true;
+}
+function foBausteinPanel(){
+  const B=foBausteine(foAkt);
+  return '<div class="fo-bs"><div class="fo-bs-k">🧩 Bausteine aus Klassento <small>erst in ein Feld klicken, dann Baustein wählen</small></div>'+(B.length?B.map((b,i)=>'<button class="fo-bs-b" onmousedown="event.preventDefault()" onclick="foBausteinEinfuegen('+i+')" title="'+foE(b.x)+'"><b>'+foE(b.t)+'</b><span>'+foE(b.x.length>90?b.x.slice(0,88)+'…':b.x)+'</span></button>').join(''):'<p class="p61-leer">Noch keine Daten zu diesem Kind.</p>')+'</div>';
+}
+
+/* ---------- Editor erweitern ---------- */
+(function(){
+  const _o=foOeffnen;foOeffnen=async function(id){
+    const f=foFormulare.find(x=>x.id===id);
+    if(f&&!f.vorschlagGemacht){const v=foVorlagen.find(x=>x.id===f.vid);if(v){try{const A=await foAnalyse(v);foVorbelegen(A,f);f.vor=foVorschlaege(A,f);f.vorschlagGemacht=true;}catch(e){}}}
+    await _o.apply(this,arguments);
+    try{const o=document.getElementById('fo-ed');if(!foAkt||o.dataset.modus!=='fill')return;
+      const vor=foAkt.vor||{cb:[],f:[]};
+      (vor.cb||[]).forEach(i=>{const c=o.querySelector('.fo-cb[data-c="'+i+'"]');if(c&&foAkt.cb&&foAkt.cb[i])c.classList.add('fo-vor');});
+      (vor.f||[]).forEach(k=>{const c=o.querySelector('[data-k="'+k+'"]');if(c)c.classList.add('fo-vor');});
+      const n=(vor.cb||[]).filter(i=>foAkt.cb&&foAkt.cb[i]).length+(vor.f||[]).length;
+      const hin=o.querySelector('.fo-hin');if(hin&&n)hin.insertAdjacentHTML('afterend','<div class="fo-hin fo-hin-vor">🔵 <b>'+n+' Eintragungen hat Klassento aus deinen Daten vorgeschlagen</b> (Förderstatus, Nachteilsausgleich der Klassenkonferenz, Mitwirkende …) – blau umrandet. Bitte prüfen; ein Klick ändert sie wie gewohnt.</div>');
+      const blatt=o.querySelector('.fo-blatt');if(blatt){blatt.classList.add('mit-bs');blatt.insertAdjacentHTML('beforeend',foBausteinPanel());}
+    }catch(e){console.error(e);}
+  };
+  // Klick auf vorgeschlagenes Element = geprüft → Markierung weg
+  document.addEventListener('click',e=>{const x=e.target.closest&&e.target.closest('#fo-ed .fo-vor');if(x)x.classList.remove('fo-vor');},true);
+  document.addEventListener('input',e=>{const x=e.target.closest&&e.target.closest('#fo-ed .fo-vor');if(x)x.classList.remove('fo-vor');},true);
+  // Nach dem Schließen dorthin zurück, wo man herkam
+  const _z=foZu;foZu=function(){const r=_z.apply(this,arguments);try{const v=document.getElementById('view-foerder');if(v&&v.style.display!=='none')renderFoerder();}catch(e){}return r;};
+  // Nach dem Hochladen: Förderplan-Vorlagen merken, „Fertig“ bietet direkt das Ausfüllen an
+  const _ff=foFelderPruefen;foFelderPruefen=async function(vid){await _ff.apply(this,arguments);
+    try{const v=foVorlagen.find(x=>x.id===vid);const b=[...document.querySelectorAll('#fo-ed .fo-leiste .btn')].find(x=>/Fertig/.test(x.textContent));
+      if(b){b.textContent='✓ Fertig – jetzt ausfüllen';b.onclick=()=>{foZu();try{einRender();}catch(e){}if(foIstFoerder(v))foerderSeite(null,vid);else foSeite();setTimeout(()=>foNeu(vid),120);};}}catch(e){}};
+  // foNeu: Vorlage vorwählen
+  const _n=foNeu;foNeu=function(vid,g,sid){if(g&&sid)foFilter={g,s:sid};const r=_n.apply(this,[]);try{if(vid&&typeof vid==='string'){const s=document.getElementById('fo-n-v');if(s)s.value=vid;}}catch(e){}return r;};
+})();
+
+/* ---------- Seite „Förderpläne“ neu ---------- */
+function foerderSeite(kind,vid){try{show('foerder');}catch(e){}if(kind)foFilter=kind;renderFoerder();}
+renderFoerder=function(){
+  const v=document.getElementById('view-foerder');if(!v)return;
+  const K=foKindListe();const sel=foFilter?foFilter.g+'|'+foFilter.s:'';
+  const FV=foVorlagen.filter(foIstFoerder);
+  let L=foFormulare.filter(f=>foIstFoerder(foVorlagen.find(x=>x.id===f.vid)));if(foFilter)L=L.filter(f=>f.g===foFilter.g&&f.s===foFilter.s);
+  L.sort((a,b)=>(a.kname||'').localeCompare(b.kname||'')||(b.geaendert||'').localeCompare(a.geaendert||''));
+  const zeile=f=>{const nc=Object.values(f.cb||{}).filter(Boolean).length,nf=Object.values(f.f||{}).filter(x=>String(x).trim()).length;
+    return '<div class="fo-z'+(f.archiv?' arch':'')+'"><span class="fo-vi">📋</span><div style="flex:1;min-width:0"><b>'+foE(f.kname||'')+'</b> · '+foE(f.titel||'')+'<small>geändert '+foDat(f.geaendert)+' · '+nc+' angekreuzt, '+nf+' Felder'+(f.archiv?' · 🗄 archiviert':'')+'</small></div>'
+      +'<button class="btn btnp" onclick="foOeffnen(\''+f.id+'\')">Öffnen</button><button class="btn" onclick="foWordLaden(\''+f.id+'\')">⬇️ Word</button><button class="btn" onclick="foKopie(\''+f.id+'\')" title="Kopie als Grundlage für die Fortschreibung">⧉ Fortschreiben</button><button class="btn" onclick="foArchiv(\''+f.id+'\');renderFoerder()">'+(f.archiv?'↩':'🗄')+'</button><button class="btn" onclick="foLoeschen(\''+f.id+'\');renderFoerder()">🗑</button></div>';};
+  const alt=(foerderFiles||[]).map((x,i)=>({x,i})).filter(o=>!foFilter||(foFilter.g==='__klasse'&&o.x.sid===foFilter.s));
+  v.innerHTML='<div class="fo-kopf"><div style="flex:1"><h2>📋 Förderpläne</h2><small>Digital ausfüllen nach eurer Vorlage – verschlüsselt beim Kind gespeichert</small></div></div>'
+    +'<div class="fo-fp-leiste"><select id="fp-kind" onchange="const v=this.value;foFilter=v?{g:v.split(\'|\')[0],s:v.split(\'|\')[1]}:null;renderFoerder()"><option value="">👥 Alle Kinder</option>'+K.map(k=>'<option value="'+k.g+'|'+k.s.id+'"'+(sel===k.g+'|'+k.s.id?' selected':'')+'>'+foE(k.s.nn+', '+k.s.vn+' · '+k.gn)+'</option>').join('')+'</select>'
+    +(FV.length?'<button class="btn btnp" onclick="foFpNeu()">＋ Förderplan ausfüllen</button>':'<button class="btn btnp" onclick="foHochladen()">📤 Förderplan-Vorlage hochladen</button>')
+    +'<button class="btn" onclick="document.getElementById(\'fp-upload2\').click()" title="Eine fertige Datei (PDF, Scan …) nur ablegen">📎 Fertige Datei ablegen</button><input type="file" id="fp-upload2" style="display:none" onchange="foFpDatei(this)">'
+    +(FV.length?'<button class="btn" onclick="foFelderPruefen(\''+FV[0].id+'\')">🔧 Vorlage</button>':'')+'</div>'
+    +(!FV.length?'<div class="fo-leerbox">Noch keine Förderplan-Vorlage. Lade eure Word-Vorlage (.docx) hoch – danach kannst du für jedes Kind einen Förderplan direkt hier ausfüllen.</div>':'')
+    +(L.filter(f=>!f.archiv).map(zeile).join('')||(FV.length?'<p class="p61-leer">Noch kein Förderplan'+(foFilter?' für dieses Kind':'')+'. Kind oben wählen → „＋ Förderplan ausfüllen“.</p>':''))
+    +(L.some(f=>f.archiv)?'<details class="fo-arch"><summary>🗄 Archiv ('+L.filter(f=>f.archiv).length+')</summary>'+L.filter(f=>f.archiv).map(zeile).join('')+'</details>':'')
+    +(alt.length?'<h4 class="fo-h4">📎 Abgelegte Dateien</h4>'+alt.map(o=>'<div class="fo-z"><span class="fo-vi">📄</span><div style="flex:1"><b>'+foE(susName(o.x.sid))+'</b><small>'+foE(o.x.name)+' · '+foE(o.x.datum||'')+'</small></div><button class="btn" onclick="delFp('+o.i+')">🗑</button></div>').join(''):'');
+};
+function foFpNeu(){
+  const FV=foVorlagen.filter(foIstFoerder);if(!FV.length){foHochladen();return;}
+  const k=(document.getElementById('fp-kind')||{}).value||'';
+  if(k){const [g,s]=k.split('|');foNeu(FV[0].id,g,s);}else foNeu(FV[0].id);
+  // im Dialog nur Förderplan-Vorlagen anbieten
+  try{const sel=document.getElementById('fo-n-v');[...sel.options].forEach(o=>{if(!FV.some(v=>v.id===o.value))o.remove();});document.querySelector('#m-fo-neu h2').textContent='＋ Förderplan ausfüllen';}catch(e){}
+}
+function foFpDatei(inp){
+  const d=inp.files[0];if(!d)return;const k=(document.getElementById('fp-kind')||{}).value||'';
+  if(!k||!k.startsWith('__klasse|')){alert('Bitte oben zuerst ein Kind deiner Klasse wählen.');inp.value='';return;}
+  foerderFiles.push({sid:k.split('|')[1],name:d.name,datum:new Date().toLocaleDateString('de-DE')});save();inp.value='';renderFoerder();
+}
+(function(){
+  // Förderplan-Vorlage beim Hochladen erkennen
+  const _h=foHochladen;foHochladen=function(){const vorher=foVorlagen.length;const r=_h.apply(this,arguments);
+    const t=setInterval(()=>{if(foVorlagen.length>vorher){clearInterval(t);const v=foVorlagen[foVorlagen.length-1];if(/f(ö|oe)rder/i.test(v.name+' '+v.dn)){v.typ='foerder';foSave();}}},400);setTimeout(()=>clearInterval(t),120000);return r;};
+  // Nach Neuanlage aus der Förderplan-Seite: Formulare-Liste nicht erzwingen
+  const _na=foNeuAnlegen;foNeuAnlegen=function(){const r=_na.apply(this,arguments);try{const v=document.getElementById('view-foerder');if(v&&v.style.display!=='none')renderFoerder();}catch(e){}return r;};
+  // Auswertung/Elterngespräch: Förderpläne-Knopf zeigt auf die Förderpläne-Seite, wenn es eine Förderplan-Vorlage gibt
+  const _fs=foSeite;foSeite=function(g,sid){if(g&&sid&&foVorlagen.some(foIstFoerder)&&!foVorlagen.some(v=>!foIstFoerder(v))){foFilter={g,s:sid};foerderSeite();return;}return _fs.apply(this,arguments);};
+})();
+/* ===== PAKET v67 ENDE ===== */
+
 
 
 
