@@ -1966,6 +1966,20 @@ td.p61-tag{border-left:1px solid #e2e8f0;border-right:2px solid #cbd5e1}
 .p62-sp .woche-b{background:#e0e7ff;color:#3730a3;border-color:#c7d2fe}
 }
 
+/* v63 */
+.p63-x{align-self:flex-end;padding:5px 9px;margin-left:-6px;color:#64748b}
+#ez-lg-knopf{display:none!important}
+#kd-root .kd-top .kd-stb{display:none!important}
+#p63-tools{display:flex;gap:6px;margin-right:8px;padding:3px;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:12px}
+#p63-tools .p63-t{width:132px;height:34px;margin:0!important;display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:9px!important;font:700 12.5px inherit!important;white-space:nowrap;cursor:pointer;
+  background:#fff!important;color:#1e3a5f!important;border:1px solid #dbe3ee!important;padding:0 10px!important;box-shadow:0 1px 1px rgba(15,23,42,.04)}
+#p63-tools .p63-t:hover{background:#eff6ff!important;border-color:#93c5fd!important}
+#p63-tools #sg-btn{color:#5b21b6!important}
+@media(max-width:1480px){#p63-tools .p63-t{width:auto;min-width:44px}}
+@media(max-width:1300px){#p63-tools .p63-t span{display:none}}
+@media print{#p63-tools{display:none!important}}
+table.p63-lgtab td.p61-tag{border-right:1px solid #e2e8f0}
+
 </style>
 </head><body>
 <script>
@@ -3472,7 +3486,7 @@ Verschiedenes und Fragen</textarea></div>
           <li><strong>🧹 Neu anfangen:</strong> Einrichtung → Meine Klasse → ganz unten: alle Elterneinträge oder alle Schüler löschen. Vorher wird automatisch eine Sicherung gespeichert, bestätigt wird mit „LÖSCHEN“.</li>
           <li><strong>📋 Anwesenheit als Raster:</strong> Spalten „Tag“ und je Block. Ein Klick auf ein Kästchen öffnet das Menü: anwesend, fehlt, entschuldigt, unentschuldigt, verspätet, vorzeitig gegangen. Jede 5. Zeile hat eine dickere Linie.</li>
           <li><strong>📅 Kalender:</strong> „Heute“-Knopf; Klick auf eine Farbe der Legende blendet diese Termine aus/ein; Wochenenden grau; vergangene Termine in der Liste blasser, der nächste Termin markiert. Der Ausdruck für Schüler bleibt unverändert.</li>
-          <li><strong>📧 Mail-Adressen einer Lerngruppe:</strong> stehen jetzt in der Einrichtung (Lerngruppen → „📧 Mails“) bzw. über den Knopf „⚙️ Mail-Adressen & Import“ in der Lerngruppe. Die Lerngruppe selbst hat nur noch SuS, Noten, Stundenbericht, Anwesenheit.</li>
+          <li><strong>📧 Mail-Adressen einer Lerngruppe:</strong> stehen jetzt in der Einrichtung (Lerngruppen → „📧 Mails“). Die Lerngruppe selbst hat nur noch SuS, Noten, Stundenbericht, Anwesenheit.</li>
           <li><strong>🎓 Klasse aus Datei – zwei Schritte:</strong> <b>a) 📥 Schüler einlesen</b> (Name, Rufname, Geburtsdatum, Anschrift, SuS-Mail, Einverständnisse) und danach <b>b) 📥 Eltern einlesen</b> (Mutter, Vater, Vormund mit Adresse, Telefon, Mail) – gern mit derselben Datei. Die Vorschau zeigt als Tabelle, was eingetragen wird (grün) und was schon da ist (grau). Eine Anleitung für den weBBschule-Export (inkl. „Vorlage speichern“) steht direkt darunter. Spalten werden flexibel erkannt – auch Einzelspalten wie „Nachname“, „Rufname“, „Name (Mutter)“, „Telefon alle (Mutter)“.</li>
           <li><strong>🎓 Klasse aus Datei:</strong> Schritt 2 → „📥 Datei wählen“: weBBschule-Export (CSV oder Excel .xlsx). Neue Kinder werden angelegt (Name, Rufname, Geburtsdatum, SuS-Mail), Eltern mit Adresse, Telefon und Mail, dazu Einverständnisse (z. B. 📷 keine Fotos). Bei einer vorhandenen Klasse wird <b>nur ergänzt, was fehlt</b> – nichts überschrieben, nichts doppelt. Statistikdaten werden nie übernommen.</li>
           <li><strong>📚 Lerngruppe aus Datei:</strong> Schritt 3 → Name und Fach eintragen → „📥 Anlegen aus Datei“. Alle Kinder der Datei erscheinen mit Häkchen; bei einer <b>WP-Gruppe</b> nur die passenden anhaken und mit „+ weitere Datei“ die nächste Klasse dazunehmen. Übernommen werden Name, SuS-Mail, Eltern-Mail. Oder „✏️ Von Hand“ – dann springt die App direkt in die neue Gruppe.</li>
@@ -4793,7 +4807,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v62 · Stand 12.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v63 · Stand 13.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -19501,6 +19515,10 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','↩','Wiederherstellen räumt sich auf','Nach „Tag löschen“ bleibt „↩ … wiederherstellen“ nur noch 3 Tage stehen und lässt sich mit ✕ wegklicken.','Klassenleitung'],
+ ['Nov. 2026','🗓','Lerngruppen: Anwesenheit als Raster','Auch in den Lerngruppen: Kästchen antippen → anwesend, fehlt, entschuldigt, unentschuldigt oder verspätet (mit Minuten).','Lerngruppen'],
+ ['Nov. 2026','🧰','Werkzeuge oben in einer Reihe','Bibliothek, Stundenberichte, Auswertung und Sichtschutz stehen oben gleich groß nebeneinander – auf jeder Seite.','Bedienung'],
+ ['Nov. 2026','📌','„Fehlend heute“ zählt Blöcke mit','Wer nur in einzelnen Blöcken fehlt, erscheint jetzt auch bei „Fehlend heute“ – z. B. „Mia (B2, B3)“.','Klassenleitung'],
  ['Nov. 2026','🗓','Stundenplan farbig','Farbige Kacheln je Fach mit Raum-Plakette, Rahmen, heutiger Tag und laufende Stunde markiert. Der SuS-Ausdruck bleibt wie er ist.','Stundenplan'],
  ['Nov. 2026','⏰','Verspätung in Minuten','„verspätet“ fragt jetzt nach den Minuten. „Alle anwesend“ zeigt im Raster grüne Haken.','Klassenleitung'],
  ['Nov. 2026','📇','Auswertung: alles zu einem Kind','Neuer fester Knopf oben neben „Sichtschutz“: Gruppe wählen, Kind antippen – Noten, Fehlzeiten, Nachschreiben, Beobachtungen, Logbuch, Schriftverkehr auf einer Seite, druckbar. Ersetzt den Eintrag „Elterngespräch“ in der Leiste.','Auswertung'],
@@ -20787,7 +20805,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v62',KLASSENTO_STAND='12.11.2026';
+const KLASSENTO_VER='v63',KLASSENTO_STAND='12.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -23824,6 +23842,105 @@ function p62SpSchmuck(gridId,lehrer){
   const _rl=renderStundenplanLehrer;renderStundenplanLehrer=function(){const r=_rl.apply(this,arguments);try{p62SpSchmuck('sp-grid-lehrer',true);}catch(e){console.error(e);}return r;};
 })();
 /* ===== PAKET v62 ENDE ===== */
+/* ===== PAKET v63 =====
+   „↩ … wiederherstellen“ (Anwesenheit) verschwindet nach 3 Tagen von selbst und lässt sich mit ✕ verwerfen;
+   der Knopf sagt, wann der Tag gelöscht wurde. */
+function p63UndoAlt(u){return !u||!u.t||Date.now()-u.t>3*86400000;}
+function p63UndoWeg(ctx){try{localStorage.removeItem('v1_aw_undo');}catch(e){}try{if(ctx==='lg')renderLGAnwesenheit();else renderAnwesenheit();}catch(e){}try{szToast('Wiederherstellen verworfen.');}catch(e){}}
+(function(){
+  try{const u=awUndoLesen();if(u&&p63UndoAlt(u))localStorage.removeItem('v1_aw_undo');}catch(e){}
+  const _p=awUndoPasst;awUndoPasst=function(u){if(u&&p63UndoAlt(u)){try{localStorage.removeItem('v1_aw_undo');}catch(e){}return false;}return _p.apply(this,arguments);};
+  ['aw-undo-btn','lgaw-undo-btn'].forEach(id=>{const b=document.getElementById(id);if(!b)return;const ctx=id==='lgaw-undo-btn'?'lg':'klasse';
+    const x=document.createElement('button');x.className='btn p63-x';x.textContent='✕';x.title='Wiederherstellen verwerfen (der gelöschte Tag bleibt gelöscht)';x.onclick=()=>p63UndoWeg(ctx);b.insertAdjacentElement('afterend',x);
+    new MutationObserver(()=>{x.style.display=b.style.display==='none'?'none':'';const u=awUndoLesen();if(u&&u.t)b.title='Dieser Tag wurde am '+new Date(u.t).toLocaleDateString('de-DE')+' um '+new Date(u.t).toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'})+' gelöscht. Klick holt ihn zurück.';}).observe(b,{attributes:true,attributeFilter:['style']});
+    x.style.display='none';});
+})();
+
+/* ---------- Lerngruppen: Anwesenheit als Raster (wie Klasse) ---------- */
+let p63LgVersp=(function(){try{return JSON.parse(localStorage.getItem('v1_lgaw_versp')||'{}')||{};}catch(e){return {};}})();
+function p63LgVerspSave(){try{localStorage.setItem('v1_lgaw_versp',JSON.stringify(p63LgVersp));}catch(e){}}
+function p63LgMin(lgId,d,sid){const x=p63LgVersp[lgId]&&p63LgVersp[lgId][d];return x&&x[sid]!=null?x[sid]:null;}
+function p63LgVerspSetzen(lgId,d,sid,min){if(min!=null){((p63LgVersp[lgId]=p63LgVersp[lgId]||{})[d]=p63LgVersp[lgId][d]||{})[sid]=min;}
+  else if(p63LgVersp[lgId]&&p63LgVersp[lgId][d]){delete p63LgVersp[lgId][d][sid];if(!Object.keys(p63LgVersp[lgId][d]).length)delete p63LgVersp[lgId][d];}p63LgVerspSave();}
+(function(){
+  const _r=renderLGAnwesenheit;
+  renderLGAnwesenheit=function(){const r=_r.apply(this,arguments);
+    try{const lg=lerngruppen.find(g=>g.id===activeLGId);const wrap=document.getElementById('lgaw-table-wrap');const tab=wrap&&wrap.querySelector('table');if(!lg||!tab||tab.classList.contains('p61-tab'))return r;
+      const datum=document.getElementById('lgaw-datum').value;const tag=(lg.anwesenheit||{})[datum]||{};
+      tab.classList.add('p61-tab','p63-lgtab');
+      const th=tab.querySelectorAll('thead th');if(th[1])th[1].outerHTML='<th class="p61-h" style="min-width:70px">Stunde</th>';
+      const sorted=[...(lg.schueler||[])].sort(susCmp);
+      [...tab.querySelectorAll('tbody tr')].forEach((tr,i)=>{const s=sorted[i];if(!s||!tr.children[1])return;const st=tag[s.id]||'';const m=p63LgMin(lg.id,datum,s.id);
+        const sym=m!=null&&st==='anwesend'?'<span class="p61-i versp p62-versp" title="verspätet'+(m?' – '+m+' Minuten':'')+'">'+(m?m+'′':'⏰')+'</span>':p61Sym(st);
+        tr.children[1].outerHTML='<td class="p61-c p61-tag" onclick="p63LgMenue(event,\''+datum+'\',\''+s.id+'\')">'+sym+'</td>';});
+    }catch(e){console.error(e);}return r;};
+})();
+function p63LgMenue(ev,datum,sid){
+  ev.stopPropagation();p61MenueZu();const lg=lerngruppen.find(g=>g.id===activeLGId);const s=lg&&(lg.schueler||[]).find(x=>x.id===sid);
+  const opts=[['anwesend','anwesend'],['fehlt','fehlt (noch offen)'],['entschuldigt','entschuldigt'],['unentschuldigt','unentschuldigt'],['verspaetet','verspätet …']];
+  const m=document.createElement('div');m.id='p61-menue';
+  m.innerHTML='<div class="p61-m-k">'+p61E(s?s.vn+' '+s.nn:'')+' · '+p61E(lg?lg.name:'')+'</div>'+opts.map(([k,l])=>'<button onclick="p63LgSetzen(\''+datum+'\',\''+sid+'\',\''+k+'\')">'+p61Sym(k)+' '+l+'</button>').join('');
+  document.body.appendChild(m);const r=ev.currentTarget.getBoundingClientRect();const w=m.offsetWidth,h=m.offsetHeight;
+  let x=r.left+r.width/2-w/2,y=r.bottom+4;if(y+h>innerHeight-8)y=r.top-h-4;m.style.left=Math.max(8,Math.min(innerWidth-w-8,x))+'px';m.style.top=Math.max(8,y)+'px';
+  setTimeout(()=>document.addEventListener('click',p61MenueZu,{once:true}),0);
+}
+function p63LgSetzen(datum,sid,k){
+  const lg=lerngruppen.find(g=>g.id===activeLGId);if(!lg)return;
+  if(k==='verspaetet'){const m=document.getElementById('p61-menue');if(!m)return;const alt=p63LgMin(lg.id,datum,sid)||0;[...m.querySelectorAll('button')].forEach(b=>b.remove());
+    m.insertAdjacentHTML('beforeend','<div class="p62-min"><div class="p62-min-t">⏰ Wie viele Minuten zu spät?</div><div class="p62-min-k">'+[5,10,15,20,30,45].map(x=>'<button class="'+(alt===x?'on':'')+'" onclick="p63LgVerspFertig(\''+datum+'\',\''+sid+'\','+x+')">'+x+'</button>').join('')
+      +'</div><div class="p62-min-e"><input type="number" min="1" max="90" id="p62-min-in" placeholder="andere" onkeydown="if(event.key===\'Enter\')p63LgVerspFertig(\''+datum+'\',\''+sid+'\',this.value)"><button class="ok" onclick="p63LgVerspFertig(\''+datum+'\',\''+sid+'\',document.getElementById(\'p62-min-in\').value)">OK</button></div></div>');
+    m.addEventListener('click',e=>e.stopPropagation());setTimeout(()=>{document.removeEventListener('click',p61MenueZu);document.addEventListener('click',p61MenueZu,{once:true});},0);return;}
+  p61MenueZu();p63LgVerspSetzen(lg.id,datum,sid,null);
+  const alt=((lg.anwesenheit||{})[datum]||{})[sid];if(alt!==k)setLGAw(datum,sid,k);else renderLGAnwesenheit();
+}
+function p63LgVerspFertig(datum,sid,min){
+  const lg=lerngruppen.find(g=>g.id===activeLGId);if(!lg)return;min=Math.max(0,Math.min(240,parseInt(min,10)||0));p61MenueZu();
+  p63LgVerspSetzen(lg.id,datum,sid,min);const alt=((lg.anwesenheit||{})[datum]||{})[sid];if(alt!=='anwesend')setLGAw(datum,sid,'anwesend');else renderLGAnwesenheit();
+}
+
+/* ---------- „Fehlend heute“ / „Unentschuldigt“: Blockfehlzeiten mitzählen ---------- */
+function p63Heute(){
+  const d=today();const rec=anwesenheit[d]||{};const blk=(typeof blockAw!=='undefined'&&blockAw[d])||{};
+  const kurz=zi=>{const l=(ZEITEN[zi]&&ZEITEN[zi].label)||('Block '+(+zi+1));return l.replace(/^Block\s*/i,'B');};
+  const fehl=[],unent=[];
+  sus.forEach(s=>{const st=rec[s.id];const b=blk[s.id]||{};const bz=Object.keys(b).filter(zi=>b[zi]&&b[zi]!=='anwesend').sort((a,c)=>a-c);
+    if(st&&st!=='anwesend'){fehl.push(s.vn);if(st==='unentschuldigt')unent.push(s.vn);}
+    else if(bz.length){fehl.push(s.vn+' ('+bz.map(kurz).join(', ')+')');const u=bz.filter(zi=>b[zi]==='unentschuldigt');if(u.length)unent.push(s.vn+' ('+u.map(kurz).join(', ')+')');}});
+  return {erfasst:Object.keys(rec).length>0||Object.keys(blk).length>0,fehl,unent};
+}
+(function(){
+  const _k=kdRender;kdRender=function(){const r=_k.apply(this,arguments);
+    try{const k=document.querySelectorAll('#kd-root .kd-fix .kd-stat');if(k.length<2)return r;const h=p63Heute();
+      const setz=(el,n,txt)=>{el.querySelector('.kd-v').textContent=n;el.querySelector('.kd-s').textContent=txt;};
+      setz(k[0],h.erfasst?h.fehl.length:'—',h.erfasst?(h.fehl.length?h.fehl.join(', '):'alle da 🎉'):'noch nicht erfasst');
+      setz(k[1],h.erfasst?h.unent.length:'—',h.unent.length?h.unent.join(', '):'keine');
+      k[1].style.background='linear-gradient(140deg,'+(h.unent.length?'#e11d48,#be123c':'#94a3b8,#64748b')+')';
+      const d=document.getElementById('d-fehlt');if(d)d.textContent=h.fehl.length;
+    }catch(e){console.error(e);}return r;};
+})();
+
+/* ---------- Kopfleiste: Werkzeug-Knöpfe gleich groß, nebeneinander ---------- */
+function p63Leiste(){
+  const sg=document.getElementById('sg-btn');if(!sg)return;
+  let g=document.getElementById('p63-tools');
+  if(!g){g=document.createElement('div');g.id='p63-tools';sg.parentNode.insertBefore(g,sg);}
+  const knopf=(id,ic,txt,fn,tip)=>{let b=document.getElementById(id);if(!b){b=document.createElement('button');b.id=id;b.type='button';b.innerHTML=ic+' <span>'+txt+'</span>';b.title=tip;b.onclick=fn;}b.classList.add('p63-t');return b;};
+  const liste=[];
+  let bib=false;try{bib=!!matApp();}catch(e){}
+  if(bib)liste.push(knopf('p63-bib','📚','Bibliothek',()=>biOeffnenFenster(),'Bibliothek: alle Unterrichtsmaterialien'));else{const b=document.getElementById('p63-bib');if(b)b.remove();}
+  if(typeof stbOeffnen==='function')liste.push(knopf('p63-stb','📋','Stundenberichte',()=>stbOeffnen(),'Stundenberichte deiner Lerngruppen ansehen'));
+  const a=document.getElementById('p61-btn');if(a){a.classList.add('p63-t');liste.push(a);}
+  sg.classList.add('p63-t');liste.push(sg);
+  liste.forEach(b=>{if(b.parentNode!==g||g.lastElementChild!==b)g.appendChild(b);});
+}
+(function(){
+  const los=()=>setTimeout(p63Leiste,0);
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(p63Leiste,30));else los();
+  try{const _sk=sgKnopf;sgKnopf=function(){const r=_sk.apply(this,arguments);p63Leiste();return r;};}catch(e){}
+  try{const _k=kdRender;kdRender=function(){const r=_k.apply(this,arguments);try{p63Leiste();}catch(e){}return r;};}catch(e){}
+})();
+/* ===== PAKET v63 ENDE ===== */
+
 
 
 
