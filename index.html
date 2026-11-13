@@ -2002,6 +2002,47 @@ table.p63-lgtab td.p61-tag{border-right:1px solid #e2e8f0}
 @media(max-width:1440px){#p63-tools.p64-unten .p63-t{padding:0 11px!important;font-size:12.5px!important}#kd-root .kd-top .kd-auto{display:none}}
 @media(max-width:1350px){#p63-tools.p64-unten{order:5;flex-basis:100%;margin:2px 0 0}}
 
+/* v65 */
+/* v66 Formulare */
+#fo-ed{position:fixed;inset:0;z-index:8000;display:none;flex-direction:column;background:#e9edf3;overflow:auto}
+.fo-leiste{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:#fff;border-bottom:1px solid #dbe3ee;padding:10px 16px;box-shadow:0 2px 8px rgba(15,23,42,.06)}
+.fo-lt{display:flex;flex-direction:column;margin-right:auto}.fo-lt b{font-size:15px}.fo-lt span{font-size:12px;color:#64748b}
+#fo-titel{min-width:260px;padding:7px 10px;border:1px solid #cbd5e1;border-radius:8px;font-size:13px}
+.fo-hin{max-width:1180px;margin:10px auto 0;padding:8px 12px;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;font-size:12.5px;color:#1e3a5f}
+.fo-blatt{display:flex;justify-content:center;padding:16px 16px 60px}
+.fo-seite{background:#fff;box-shadow:0 4px 24px rgba(15,23,42,.15);padding:38px 42px;font-family:Arial,Helvetica,sans-serif;font-size:9pt;color:#000;box-sizing:content-box;max-width:none}
+.fo-p{white-space:pre-wrap;tab-size:6;min-height:1.15em;line-height:1.25}
+.fo-t{border-collapse:collapse;width:100%;margin:2px 0;table-layout:auto}
+.fo-t td{border:1px solid #000;vertical-align:top;padding:2px 4px}
+.fo-t td.fo-vm{border-top:0}
+.fo-cb{cursor:pointer;display:inline-block;min-width:1em;text-align:center;border-radius:3px;font-size:1.1em;line-height:1}
+#fo-ed[data-modus="fill"] .fo-cb:hover{background:#dbeafe}
+.fo-cb.an{color:#1d4ed8;font-weight:700}
+.fo-bl{display:block;min-height:3.2em;background:#fffbeb;border:1px dashed #f59e0b;border-radius:3px;padding:2px 4px;outline:none;white-space:pre-wrap}
+.fo-in{display:inline-block;min-width:140px;min-height:1.2em;background:#fffbeb;border-bottom:1.5px solid #f59e0b;padding:0 3px;outline:none;white-space:pre-wrap;vertical-align:baseline}
+.fo-bl:focus,.fo-in:focus{background:#fef3c7;border-color:#d97706}
+.fo-mark{background:#ecfdf5!important;border-color:#10b981!important;color:#047857;font-size:8pt;min-height:auto;min-width:auto}
+.fo-wahl{cursor:pointer;border-radius:3px}.fo-wahl:hover{background:#f0f9ff;outline:1px dashed #38bdf8}
+.fo-karte .fo-vl{display:flex;flex-direction:column;gap:6px;margin:8px 0 10px}
+.fo-vz,.fo-z{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:8px 10px;flex-wrap:wrap}
+.fo-vz small,.fo-z small{display:block;color:#64748b;font-size:11.5px}.fo-vi{font-size:20px}
+.fo-z{margin-bottom:6px}.fo-z.arch{opacity:.65}
+.fo-kopf{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}.fo-kopf h2{margin:0;font-size:20px}.fo-kopf small{color:#64748b}
+.fo-leerbox{background:#fff;border:1px dashed #cbd5e1;border-radius:12px;padding:20px;text-align:center;color:#475569;margin-bottom:10px}
+.fo-arch{margin-top:10px}.fo-arch summary{cursor:pointer;font-weight:700;color:#475569;margin-bottom:6px}
+.fo-egk{margin-bottom:10px}
+@media print{#fo-ed{display:none!important}}
+/* v66 Rechtsstand */
+.rs-pill{font-size:11px;background:#fee2e2;color:#b91c1c;border-radius:999px;padding:2px 8px;margin-left:6px;vertical-align:middle}.rs-pill.ok{background:#dcfce7;color:#166534}
+.rs-karte.rs-alt{border-color:#fca5a5}
+.rs-p{font-size:13px;color:#334155;margin:0 0 10px}
+.rs-t{width:100%;border-collapse:collapse;font-size:12.5px}.rs-t th{text-align:left;font-size:11px;color:#64748b;text-transform:uppercase;border-bottom:1px solid #e2e8f0;padding:5px}
+.rs-t td{padding:6px 5px;border-bottom:1px solid #f1f5f9;vertical-align:top}.rs-k{color:#475569;font-size:12px;max-width:260px}
+.rs-t td input:not([type]){width:100%;box-sizing:border-box;margin-top:4px;padding:5px 7px;border:1px solid #cbd5e1;border-radius:6px;font-size:12px}
+.rs-ok{white-space:nowrap;font-weight:600;font-size:12px}
+.rs-hin{margin-top:10px;font-size:12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:8px 10px;color:#475569}
+.rs-band{display:flex;align-items:center;gap:10px;background:#fff7ed;border:1px solid #fdba74;border-radius:12px;padding:9px 12px;margin:0 0 12px;font-size:13px;color:#7c2d12}.rs-band span{flex:1}
+
 </style>
 </head><body>
 <script>
@@ -3504,6 +3545,8 @@ Verschiedenes und Fragen</textarea></div>
           <li><strong>🧭 Einrichtung – alles an einem Ort:</strong> Das Zahnrad ⚙️ öffnet die große Seite „Einrichtung“. Links der rote Faden mit 8 Schritten: 👤 Profil &amp; Schule · 🎓 Meine Klasse · 📚 Meine Lerngruppen · 🗓 Stundenplan &amp; Zeiten · 📁 Unterrichtsordner · 🧩 Module &amp; Ansicht · 💾 Sicherung &amp; Datenschutz · 📅 Schuljahr &amp; Regeln. Jeder Schritt hat eine <b>Ampel</b>: 🟢 erledigt · 🟡 etwas fehlt (steht dabei, was) · ⚪ „brauche ich nicht“ (Häkchen oben im Schritt). Gesperrt wird nie etwas.</li>
           <li><strong>🗓 Stundenplan:</strong> Auf dem Bildschirm farbige Kacheln je Fach (dieselben Farben wie im SuS-Ausdruck), der heutige Tag und die laufende Stunde („jetzt“) sind markiert. Der Ausdruck „Für SuS drucken“ bleibt unverändert.</li>
           <li><strong>⏰ Verspätet:</strong> Im Anwesenheits-Raster auf einen Block klicken → „verspätet“ → Minuten wählen (5, 10, 15 … oder eigene Zahl). Im Kästchen steht dann z. B. „10′“.</li>
+          <li><strong>📄 Formulare &amp; Förderpläne:</strong> Einstellungen → Profil &amp; Schule → „Formular-Vorlagen“: eine Word-Datei (.docx) hochladen, z. B. euren Förderplan. Klassento erkennt Kästchen ☐ und Schreibfelder; unter „🔧 Felder prüfen“ schaltet ein Klick auf eine Zeile ein Feld an oder aus. Ausfüllen je Kind über 📇 Auswertung → „📄 Formulare“. Kästchen anklicken, in die gelben Felder schreiben; „⬇️ Word-Datei“ liefert das Original mit deinen Eintragungen. „⧉ Fortschreiben“ kopiert einen Plan als Grundlage für den nächsten; 🗄 archiviert. PDF-Vorlagen vorher in Word öffnen und als .docx speichern.</li>
+          <li><strong>⚖️ Rechtsstand:</strong> Einstellungen → Schuljahr: „Rechtsstand jetzt prüfen“ – Links zu den amtlichen Fassungen, du bestätigst „unverändert“ oder notierst Änderungen. Nach 6 Monaten erinnert das Dashboard.</li>
           <li><strong>📇 Auswertung:</strong> Fester Knopf oben neben „Sichtschutz“. Erst Klasse oder Lerngruppe wählen, dann das Kind (oder oben nach dem Namen suchen). Kinder der eigenen Klasse: ausführliche Auswertung (früher „Elterngespräch“). Lerngruppen-Kinder: Noten je Spalte mit Ø, Fehlstunden, Nachschreiben, Beobachtungen, Logbuch, Schriftverkehr, Förderstatus und Mails – mit Drucken/PDF. Unter dem Sichtschutz nicht sichtbar.</li>
           <li><strong>🧹 Neu anfangen:</strong> Einrichtung → Meine Klasse → ganz unten: alle Elterneinträge oder alle Schüler löschen. Vorher wird automatisch eine Sicherung gespeichert, bestätigt wird mit „LÖSCHEN“.</li>
           <li><strong>📋 Anwesenheit als Raster:</strong> Spalten „Tag“ und je Block. Ein Klick auf ein Kästchen öffnet das Menü: anwesend, fehlt, entschuldigt, unentschuldigt, verspätet, vorzeitig gegangen. Jede 5. Zeile hat eine dickere Linie.</li>
@@ -4829,7 +4872,7 @@ function ui(html,breit){box.innerHTML='<div class="c'+(breit?' w':'')+'">'+html+
 const kopf='<div class="lg"><div class="i" style="background:none"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImExIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjMjJkM2VlIi8+PHN0b3Agb2Zmc2V0PSIuNTUiIHN0b3AtY29sb3I9IiM2MzY2ZjEiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhODU1ZjciLz48L2xpbmVhckdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iYTIiIGN4PSIuMyIgY3k9Ii4yIiByPSIuOSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmZmIiBzdG9wLW9wYWNpdHk9Ii4zNSIvPjxzdG9wIG9mZnNldD0iLjYiIHN0b3AtY29sb3I9IiNmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJhMyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2ZiYmYyNCIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI2Y5NzMxNiIvPjwvbGluZWFyR3JhZGllbnQ+PGZpbHRlciBpZD0ic2giIHg9Ii0yMCUiIHk9Ii0yMCUiIHdpZHRoPSIxNDAlIiBoZWlnaHQ9IjE0MCUiPjxmZURyb3BTaGFkb3cgZHg9IjAiIGR5PSIxMCIgc3RkRGV2aWF0aW9uPSIxNCIgZmxvb2QtY29sb3I9IiMxZTFiNGIiIGZsb29kLW9wYWNpdHk9Ii4zNSIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB4PSIxNiIgeT0iMTYiIHdpZHRoPSI0ODAiIGhlaWdodD0iNDgwIiByeD0iMTEyIiBmaWxsPSJ1cmwoI2ExKSIvPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjQ4MCIgaGVpZ2h0PSI0ODAiIHJ4PSIxMTIiIGZpbGw9InVybCgjYTIpIi8+PGcgZmlsdGVyPSJ1cmwoI3NoKSI+PHBhdGggZD0iTTE1MCAxMjBoNjJ2MTE4bDEwNi0xMThoNzhMMjc4IDI0OGwxMjQgMTQ0aC04MGwtMTEwLTEyOHYxMjhoLTYyeiIgZmlsbD0iI2ZmZiIvPjwvZz48ZyBmaWx0ZXI9InVybCgjc2gpIj48Y2lyY2xlIGN4PSIzODIiIGN5PSIxNDAiIHI9Ijc0IiBmaWxsPSJ1cmwoI2EzKSIvPjxwYXRoIGQ9Ik0zODIgMTA0djcyTTM0NiAxNDBoNzIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9nPjwvc3ZnPg==" alt="" style="width:46px;height:46px;display:block"></div><div><h1>Klassento</h1><div class="kto"><b>K</b>lassen · <b>T</b>ermine · <b>O</b>rganisation</div><div class="sub">Klassenleitung · verschlüsselt gespeichert 🔒</div></div></div>';
 const geraetZeile=()=>{const w=(window.szGeraetLesen?szGeraetLesen():'auto');const b=(v,t)=>'<button type="button" class="gw'+(w===v?' on':'')+'" onclick="szGeraetWahl(\''+v+'\')">'+t+'</button>';return '<div class="geraet"><span>Ansicht:</span>'+b('auto','🔄 Automatisch')+b('aus','💻 Computer')+b('an','📱 Tablet')+'</div>';};
 window.szGeraetWahl=function(v){try{szGeraetSchreiben(v);}catch(e){}try{tabAnwenden();}catch(e){}document.querySelectorAll('#sz-lock .gw').forEach(x=>x.classList.toggle('on',(x.getAttribute('onclick')||'').indexOf("'"+v+"'")>0));try{if(typeof tabSwUI==='function')tabSwUI();}catch(e){}};
-const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v64 · Stand 13.11.2026</div></div>';
+const fussBasis='<div class="fuss">🔒 AES-256 · Alle Daten bleiben verschlüsselt auf diesem Gerät<div style="margin-top:5px;font-weight:700;color:#64748b">Klassento v66 · Stand 13.11.2026</div></div>';
 const fuss={toString(){return geraetZeile()+fussBasis;}};
 const $=id=>document.getElementById(id);
 function fehler(t){const e=$('sz-err');if(e)e.textContent=t;const c=box.querySelector('.c');if(c&&t){c.classList.remove('shake');void c.offsetWidth;c.classList.add('shake');}}
@@ -19537,6 +19580,9 @@ const HB2_START=[
  ['Datensicherheit','Automatische Sicherung einrichten – dann ist nie etwas verloren.']
 ];
 const HB2_NEU=[
+ ['Nov. 2026','📄','Formulare & Förderpläne','Eigene Word-Vorlagen (z. B. euren Förderplan) unter Einstellungen → Profil & Schule hochladen. Je Kind ausfüllen (📇 Auswertung → 📄 Formulare), Kästchen anklicken, Felder ausfüllen – heraus kommt die Original-Word-Datei mit deinen Eintragungen. Verschlüsselt gespeichert, mit Archiv und Fortschreibung.','Klassenleitung'],
+ ['Nov. 2026','⚖️','Rechtsstand prüfen','Ist die letzte Prüfung älter als 6 Monate, erinnert das Dashboard daran. Der Prüf-Assistent öffnet die amtlichen Fassungen bei BRAVORS; du bestätigst oder notierst Änderungen.','Schulrecht'],
+ ['Nov. 2026','🪟','Rollo kommt beim Start','Steht etwas an (Nachschreiben, Korrekturen …), fährt das Info-Rollo nach dem Start nach etwa 3 Sekunden von selbst herunter – nicht bei eingeschaltetem Sichtschutz.','Dashboard'],
  ['Nov. 2026','🎨','Farbige Werkzeug-Knöpfe','Bibliothek, Stundenberichte, Auswertung, Sichtschutz und Sichern sind farbig. Auf dem Dashboard stehen sie direkt neben „Woche A/B“, auf allen anderen Seiten oben. Das Zahnrad heißt jetzt „⚙️ Einstellungen“.','Bedienung'],
  ['Nov. 2026','↩','Wiederherstellen räumt sich auf','Nach „Tag löschen“ bleibt „↩ … wiederherstellen“ nur noch 3 Tage stehen und lässt sich mit ✕ wegklicken.','Klassenleitung'],
  ['Nov. 2026','🗓','Lerngruppen: Anwesenheit als Raster','Auch in den Lerngruppen: Kästchen antippen → anwesend, fehlt, entschuldigt, unentschuldigt oder verspätet (mit Minuten).','Lerngruppen'],
@@ -20828,7 +20874,7 @@ function aufsEntfernen(){aufsSetzen('');}
 })();
 /* ===== AUFSICHTEN ENDE ===== */
 /* ===== VERSION · STUNDENBERICHTE-FENSTER · BRIEF-VORSCHLÄGE ===== */
-const KLASSENTO_VER='v64',KLASSENTO_STAND='12.11.2026';
+const KLASSENTO_VER='v66',KLASSENTO_STAND='12.11.2026';
 /* ---------- 1. Versionsnummer unten in der linken Leiste ---------- */
 (function(){
   function fuss(){const sb=document.querySelector('.sidebar');if(!sb||document.getElementById('ver-fuss'))return;
@@ -23987,6 +24033,386 @@ function p64Parken(){const g=document.getElementById('p63-tools');const lock=doc
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(()=>{try{p63Leiste();}catch(e){}},60));else setTimeout(()=>{try{p63Leiste();}catch(e){}},0);
 })();
 /* ===== PAKET v64 ENDE ===== */
+/* ===== PAKET v65 =====
+   Info-Rollo fährt nach dem Start (bzw. nach dem Entsperren) nach ca. 3 Sekunden von selbst herunter,
+   wenn etwas ansteht. Nicht bei Sichtschutz, nicht wenn das Dashboard nicht zu sehen ist. Einmal je Start. */
+let p65Auf=false,p65Erledigt=false,p65Timer=null;
+function p65Sichtbar(){
+  const pw=document.getElementById('pw-overlay');if(pw&&pw.style.display!=='none'&&getComputedStyle(pw).display!=='none')return false;
+  const d=document.getElementById('view-dashboard');if(!d||d.style.display==='none')return false;
+  try{if(SG&&SG.an)return false;}catch(e){}
+  return true;
+}
+function p65Pruefen(){
+  if(p65Erledigt||p65Timer)return;
+  try{if(!roZeilen().length)return;}catch(e){return;}
+  if(!p65Sichtbar())return;
+  p65Timer=setTimeout(()=>{p65Timer=null;if(p65Erledigt||!p65Sichtbar())return;p65Erledigt=true;
+    const r=document.getElementById('ro');if(r&&r.classList.contains('auf'))return;p65Auf=true;try{roZeichnen();}catch(e){}},3000);
+}
+(function(){
+  const _s=roSollOffen;roSollOffen=function(Z){if(p65Auf&&Z&&Z.length)return true;return _s.apply(this,arguments);};
+  const _u=roUmschalten;roUmschalten=function(){p65Auf=false;p65Erledigt=true;return _u.apply(this,arguments);};
+  const _z=roZeichnen;roZeichnen=function(){const r=_z.apply(this,arguments);try{p65Pruefen();}catch(e){}return r;};
+  // nach dem Entsperren erneut einmal anbieten
+  try{const _l=lockApp;lockApp=function(){p65Erledigt=false;p65Auf=false;if(p65Timer){clearTimeout(p65Timer);p65Timer=null;}return _l.apply(this,arguments);};}catch(e){}
+  setInterval(()=>{try{if(!p65Erledigt)p65Pruefen();}catch(e){}},1500);
+})();
+/* ===== PAKET v65 ENDE ===== */
+/* ===== PAKET v66 =====
+   A) 📄 Formulare: eigene Word-Vorlagen (.docx) hochladen (z. B. Förderplan). Klassento findet Kästchen ☐ und Schreibfelder,
+      man füllt je Kind in einer originalgetreuen Ansicht aus, alles bleibt verschlüsselt beim Kind gespeichert.
+      Ausgabe: die ORIGINAL-Word-Datei, nur ☐→☒ und Text in den Feldern.
+   B) ⚖️ Rechtsstand: Hinweis, wenn die Prüfung älter als 6 Monate ist; Prüf-Assistent mit amtlichen Links;
+      die Lehrkraft bestätigt/notiert selbst. */
+const FO_W='http://schemas.openxmlformats.org/wordprocessingml/2006/main';
+function foE(s){return String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
+function foId(){return 'fo'+Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
+function foDat(d){const x=d?new Date(d):new Date();return x.toLocaleDateString('de-DE');}
+let foVorlagen=(function(){try{return JSON.parse(localStorage.getItem('v1_fo_vorlagen')||'[]')||[];}catch(e){return [];}})();
+let foFormulare=(function(){try{return JSON.parse(localStorage.getItem('v1_fo_formulare')||'[]')||[];}catch(e){return [];}})();
+function foSave(){try{localStorage.setItem('v1_fo_vorlagen',JSON.stringify(foVorlagen));localStorage.setItem('v1_fo_formulare',JSON.stringify(foFormulare));}catch(e){alert('Speichern fehlgeschlagen: '+e.message);}}
+
+/* ---------- ZIP lesen/schreiben ---------- */
+function foB64(u8){let s='';for(let i=0;i<u8.length;i+=0x8000)s+=String.fromCharCode.apply(null,u8.subarray(i,i+0x8000));return btoa(s);}
+function foUnB64(b){const s=atob(b);const u=new Uint8Array(s.length);for(let i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u;}
+async function foUnzip(u8){
+  const buf=u8.buffer.slice(u8.byteOffset,u8.byteOffset+u8.byteLength);const dv=new DataView(buf);const u=new Uint8Array(buf);let eocd=-1;
+  for(let i=u.length-22;i>=Math.max(0,u.length-70000);i--){if(dv.getUint32(i,true)===0x06054b50){eocd=i;break;}}
+  if(eocd<0)throw new Error('Das ist keine Word-Datei (.docx).');
+  const n=dv.getUint16(eocd+10,true);let p=dv.getUint32(eocd+16,true);const L=[];
+  for(let k=0;k<n;k++){
+    const meth=dv.getUint16(p+10,true),csize=dv.getUint32(p+20,true),nl=dv.getUint16(p+28,true),el=dv.getUint16(p+30,true),cl=dv.getUint16(p+32,true),off=dv.getUint32(p+42,true);
+    const name=new TextDecoder().decode(u.slice(p+46,p+46+nl));p+=46+nl+el+cl;
+    const lnl=dv.getUint16(off+26,true),lel=dv.getUint16(off+28,true);const data=u.slice(off+30+lnl+lel,off+30+lnl+lel+csize);
+    let roh;if(meth===0)roh=data;else{if(typeof DecompressionStream==='undefined')throw new Error('Dieses Gerät kann Word-Dateien nicht entpacken.');
+      roh=new Uint8Array(await new Response(new Blob([data]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).arrayBuffer());}
+    L.push({name,data:roh});
+  }
+  return L;
+}
+const FO_CRC=(()=>{const t=new Uint32Array(256);for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0;}return t;})();
+function foCrc(u){let c=0xFFFFFFFF;for(let i=0;i<u.length;i++)c=FO_CRC[(c^u[i])&0xFF]^(c>>>8);return (c^0xFFFFFFFF)>>>0;}
+function foZip(L){
+  const enc=new TextEncoder();const teile=[],zentral=[];let off=0;
+  L.forEach(e=>{const nm=enc.encode(e.name),d=e.data,crc=foCrc(d);
+    const h=new DataView(new ArrayBuffer(30));h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x0800,true);h.setUint16(8,0,true);h.setUint16(10,0,true);h.setUint16(12,0x21,true);
+    h.setUint32(14,crc,true);h.setUint32(18,d.length,true);h.setUint32(22,d.length,true);h.setUint16(26,nm.length,true);h.setUint16(28,0,true);
+    teile.push(new Uint8Array(h.buffer),nm,d);
+    const z=new DataView(new ArrayBuffer(46));z.setUint32(0,0x02014b50,true);z.setUint16(4,20,true);z.setUint16(6,20,true);z.setUint16(8,0x0800,true);z.setUint16(10,0,true);z.setUint16(12,0,true);z.setUint16(14,0x21,true);
+    z.setUint32(16,crc,true);z.setUint32(20,d.length,true);z.setUint32(24,d.length,true);z.setUint16(28,nm.length,true);z.setUint32(42,off,true);
+    zentral.push(new Uint8Array(z.buffer),nm);off+=30+nm.length+d.length;});
+  const zl=zentral.reduce((a,b)=>a+b.length,0);const ende=new DataView(new ArrayBuffer(22));ende.setUint32(0,0x06054b50,true);ende.setUint16(8,L.length,true);ende.setUint16(10,L.length,true);ende.setUint32(12,zl,true);ende.setUint32(16,off,true);
+  return new Blob([...teile,...zentral,new Uint8Array(ende.buffer)],{type:'application/vnd.openxmlformats-officedocument.wordprocessingml.document'});
+}
+
+/* ---------- Vorlage untersuchen ---------- */
+function foKinder(el,name){return [...el.childNodes].filter(n=>n.nodeType===1&&n.localName===name);}
+function foText(p){return [...p.getElementsByTagNameNS(FO_W,'t')].map(t=>t.textContent).join('');}
+function foZelle(p){let n=p.parentNode;while(n&&n.nodeType===1){if(n.localName==='tc')return n;if(n.localName==='body')return null;n=n.parentNode;}return null;}
+async function foAnalyse(v){
+  const L=await foUnzip(foUnB64(v.b64));const e=L.find(x=>x.name==='word/document.xml');if(!e)throw new Error('In der Datei fehlt der Text (word/document.xml).');
+  const xml=new TextDecoder().decode(e.data);const doc=new DOMParser().parseFromString(xml,'application/xml');
+  if(doc.getElementsByTagName('parsererror').length)throw new Error('Die Word-Datei konnte nicht gelesen werden.');
+  const paras=[...doc.getElementsByTagNameNS(FO_W,'p')];const idx=new Map(paras.map((p,i)=>[p,i]));
+  const auto={};const label={};
+  const leer=p=>!foText(p).trim();
+  // Zellen
+  const zellen=new Set();paras.forEach(p=>{const z=foZelle(p);if(z)zellen.add(z);});
+  zellen.forEach(z=>{
+    const ps=[...z.getElementsByTagNameNS(FO_W,'p')].filter(p=>foZelle(p)===z);if(!ps.length)return;
+    const voll=ps.filter(p=>!leer(p));
+    if(!voll.length){auto['p'+idx.get(ps[0])]='block';label['p'+idx.get(ps[0])]=foSpaltenKopf(z);return;}
+    const letzte=voll[voll.length-1];const li=ps.indexOf(letzte);const danach=ps.slice(li+1);const lt=foText(letzte).trim();
+    if(danach.length&&(/:$/.test(lt)||(voll.length===1&&danach.length>=2))&&!/☐$/.test(lt)){auto['p'+idx.get(danach[0])]='block';label['p'+idx.get(danach[0])]=lt.replace(/:$/,'');}
+    voll.forEach(p=>{const t=foText(p).trim();const k='p'+idx.get(p);
+      if(p===letzte&&danach.length&&auto['p'+idx.get(danach[0])])return;
+      if(/:$/.test(t)){auto[k]='inline';label[k]=foLabelEnde(t);}
+      else if(voll.length===1&&t.length<30&&/^(geburtsdatum|geb\.?\s*datum|geboren am|datum|ort,? datum)$/i.test(t)){auto[k]='inline';label[k]=t;}});
+  });
+  // Absätze außerhalb von Tabellen
+  paras.forEach((p,i)=>{if(foZelle(p))return;const t=foText(p).trim();if(/:$/.test(t)&&t.length<120){auto['p'+i]='inline';label['p'+i]=foLabelEnde(t);}});
+  let cb=0;[...doc.getElementsByTagNameNS(FO_W,'t')].forEach(t=>{cb+=(t.textContent.match(/☐|☒/g)||[]).length;});
+  // Wünsche der Lehrkraft
+  const felder={};Object.keys(auto).forEach(k=>{if(!(v.aus||[]).includes(k))felder[k]=auto[k];});
+  Object.keys(v.an||{}).forEach(k=>{felder[k]=v.an[k];const i=+k.slice(1);if(!label[k]&&paras[i])label[k]=foLabelEnde(foText(paras[i]).trim())||foSpaltenKopf(foZelle(paras[i]));});
+  return {L,doc,paras,idx,felder,auto,label,cb};
+}
+function foLabelEnde(t){t=String(t||'').replace(/☐|☒/g,' ').replace(/\s{2,}/g,' ').trim().replace(/:$/,'');return t.length>70?t.slice(0,67)+'…':t;}
+function foSpaltenKopf(z){try{if(!z)return '';const tr=z.parentNode,tbl=tr.parentNode;const i=foKinder(tr,'tc').indexOf(z);const erste=foKinder(tbl,'tr')[0];if(!erste||erste===tr)return '';const k=foKinder(erste,'tc')[i];return k?foText(k).trim():'';}catch(e){return '';}}
+
+/* ---------- Ansicht (HTML) ---------- */
+function foTw(v){return Math.round((+v||0)/15);}
+function foRunHtml(r,st){
+  const rp=foKinder(r,'rPr')[0];let css='';
+  if(rp){const b=foKinder(rp,'b')[0];if(b&&b.getAttributeNS(FO_W,'val')!=='0'&&b.getAttributeNS(FO_W,'val')!=='false')css+='font-weight:700;';
+    const i=foKinder(rp,'i')[0];if(i&&i.getAttributeNS(FO_W,'val')!=='0')css+='font-style:italic;';
+    const u=foKinder(rp,'u')[0];if(u&&u.getAttributeNS(FO_W,'val')!=='none')css+='text-decoration:underline;';
+    const sz=foKinder(rp,'sz')[0];if(sz)css+='font-size:'+(+sz.getAttributeNS(FO_W,'val')/2)+'pt;';}
+  let h='';
+  [...r.childNodes].forEach(n=>{if(n.nodeType!==1)return;
+    if(n.localName==='t'){h+=n.textContent.split(/(☐|☒)/).map(s=>{if(s==='☐'||s==='☒'){const c=st.cb++;const an=st.modus==='fill'?!!(st.werte.cb||{})[c]:s==='☒';return '<span class="fo-cb'+(an?' an':'')+'" data-c="'+c+'">'+(an?'☒':'☐')+'</span>';}return foE(s);}).join('');}
+    else if(n.localName==='tab')h+='\t';else if(n.localName==='br'||n.localName==='cr')h+='<br>';});
+  return css?'<span style="'+css+'">'+h+'</span>':h;
+}
+function foParaHtml(p,st){
+  const i=st.idx.get(p);const k='p'+i;const pp=foKinder(p,'pPr')[0];let css='';
+  if(pp){const jc=foKinder(pp,'jc')[0];if(jc){const v=jc.getAttributeNS(FO_W,'val');css+='text-align:'+(v==='center'?'center':v==='right'||v==='end'?'right':v==='both'?'justify':'left')+';';}
+    const rp=foKinder(pp,'rPr')[0];const sz=rp&&foKinder(rp,'sz')[0];if(sz)css+='font-size:'+(+sz.getAttributeNS(FO_W,'val')/2)+'pt;';}
+  let inner='';[...p.getElementsByTagNameNS(FO_W,'r')].forEach(r=>{inner+=foRunHtml(r,st);});
+  const typ=st.felder[k];const wert=(st.werte.f||{})[k]||'';
+  if(typ==='block')inner=st.modus==='fill'?'<div class="fo-bl" contenteditable="true" data-k="'+k+'" data-l="'+foE(st.label[k]||'')+'">'+foE(wert).replace(/\n/g,'<br>')+'</div>':inner+'<div class="fo-bl fo-mark">✏️ Schreibfeld'+(st.label[k]?' · '+foE(st.label[k]):'')+'</div>';
+  else if(typ==='inline')inner+=st.modus==='fill'?' <span class="fo-in" contenteditable="true" data-k="'+k+'">'+foE(wert)+'</span>':' <span class="fo-in fo-mark">✏️</span>';
+  const kl='fo-p'+(st.modus==='setup'?' fo-wahl'+(typ?' hat':''):'');
+  return '<div class="'+kl+'" data-p="'+i+'" style="'+css+'">'+(inner||'&nbsp;')+'</div>';
+}
+function foBlockHtml(el,st){
+  if(el.localName==='p')return foParaHtml(el,st);
+  if(el.localName==='tbl'){
+    let h='<table class="fo-t">';
+    foKinder(el,'tr').forEach(tr=>{h+='<tr>';foKinder(tr,'tc').forEach(tc=>{
+      const pr=foKinder(tc,'tcPr')[0];let cs=1,w=0,vm=null;
+      if(pr){const g=foKinder(pr,'gridSpan')[0];if(g)cs=+g.getAttributeNS(FO_W,'val')||1;const tw=foKinder(pr,'tcW')[0];if(tw&&tw.getAttributeNS(FO_W,'type')==='dxa')w=foTw(tw.getAttributeNS(FO_W,'w'));const v=foKinder(pr,'vMerge')[0];if(v)vm=v.getAttributeNS(FO_W,'val')||'continue';}
+      let inner='';[...tc.childNodes].forEach(n=>{if(n.nodeType===1&&(n.localName==='p'||n.localName==='tbl'))inner+=foBlockHtml(n,st);});
+      h+='<td'+(cs>1?' colspan="'+cs+'"':'')+(w?' style="width:'+w+'px"':'')+(vm==='continue'?' class="fo-vm"':'')+'>'+inner+'</td>';});h+='</tr>';});
+    return h+'</table>';
+  }
+  if(el.localName==='sdt'){const c=foKinder(el,'sdtContent')[0];return c?[...c.childNodes].filter(n=>n.nodeType===1).map(n=>foBlockHtml(n,st)).join(''):'';}
+  return '';
+}
+function foSeitenBreite(doc){try{const s=[...doc.getElementsByTagNameNS(FO_W,'sectPr')].pop();const pg=foKinder(s,'pgSz')[0],m=foKinder(s,'pgMar')[0];
+  return foTw(+pg.getAttributeNS(FO_W,'w')-(+m.getAttributeNS(FO_W,'left'))-(+m.getAttributeNS(FO_W,'right')));}catch(e){return 720;}}
+function foHtml(A,werte,modus){
+  const st={cb:0,idx:A.idx,felder:A.felder,label:A.label,werte:werte||{},modus};
+  const body=A.doc.getElementsByTagNameNS(FO_W,'body')[0];let h='';
+  [...body.childNodes].forEach(n=>{if(n.nodeType===1)h+=foBlockHtml(n,st);});
+  return '<div class="fo-seite" style="width:'+foSeitenBreite(A.doc)+'px">'+h+'</div>';
+}
+
+/* ---------- Ausfüllen → Word-Datei ---------- */
+async function foWord(f){
+  const v=foVorlagen.find(x=>x.id===f.vid);if(!v)throw new Error('Die Vorlage gibt es nicht mehr.');
+  const A=await foAnalyse(v);const doc=A.doc;let c=0;
+  [...doc.getElementsByTagNameNS(FO_W,'t')].forEach(t=>{const s=t.textContent;if(!/☐|☒/.test(s))return;
+    t.textContent=s.replace(/☐|☒/g,m=>{const i=c++;return (f.cb||{})[i]?'☒':(m==='☒'&&!(i in (f.cb||{}))?'☒':'☐');});});
+  Object.keys(A.felder).forEach(k=>{const txt=String((f.f||{})[k]||'').replace(/\r/g,'');if(!txt.trim())return;const p=A.paras[+k.slice(1)];if(!p)return;
+    const r=doc.createElementNS(FO_W,'w:r');
+    let rp=null;const runs=[...p.getElementsByTagNameNS(FO_W,'r')];
+    if(runs.length){const q=foKinder(runs[runs.length-1],'rPr')[0];if(q)rp=q.cloneNode(true);}
+    else{const pp=foKinder(p,'pPr')[0];const q=pp&&foKinder(pp,'rPr')[0];if(q){rp=doc.createElementNS(FO_W,'w:rPr');[...q.childNodes].forEach(n=>rp.appendChild(n.cloneNode(true)));}}
+    if(rp){['b','bCs'].forEach(n=>foKinder(rp,n).forEach(x=>rp.removeChild(x)));r.appendChild(rp);}
+    const zeilen=(A.felder[k]==='inline'?' ':'')+txt;zeilen.split('\n').forEach((z,i)=>{if(i){r.appendChild(doc.createElementNS(FO_W,'w:br'));}
+      const t=doc.createElementNS(FO_W,'w:t');t.setAttributeNS('http://www.w3.org/XML/1998/namespace','xml:space','preserve');t.textContent=z;r.appendChild(t);});
+    p.appendChild(r);});
+  let xml=new XMLSerializer().serializeToString(doc);if(!/^<\?xml/.test(xml))xml='<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n'+xml;
+  const L=A.L.map(e=>e.name==='word/document.xml'?{name:e.name,data:new TextEncoder().encode(xml)}:e);
+  return foZip(L);
+}
+function foDateiName(f){const v=foVorlagen.find(x=>x.id===f.vid);return ((v?v.name:'Formular')+'_'+(f.kname||'')+'_'+foDat(f.geaendert).replace(/\./g,'-')).replace(/[^\wäöüÄÖÜß.-]+/g,'_')+'.docx';}
+async function foWordLaden(id){
+  const f=foFormulare.find(x=>x.id===id);if(!f)return;
+  try{const b=await foWord(f);if(typeof saveBlobAsFile==='function')await saveBlobAsFile(b,foDateiName(f));else{const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=foDateiName(f);document.body.appendChild(a);a.click();a.remove();}}
+  catch(e){alert('Die Word-Datei konnte nicht erstellt werden: '+e.message);}
+}
+
+/* ---------- Kinder ---------- */
+function foKindListe(){
+  const K=[];sus.forEach(s=>K.push({g:'__klasse',s,gn:'Klasse '+(meta.klasse||'')}));
+  (lerngruppen||[]).filter(g=>!lgIstEigeneKlasse(g)).forEach(g=>(g.schueler||[]).forEach(s=>K.push({g:g.id,s,gn:g.name})));return K;
+}
+function foKind(g,sid){if(g==='__klasse')return sus.find(s=>s.id===sid);const lg=(lerngruppen||[]).find(x=>x.id===g);return lg&&(lg.schueler||[]).find(s=>s.id===sid);}
+function foSchuljahr(){const d=new Date();const y=d.getFullYear();return d.getMonth()>=7?y+'/'+String(y+1).slice(2):(y-1)+'/'+String(y).slice(2);}
+function foVorbelegen(A,f){
+  const s=foKind(f.g,f.s);if(!s)return;f.f=f.f||{};
+  const lg=f.g!=='__klasse'?(lerngruppen||[]).find(x=>x.id===f.g):null;
+  const gb=s.gb&&/^\d{4}-\d\d-\d\d$/.test(s.gb)?s.gb.split('-').reverse().join('.'):'';
+  Object.keys(A.felder).forEach(k=>{if(f.f[k])return;const l=String(A.label[k]||'').toLowerCase().replace(/:$/,'').trim();let w='';
+    if(/^(name,?\s*vorname|nachname,?\s*vorname|name des schülers|name der schülerin|schüler\/?in|name)$/.test(l))w=(s.nn||'')+', '+(s.vn||'');
+    else if(/^vorname,?\s*name$/.test(l))w=(s.vn||'')+' '+(s.nn||'');
+    else if(/geburtsdatum|geb\.?\s*datum|geboren am/.test(l))w=gb;
+    else if(/^klasse(\s*\/.*)?$/.test(l))w=lg?(s.klasse||''):(meta.klasse||'');
+    else if(/^(klassenleitung|klassenlehrer)/.test(l))w=lg?'':(function(){try{return profilAnzeigeName();}catch(e){return '';}})();
+    else if(/^schule$/.test(l))w=(function(){try{const n=schulName();return /^schule$/i.test(n)?'':n;}catch(e){return '';}})();
+    else if(/^schuljahr$/.test(l))w=foSchuljahr();
+    if(w)f.f[k]=w;});
+}
+
+/* ---------- Editor ---------- */
+let foAkt=null,foAktA=null,foGeaendert=false;
+function foEdDiv(){let o=document.getElementById('fo-ed');if(!o){o=document.createElement('div');o.id='fo-ed';document.body.appendChild(o);
+  o.addEventListener('click',e=>{const c=e.target.closest('.fo-cb');if(c&&foAkt&&o.dataset.modus==='fill'){const i=+c.dataset.c;foAkt.cb=foAkt.cb||{};foAkt.cb[i]=!foAkt.cb[i];c.classList.toggle('an',foAkt.cb[i]);c.textContent=foAkt.cb[i]?'☒':'☐';foGeaendert=true;}
+    const p=e.target.closest('.fo-wahl');if(p&&o.dataset.modus==='setup')foFeldUmschalten(+p.dataset.p);});
+  o.addEventListener('input',e=>{const f=e.target.closest('[data-k]');if(f&&foAkt){foAkt.f=foAkt.f||{};foAkt.f[f.dataset.k]=f.innerText.replace(/\n$/,'');foGeaendert=true;}});
+  o.addEventListener('paste',e=>{if(!e.target.closest('[data-k]'))return;e.preventDefault();const t=(e.clipboardData||window.clipboardData).getData('text');document.execCommand('insertText',false,t);});}
+  return o;}
+async function foOeffnen(id){
+  const f=foFormulare.find(x=>x.id===id);if(!f)return;const v=foVorlagen.find(x=>x.id===f.vid);if(!v){alert('Die Vorlage zu diesem Formular wurde gelöscht.');return;}
+  let A;try{A=await foAnalyse(v);}catch(e){alert(e.message);return;}
+  foAkt=f;foAktA=A;foGeaendert=false;foVorbelegen(A,f);
+  const o=foEdDiv();o.dataset.modus='fill';
+  o.innerHTML='<div class="fo-leiste"><div class="fo-lt"><b>📄 '+foE(v.name)+'</b><span>'+foE(f.kname||'')+'</span></div>'
+    +'<input id="fo-titel" value="'+foE(f.titel||'')+'" placeholder="Titel, z. B. Förderplan 1. Halbjahr" oninput="foAkt.titel=this.value;foGeaendert=true">'
+    +'<button class="btn btng" onclick="foSpeichern(true)">💾 Speichern</button><button class="btn" onclick="foSpeichern();foWordLaden(\''+f.id+'\')" title="Original-Word-Datei mit deinen Eintragungen">⬇️ Word-Datei</button><button class="btn" onclick="foDrucken()">🖨 Drucken</button><button class="btn" onclick="foZu()">✕ Schließen</button></div>'
+    +'<div class="fo-hin">Kästchen anklicken zum Ankreuzen · in die gelben Felder schreiben · Speichern geht auch mit ⌘S. Die Word-Datei ist das Original – nur deine Eintragungen kommen hinzu.</div>'
+    +'<div class="fo-blatt">'+foHtml(A,f,'fill')+'</div>';
+  o.style.display='flex';
+}
+function foSpeichern(meldung){if(!foAkt)return;foAkt.geaendert=new Date().toISOString();if(!foFormulare.includes(foAkt))foFormulare.push(foAkt);foSave();foGeaendert=false;if(meldung)try{szToast('💾 Formular gespeichert.');}catch(e){}try{foListeRender();}catch(e){}}
+function foZu(){if(foAkt&&document.getElementById('fo-ed').dataset.modus==='fill'){foSpeichern();}const o=document.getElementById('fo-ed');if(o){o.style.display='none';o.innerHTML='';}foAkt=null;foAktA=null;try{foListeRender();}catch(e){}}
+document.addEventListener('keydown',e=>{const o=document.getElementById('fo-ed');if(!o||o.style.display!=='flex')return;
+  if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='s'){e.preventDefault();if(o.dataset.modus==='fill')foSpeichern(true);}
+  if(e.key==='Escape'&&!e.target.closest('[data-k]'))foZu();});
+function foDrucken(){
+  if(!foAkt||!foAktA)return;foSpeichern();
+  const h=foHtml(foAktA,foAkt,'fill').replace(/contenteditable="true"/g,'');
+  const w=window.open('','_blank');if(!w){alert('Bitte Pop-ups erlauben oder die Word-Datei drucken.');return;}
+  w.document.write('<!doctype html><html><head><meta charset="utf-8"><title>'+foE(foDateiName(foAkt))+'</title><style>'+FO_DRUCK_CSS+'</style></head><body>'+h+'<script>setTimeout(()=>print(),300)<\/script></body></html>');w.document.close();
+}
+const FO_DRUCK_CSS='@page{size:A4 landscape;margin:12mm}body{font-family:Arial,Helvetica,sans-serif;font-size:9pt;margin:0}.fo-seite{width:auto!important}.fo-p{white-space:pre-wrap;tab-size:6;min-height:1em}.fo-t{border-collapse:collapse;width:100%;margin:2px 0}.fo-t td{border:1px solid #000;vertical-align:top;padding:2px 4px}.fo-cb{font-size:1.05em}.fo-bl{white-space:pre-wrap}.fo-in{white-space:pre-wrap}';
+
+/* ---------- Vorlagen verwalten ---------- */
+async function foHochladen(){
+  const i=document.createElement('input');i.type='file';i.accept='.docx,.pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/pdf';
+  i.onchange=async()=>{const d=i.files[0];if(!d)return;
+    if(/\.pdf$/i.test(d.name)){alert('PDF-Vorlagen gehen noch nicht.\n\nTipp: Die PDF in Word öffnen (Word wandelt sie um) und als .docx speichern – dann hier hochladen. Oder bei der Schulleitung die Word-Fassung erfragen.');return;}
+    if(!/\.docx$/i.test(d.name)){alert('Bitte eine Word-Datei (.docx) wählen. Alte .doc-Dateien in Word öffnen und als .docx speichern.');return;}
+    if(d.size>3*1024*1024){alert('Die Datei ist größer als 3 MB – bitte Bilder in der Vorlage verkleinern.');return;}
+    const u=new Uint8Array(await d.arrayBuffer());
+    const v={id:foId(),name:d.name.replace(/\.docx$/i,'').replace(/[_-]+/g,' ').trim(),dn:d.name,b64:foB64(u),datum:new Date().toISOString(),aus:[],an:{}};
+    try{const A=await foAnalyse(v);v.nFelder=Object.keys(A.felder).length;v.nCb=A.cb;}catch(e){alert(e.message);return;}
+    const n=prompt('Wie soll die Vorlage heißen?',v.name);if(n===null)return;v.name=(n||v.name).trim();
+    foVorlagen.push(v);foSave();try{einRender();}catch(e){}foListeRender();foFelderPruefen(v.id);};
+  i.click();
+}
+async function foFelderPruefen(vid){
+  const v=foVorlagen.find(x=>x.id===vid);if(!v)return;let A;try{A=await foAnalyse(v);}catch(e){alert(e.message);return;}
+  foAkt=null;foAktA=A;const o=foEdDiv();o.dataset.modus='setup';o.dataset.vid=vid;
+  o.innerHTML='<div class="fo-leiste"><div class="fo-lt"><b>🔧 Felder prüfen · '+foE(v.name)+'</b><span>'+A.cb+' Kästchen · '+Object.keys(A.felder).length+' Schreibfelder</span></div>'
+    +'<button class="btn" onclick="foFelderZurueck(\''+vid+'\')" title="Alle eigenen Änderungen an den Feldern verwerfen">↺ Erkennung zurücksetzen</button><button class="btn btng" onclick="foZu();try{einRender()}catch(e){}">✓ Fertig</button></div>'
+    +'<div class="fo-hin">Klassento hat die Kästchen ☐ und die Schreibfelder (✏️) selbst gefunden. <b>Klick auf eine Zeile</b> schaltet dort ein Schreibfeld an oder aus. Leere Tabellenzellen werden zu großen Feldern, Zeilen mit „…:“ bekommen das Feld dahinter.</div>'
+    +'<div class="fo-blatt">'+foHtml(A,{},'setup')+'</div>';
+  o.style.display='flex';
+}
+async function foFeldUmschalten(i){
+  const o=document.getElementById('fo-ed');const v=foVorlagen.find(x=>x.id===o.dataset.vid);if(!v||!foAktA)return;const k='p'+i;
+  v.aus=v.aus||[];v.an=v.an||{};
+  if(foAktA.felder[k]){if(foAktA.auto[k]&&!v.an[k]){if(!v.aus.includes(k))v.aus.push(k);}delete v.an[k];}
+  else{const p=foAktA.paras[i];const leer=!foText(p).trim();if(foAktA.auto[k])v.aus=v.aus.filter(x=>x!==k);else v.an[k]=leer?'block':'inline';}
+  const A=await foAnalyse(v);v.nFelder=Object.keys(A.felder).length;foSave();
+  const y=o.scrollTop;foAktA=A;o.querySelector('.fo-blatt').innerHTML=foHtml(A,{},'setup');o.querySelector('.fo-lt span').textContent=A.cb+' Kästchen · '+v.nFelder+' Schreibfelder';o.scrollTop=y;
+}
+function foFelderZurueck(vid){const v=foVorlagen.find(x=>x.id===vid);if(!v)return;v.aus=[];v.an={};foSave();foFelderPruefen(vid);}
+function foVorlageUmbenennen(vid){const v=foVorlagen.find(x=>x.id===vid);if(!v)return;const n=prompt('Neuer Name der Vorlage:',v.name);if(!n)return;v.name=n.trim();foSave();try{einRender();}catch(e){}foListeRender();}
+function foVorlageLoeschen(vid){const v=foVorlagen.find(x=>x.id===vid);if(!v)return;const n=foFormulare.filter(f=>f.vid===vid).length;
+  if(n){alert('Mit dieser Vorlage gibt es noch '+n+' ausgefüllte Formulare. Bitte zuerst diese löschen (oder als Word-Datei sichern).');return;}
+  if(!confirm('Vorlage „'+v.name+'“ löschen?'))return;foVorlagen=foVorlagen.filter(x=>x.id!==vid);foSave();try{einRender();}catch(e){}foListeRender();}
+function foVorlagenKarte(){
+  return '<div class="ez-karte fo-karte"><h3>📄 Formular-Vorlagen (z. B. Förderplan)</h3><p class="ez-p">Eigene <b>Word-Vorlagen (.docx)</b> der Schule hochladen. Klassento findet die Kästchen ☐ und Schreibfelder selbst. Ausgefüllt wird je Kind (📇 Auswertung bzw. „📄 Formulare“) – heraus kommt wieder die <b>Original-Word-Datei</b>, nur mit deinen Eintragungen.</p>'
+    +(foVorlagen.length?'<div class="fo-vl">'+foVorlagen.map(v=>{const n=foFormulare.filter(f=>f.vid===v.id).length;return '<div class="fo-vz"><span class="fo-vi">📄</span><div style="flex:1"><b>'+foE(v.name)+'</b><small>'+(v.nCb||0)+' Kästchen · '+(v.nFelder||0)+' Felder · '+n+' ausgefüllt · seit '+foDat(v.datum)+'</small></div>'
+      +'<button class="btn" onclick="foFelderPruefen(\''+v.id+'\')">🔧 Felder prüfen</button><button class="btn" onclick="foVorlageUmbenennen(\''+v.id+'\')">✏️</button><button class="btn" onclick="foVorlageLoeschen(\''+v.id+'\')">🗑</button></div>';}).join('')+'</div>':'')
+    +'<button class="btn btnp" onclick="foHochladen()">📤 Word-Vorlage hochladen</button> <button class="btn" onclick="foSeite()">📂 Ausgefüllte Formulare ('+foFormulare.length+')</button>'
+    +'<p class="ez-p" style="margin-top:8px;font-size:12px">PDF-Vorlage? In Word öffnen und als .docx speichern. Ausgefüllte Formulare sind verschlüsselt gespeichert, unter dem Sichtschutz unsichtbar und gehören nicht in Weitergabe-Dateien.</p></div>';
+}
+
+/* ---------- Seite „Formulare“ ---------- */
+let foFilter=null;
+function foViewAnlegen(){if(document.getElementById('view-formulare'))return;const d=document.getElementById('view-dashboard');const v=document.createElement('div');v.id='view-formulare';v.style.display='none';d.parentNode.insertBefore(v,d.nextSibling);}
+function foSeite(g,sid){foViewAnlegen();foFilter=g&&sid?{g,s:sid}:null;show('formulare');try{document.getElementById('pg-title').textContent='📄 Formulare';}catch(e){}foListeRender();}
+function foListeRender(){
+  const v=document.getElementById('view-formulare');if(!v||v.style.display==='none')return;
+  let L=foFormulare.slice();if(foFilter)L=L.filter(f=>f.g===foFilter.g&&f.s===foFilter.s);
+  L.sort((a,b)=>(b.geaendert||'').localeCompare(a.geaendert||''));
+  const kn=foFilter?(function(){const s=foKind(foFilter.g,foFilter.s);return s?s.vn+' '+s.nn:'';})():'';
+  const zeile=f=>{const vv=foVorlagen.find(x=>x.id===f.vid);const nf=Object.values(f.f||{}).filter(x=>String(x).trim()).length,nc=Object.values(f.cb||{}).filter(Boolean).length;
+    return '<div class="fo-z'+(f.archiv?' arch':'')+'"><span class="fo-vi">📄</span><div style="flex:1;min-width:0"><b>'+foE(f.titel||(vv?vv.name:'Formular'))+'</b><small>'+foE(f.kname||'')+' · '+foE(vv?vv.name:'Vorlage fehlt')+' · geändert '+foDat(f.geaendert)+' · '+nc+' angekreuzt, '+nf+' Felder'+(f.archiv?' · 🗄 archiviert':'')+'</small></div>'
+      +'<button class="btn btnp" onclick="foOeffnen(\''+f.id+'\')">Öffnen</button><button class="btn" onclick="foWordLaden(\''+f.id+'\')">⬇️ Word</button><button class="btn" onclick="foKopie(\''+f.id+'\')" title="Als Grundlage für die Fortschreibung kopieren">⧉ Fortschreiben</button><button class="btn" onclick="foArchiv(\''+f.id+'\')">'+(f.archiv?'↩':'🗄')+'</button><button class="btn" onclick="foLoeschen(\''+f.id+'\')">🗑</button></div>';};
+  const aktiv=L.filter(f=>!f.archiv),arch=L.filter(f=>f.archiv);
+  v.innerHTML='<div class="fo-kopf"><div style="flex:1"><h2>📄 Formulare'+(kn?' · '+foE(kn):'')+'</h2><small>'+(foFilter?'<a href="#" onclick="foSeite();return false">alle Kinder anzeigen</a>':'Förderpläne und andere Formulare – je Kind, verschlüsselt')+'</small></div>'
+    +'<button class="btn btnp" onclick="foNeu()">＋ Neues Formular</button><button class="btn" onclick="einOeffnen(\'profil\');setTimeout(()=>{const k=document.querySelector(\'.fo-karte\');k&&k.scrollIntoView({behavior:\'smooth\'})},200)">⚙️ Vorlagen</button></div>'
+    +(!foVorlagen.length?'<div class="fo-leerbox">Noch keine Vorlage. Lade unter ⚙️ Einstellungen → Profil &amp; Schule eine Word-Vorlage hoch (z. B. euren Förderplan).<br><button class="btn btnp" onclick="foHochladen()" style="margin-top:10px">📤 Word-Vorlage hochladen</button></div>':'')
+    +(aktiv.length?aktiv.map(zeile).join(''):(foVorlagen.length?'<p class="p61-leer">Noch keine ausgefüllten Formulare'+(kn?' für '+foE(kn):'')+'.</p>':''))
+    +(arch.length?'<details class="fo-arch"><summary>🗄 Archiv ('+arch.length+')</summary>'+arch.map(zeile).join('')+'</details>':'');
+}
+function foNeu(){
+  if(!foVorlagen.length){foHochladen();return;}
+  let m=document.getElementById('m-fo-neu');if(!m){m=document.createElement('div');m.className='mb';m.id='m-fo-neu';document.body.appendChild(m);}
+  const K=foKindListe();const vor=foFilter?foFilter.g+'|'+foFilter.s:'';
+  m.innerHTML='<div class="md" style="width:460px"><div class="mhd"><h2>＋ Neues Formular</h2><button class="btn" onclick="closeM(\'m-fo-neu\')" style="padding:4px 8px;border:none">✕</button></div>'
+    +'<div class="fg"><label>Vorlage</label><select id="fo-n-v">'+foVorlagen.map(v=>'<option value="'+v.id+'">'+foE(v.name)+'</option>').join('')+'</select></div>'
+    +'<div class="fg"><label>Für wen?</label><select id="fo-n-k">'+(vor?'':'<option value="">– Kind wählen –</option>')+K.map(k=>'<option value="'+k.g+'|'+k.s.id+'"'+(vor===k.g+'|'+k.s.id?' selected':'')+'>'+foE(k.s.nn+', '+k.s.vn+' · '+k.gn)+'</option>').join('')+'</select></div>'
+    +'<div class="fg"><label>Titel (optional)</label><input id="fo-n-t" placeholder="z. B. Förderplan 1. Halbjahr '+foSchuljahr()+'"></div>'
+    +'<div style="display:flex;justify-content:flex-end;gap:8px;margin-top:10px"><button class="btn" onclick="closeM(\'m-fo-neu\')">Abbrechen</button><button class="btn btnp" onclick="foNeuAnlegen()">Anlegen &amp; ausfüllen</button></div></div>';
+  m.style.display='flex';
+}
+function foNeuAnlegen(){
+  const vid=document.getElementById('fo-n-v').value,k=document.getElementById('fo-n-k').value;if(!k){alert('Bitte ein Kind wählen.');return;}
+  const [g,s]=k.split('|');const kind=foKind(g,s);const v=foVorlagen.find(x=>x.id===vid);
+  const f={id:foId(),vid,g,s,kname:kind?kind.vn+' '+kind.nn:'',titel:document.getElementById('fo-n-t').value.trim()||((v?v.name:'Formular')+' '+foDat()),erstellt:new Date().toISOString(),geaendert:new Date().toISOString(),cb:{},f:{},archiv:false};
+  foFormulare.push(f);foSave();closeM('m-fo-neu');foOeffnen(f.id);
+}
+function foKopie(id){const f=foFormulare.find(x=>x.id===id);if(!f)return;const n=JSON.parse(JSON.stringify(f));n.id=foId();n.titel=(f.titel||'Formular')+' – Fortschreibung '+foDat();n.erstellt=n.geaendert=new Date().toISOString();n.archiv=false;foFormulare.push(n);foSave();foOeffnen(n.id);}
+function foArchiv(id){const f=foFormulare.find(x=>x.id===id);if(!f)return;f.archiv=!f.archiv;foSave();foListeRender();}
+function foLoeschen(id){const f=foFormulare.find(x=>x.id===id);if(!f)return;if(!confirm('Formular „'+(f.titel||'')+'“ endgültig löschen?\n\nTipp: Vorher als Word-Datei sichern oder stattdessen archivieren.'))return;foFormulare=foFormulare.filter(x=>x.id!==id);foSave();foListeRender();}
+function foAnzahl(g,sid){return foFormulare.filter(f=>f.g===g&&f.s===sid&&!f.archiv).length;}
+
+/* ---------- Einbindung: Einrichtung, Auswertung, Sichtschutz ---------- */
+(function(){
+  const _nh=einNeuHtml;einNeuHtml=function(id){let h=_nh.apply(this,arguments)||'';if(id==='profil')h+=foVorlagenKarte();if(id==='jahr')h+=rsKarte();return h;};
+  // LG-Akte (Auswertung)
+  const _ak=p61Akte;p61Akte=function(lgId,sid){const r=_ak.apply(this,arguments);try{const kn=document.querySelector('#view-auswertung .p61-a-kn');if(kn)kn.insertAdjacentHTML('afterbegin','<button class="btn" onclick="foSeite(\''+lgId+'\',\''+sid+'\')">📄 Formulare ('+foAnzahl(lgId,sid)+')</button>');}catch(e){}return r;};
+  // Klassen-Kind (Elterngespräch/Auswertung)
+  const _eg=renderElterngespraechDetail;renderElterngespraechDetail=function(sid){const r=_eg.apply(this,arguments);try{const d=document.getElementById('eg-detail');if(d&&!d.querySelector('.fo-egk')){d.insertAdjacentHTML('afterbegin','<div class="fo-egk no-print"><button class="btn" onclick="foSeite(\'__klasse\',\''+sid+'\')">📄 Formulare / Förderplan ('+foAnzahl('__klasse',sid)+')</button></div>');}}catch(e){}return r;};
+  // Sichtschutz: Editor schließen
+  try{const _sa=sgAn;sgAn=function(){try{const o=document.getElementById('fo-ed');if(o&&o.style.display==='flex'){if(foAkt)foSpeichern();o.style.display='none';}}catch(e){}return _sa.apply(this,arguments);};}catch(e){}
+  try{const _l=lockApp;lockApp=function(){try{if(document.getElementById('fo-ed')&&document.getElementById('fo-ed').style.display==='flex')foZu();}catch(e){}return _l.apply(this,arguments);};}catch(e){}
+})();
+
+/* ---------- B) Rechtsstand ---------- */
+const RS_LINKS={'BbgSchulG':'https://bravors.brandenburg.de/gesetze/bbgschulg','Sek I-V':'https://bravors.brandenburg.de/verordnungen/sek_i_v','VV-Leistungsbewertung':'https://bravors.brandenburg.de/verwaltungsvorschriften/vv_leistungsbewertung','VV-Schulbetrieb':'https://bravors.brandenburg.de/verwaltungsvorschriften/vv_schulbetrieb','LRSRV / SopV':'https://bravors.brandenburg.de/verordnungen/sopv'};
+function rsCfg(){try{return JSON.parse(localStorage.getItem('v1_rechtsstand')||'{}')||{};}catch(e){return {};}}
+function rsCfgSave(c){try{localStorage.setItem('v1_rechtsstand',JSON.stringify(c));}catch(e){}}
+const RS_BUILTIN=RECHTSSTAND.geprueft;
+function rsDe2Iso(d){const m=/^(\d\d)\.(\d\d)\.(\d{4})$/.exec(d||'');return m?m[3]+'-'+m[2]+'-'+m[1]:'';}
+function rsDatum(){const c=rsCfg();const a=rsDe2Iso(RS_BUILTIN);return (c.geprueft&&c.geprueft>a)?c.geprueft:a;}
+function rsAlterMonate(){const d=rsDatum();if(!d)return 0;const a=new Date(d+'T12:00:00'),n=new Date();return (n.getFullYear()-a.getFullYear())*12+(n.getMonth()-a.getMonth())-(n.getDate()<a.getDate()?1:0);}
+function rsAlt(){return rsAlterMonate()>=6;}
+function rsKarte(){
+  const c=rsCfg();const alt=rsAlt();const d=rsDatum();
+  return '<div class="ez-karte rs-karte'+(alt?' rs-alt':'')+'"><h3>⚖️ Rechtsstand '+(alt?'<span class="rs-pill">älter als 6 Monate</span>':'<span class="rs-pill ok">aktuell</span>')+'</h3>'
+    +'<p class="ez-p">Zuletzt geprüft am <b>'+foDat(d)+'</b>'+(c.geprueft&&c.geprueft>rsDe2Iso(RS_BUILTIN)?' (von dir)':' (mit dem Programm-Update)')+'. Die Regeln in Klassento (Fehlzeiten, Versetzung, Kurse …) beruhen auf diesen Fassungen.</p>'
+    +'<button class="btn '+(alt?'btnp':'')+'" onclick="rsPruefen()">🔍 Rechtsstand jetzt prüfen</button></div>';
+}
+function rsPruefen(){
+  let m=document.getElementById('m-rs');if(!m){m=document.createElement('div');m.className='mb';m.id='m-rs';document.body.appendChild(m);}
+  const c=rsCfg();c.notiz=c.notiz||{};
+  m.innerHTML='<div class="md" style="width:760px;max-width:96vw;max-height:92vh;overflow:auto"><div class="mhd"><h2>⚖️ Rechtsstand prüfen</h2><button class="btn" onclick="closeM(\'m-rs\')" style="padding:4px 8px;border:none">✕</button></div>'
+    +'<p class="rs-p">So geht’s: Jede Vorschrift über <b>„Öffnen“</b> bei BRAVORS aufrufen. Ganz oben steht, wann sie <b>zuletzt geändert</b> wurde. Stimmt das mit „In Klassento“ überein → <b>✓ unverändert</b> anhaken. Ist sie neuer → kurz notieren, was sich geändert hat.</p>'
+    +'<table class="rs-t"><tr><th>Vorschrift</th><th>In Klassento</th><th></th><th>Ergebnis</th></tr>'
+    +RECHTSSTAND.quellen.map((q,i)=>{const n=c.notiz[q[0]]||{};const url=RS_LINKS[q[0]]||'https://bravors.brandenburg.de/';
+      return '<tr><td><b>'+foE(q[0])+'</b></td><td class="rs-k">'+foE(q[1])+'</td><td><a class="btn" href="'+url+'" target="_blank" rel="noopener">Öffnen ↗</a></td>'
+       +'<td><label class="rs-ok"><input type="checkbox" id="rs-ok-'+i+'"'+(n.ok?' checked':'')+'> ✓ unverändert</label><input id="rs-n-'+i+'" placeholder="geändert? kurz notieren …" value="'+foE(n.txt||'')+'"></td></tr>';}).join('')+'</table>'
+    +'<div class="rs-hin">ℹ️ Ein automatischer Abgleich mit dem Internet ist nicht zuverlässig möglich: BRAVORS lässt fremde Programme nicht mitlesen, und ob eine Änderung Klassento betrifft, muss ein Mensch beurteilen. Ändert sich eine Regel, die Klassento rechnet (z. B. Fehlzeiten-Grenzen), kommt die Anpassung mit dem nächsten Programm-Update – deine Notiz hilft dabei.</div>'
+    +'<div style="display:flex;justify-content:flex-end;gap:8px;margin-top:12px"><button class="btn" onclick="rsMerken(false)">Notizen speichern</button><button class="btn btnp" onclick="rsMerken(true)">✓ Alles geprüft – heute als Prüfdatum</button></div></div>';
+  m.style.display='flex';
+}
+function rsMerken(fertig){
+  const c=rsCfg();c.notiz=c.notiz||{};let alle=true;
+  RECHTSSTAND.quellen.forEach((q,i)=>{const ok=document.getElementById('rs-ok-'+i).checked,txt=document.getElementById('rs-n-'+i).value.trim();c.notiz[q[0]]={ok,txt};if(!ok&&!txt)alle=false;});
+  if(fertig){if(!alle&&!confirm('Nicht bei jeder Vorschrift ist etwas eingetragen. Trotzdem heute als Prüfdatum speichern?'))return;c.geprueft=today();}
+  rsCfgSave(c);rsAnzeige();closeM('m-rs');try{szToast(fertig?'⚖️ Rechtsstand geprüft – danke!':'Notizen gespeichert.');}catch(e){}try{einRender();}catch(e){}try{kdRender();}catch(e){}
+}
+(function(){
+  const _k=kdRender;kdRender=function(){const r=_k.apply(this,arguments);try{
+      const root=document.getElementById('kd-root');if(!root||!rsAlt()||root.querySelector('.rs-band'))return r;
+      const c=rsCfg();if(c.spaeter===today())return r;
+      const top=root.querySelector('.kd-top');if(top)top.insertAdjacentHTML('afterend','<div class="rs-band">⚖️ <span>Der Rechtsstand (Schulgesetz, Sek I-V, VVs) wurde zuletzt am <b>'+foDat(rsDatum())+'</b> geprüft – das ist über 6 Monate her.</span><button class="btn btnp" onclick="rsPruefen()">Jetzt prüfen</button><button class="btn" onclick="const c=rsCfg();c.spaeter=today();rsCfgSave(c);this.parentNode.remove()">Später</button></div>');
+    }catch(e){}return r;};
+})();
+function rsAnzeige(){try{const d=rsDatum();if(d&&d>rsDe2Iso(RS_BUILTIN))RECHTSSTAND.geprueft=d.split('-').reverse().join('.');}catch(e){}}
+rsAnzeige();
+/* ===== PAKET v66 ENDE ===== */
+
+
 
 
 
